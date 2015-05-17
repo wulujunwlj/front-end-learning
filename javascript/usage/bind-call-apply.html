@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS 中 bind call apply 的用法</title>
+</head>
+
+<body>
+
+	<h1>JavaScript中bind、call、apply函数用法详解</h1>
+	<h2>from: <a href="http://www.codeceo.com/article/javascript-bind-call-apply.html">http://www.codeceo.com/article/javascript-bind-call-apply.html</a></h2>
+	<script>
+	/*
+	JS 里函数调用的4重模式:方法调用；正常函数调用；构造器函数调用；apply/call调用。
+	无论哪种函数调用除了你声明时定义的形参外，还会自动添加 2 个形参，分别是 this 和arguments。
+	this 在上面4种调用模式下，分别会绑定不同的值。
+	*/
+
+
+	// 方法调用
+	var a = {
+		v: 0,
+		f: function(xx) {
+			this.v = xx;
+		}
+	}
+	a.f(5);			// this --> a
+
+	// 正常函数调用
+	function f(xx) {
+		this.x = xx;
+	}
+	f(5);				// this --> Global variable(浏览器中this指代window，这种方法会创建一个window的x属性，并赋值)
+
+	// 构造器函数调用
+	// 如果在一个函数前面带上 new 关键字来调用，那么 js 会创建一个 prototype 属性是此函数的一个新对象，同时在调用这个函数的时候，把 this 绑定到这个新对象上。new 关键字也会改变return 语句的行为
+	function a(xx) {
+		this.x = xx;
+	}
+	var b = new a(5);
+
+	// apply/call 调用
+
+	// apply 接受两个参数：第一个传递给这个函数用来绑定this的值，第二个是一个参数数组
+	// apply 第一个参数传递null时，则this被绑定到全局变量
+	function a(xx) {
+		this.b = xx;
+	}
+	var o = {};
+	a.apply(o, [5]);
+	console.log(a.b);
+	console.log(o.b);
+
+	// call
+	function a(xx, yy) {
+		console.log(xx, yy);
+		console.log(this);
+		console.log(arguments);
+	}
+	a.apply(null, [5, 55]);
+	a.call(null, 5, 55);
+
+	// bind:
+	// call/apply 都是立马调用了对应的函数，bind会生成一个新的函数，参数跟call一致。
+	var m = {
+		'x': 1
+	};
+	function foo(y) {
+		console.log(this.x + y);
+	}
+	foo.apply(m, [5]);
+	foo.call(m, 5);
+	var foo1 = foo.bind(m, 5);
+	foo1();
+	</script>	
+</body>
+</html>

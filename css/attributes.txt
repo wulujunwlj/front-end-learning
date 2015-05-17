@@ -1,0 +1,24 @@
+
+1、cursor
+	十字准心 cursor:crosshair;
+	手 cursor:pointer; cursor:hand; 写两个是为了照顾IE5，它只认hand。
+	等待/沙漏 cursor:wait;
+	帮助 cursor:help;
+	无法释放 cursor:no-drop;
+	文字/编辑 cursor:text;
+	可移动对象 cursor:move;
+	向上改变大小 cursor:n-resize;
+	向下改变大小 cursor:s-resize;
+	向右改变大小 cursor:e-resize;
+	向左改变大小 cursor:w-resize;
+	向上右改变大小 cursor:ne-resize;
+	向上左改变大小 cursor:nw-resize;
+	向下右改变大小 cursor:se-resize;
+	向下左改变大小 cursor:sw-resize;
+	自动 cursor:auto;
+	禁止 cursor:not-allowed;
+	处理中 cursor:progress;
+	系统默认 cursor:default;
+	用户自定义 cursor:url('#');#=光标文件地址(注意文件格式必须为.cur或.ani)
+
+2、

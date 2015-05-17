@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Reader</title>
+</head>
+
+<body>
+	<input type="file" id="upload" onchange="upload(this)" multiple></input>
+
+	<div id="imgShow"></div>
+
+	<script>
+		var reader = new FileReader();
+		reader.onload = function(event) {
+			var dataUri = event.target.result;
+			console.log(dataUri)
+		};
+
+		reader.onerror = function(event) {
+			console.log(event.target.error.code);
+		};
+
+		// reader.readAsText(file);
+
+		var upload = function(obj) {
+			// element.files 获取上传列表的所有文件对象数组
+			console.log(obj.files);
+
+			var imgShow = document.getElementById('imgShow');
+			// for(var i=0; i<obj.files.length; i++) {
+				// var img = imgShow.createElement('img');
+				// img.src = ;
+// 
+				reader.readAsDataURL(obj.files);
+			// }
+		};
+	</script>
+</body>
+</html>
