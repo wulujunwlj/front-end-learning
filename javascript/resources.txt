@@ -1,0 +1,24 @@
+
+1、史上最详细的JavaScript事件使用指南
+	http://www.codeceo.com/article/javascript-event-guide.html
+	http://web.jobbole.com/82419/
+
+2、用node-webkit开发桌面应用
+	https://cnodejs.org/topic/53233277bfb7097d7a00059e
+
+3、去哪儿网前端架构师司徒正美：如何挑选适合的前端框架？
+	http://www.csdn.net/article/2015-05-11/2824656-fontend-Frameworks
+
+4、函数式JavaScript编程指南
+	http://shiningray.cn/functional_javascript_programming.html
+
+5、JavaScript 中的函数式编程实践
+	http://www.ibm.com/developerworks/cn/web/1006_qiujt_jsfunctional/
+
+6、AngularJS中serivce,factory,provider的区别
+	http://blog.csdn.net/puncha/article/details/22491745
+
+7、AngularJS开发人员最常犯的10个错误
+	http://blog.jobbole.com/78946/
+
+8、
