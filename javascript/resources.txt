@@ -21,4 +21,18 @@
 7、AngularJS开发人员最常犯的10个错误
 	http://blog.jobbole.com/78946/
 
-8、
+8、闭包漫谈（从抽象代数及函数式编程角度）
+    http://blogread.cn/it/article/4662?f=wb
+
+9、Web APP开发技巧总结
+    http://www.codeceo.com/article/web-app-tips.html
+
+10、js模块加载
+	AMD 规范：
+	https://github.com/amdjs/amdjs-api/blob/master/AMD.md
+	RequireJS入门
+	http://www.cnblogs.com/snandy/archive/2012/05/22/2513652.html
+	Javascript模块化编程
+	http://www.ruanyifeng.com/blog/2012/10/javascript_module.html
+	requirejs 中文文档：
+	http://www.requirejs.cn/
