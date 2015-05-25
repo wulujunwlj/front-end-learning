@@ -2,4 +2,10 @@
 1、60个有用CSS代码片段
 	http://segmentfault.com/a/1190000002773955?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare
 
-2、
+2、编写高效CSS代码的一些建议
+	http://www.codeceo.com/article/do-better-css-code.html
+
+3、清除 浮动
+	http://www.divcss5.com/jiqiao/j406.shtml
+
+4、

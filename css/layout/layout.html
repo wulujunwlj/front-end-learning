@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>利用 CSS 进行网页布局</title>
+	<style>
+	/* one-col layout */
+	.one-col .header { background-color: #ff8500; height: 40px; border-top: 2px solid red; border-bottom: 1px solid green; }
+	.one-col .main { background-color: #333333; width: 80%; height: 200px; margin: 0 auto; margin-top: 5px; }
+	.one-col .footer { background-color: blue; width: 80%; height: 50px; margin: 0 auto; margin-top: 5px; }
+	/* two-col layout */
+	.two-col .header { background-color: #ff8500; height: 40px; border-top: 2px solid red; border-bottom: 1px solid green; }
+	.two-col .main { width: 80%; height: 200px; margin: 0 auto; margin-top: 5px; }
+	.two-col .left { float: left; width: 30%; height: 100%; background-color: yellow; }
+	.two-col .right { float: right; width: 70%; height: 100%; background-color: black; }
+	.two-col .footer { background-color: blue; width: 80%; height: 50px; margin: 0 auto; margin-top: 5px; }
+
+	/*.three-col .main { position: absolute; }*/
+	.three-col .left { position: absolute; left: 0; top: 800px; width: 200px; height: 300px; background-color: yellow; }
+	.three-col .middle { position: absolute; left: 200px; top: 800px; width: 100%; height: 300px; background-color: green; margin: 0 10px; }
+	/*.three-col .right { position: absolute; right: 0; top: 800px; width: 300px; height: 300px; background-color: red; }*/
+	</style>
+</head>
+
+<body>
+	<p>一列布局</p>	
+	<div class="one-col">
+		<div class="header"></div>
+		<div class="main"></div>
+		<div class="footer"></div>
+	</div>
+
+	<p>二列布局</p>
+	<div class="two-col">
+		<div class="header"></div>
+		<div class="main">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+		<div class="footer"></div>
+	</div>
+
+	<p>三列布局</p>
+	<div class="three-col">
+		<!-- <div class="header"></div> -->
+		<div class="main">
+			<div class="left"></div>
+			<div class="middle"></div>
+			<div class="right"></div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

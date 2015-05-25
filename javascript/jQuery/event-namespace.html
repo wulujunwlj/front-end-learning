@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Event Namespace</title>
+	<link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+	<div class="container p-t">
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">jQuery 事件绑定和解绑</div>
+					</div>
+					<div class="panel-body">
+						<form action="" class="form">
+							<div class="form-group">
+								<label for="" class="control-label">绑定</label>
+								<button type="button" class="btn btn-primary js-btnAddEvent">添加事件</button>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label">trigger</label>
+								<button type="button" class="btn btn-primary js-btnTrigger">trigger</button>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label">解除绑定</label>
+								<button type="button" class="btn btn-primary js-btnRemoveEvent">删除事件</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../../bower_components/jquery/dist/jquery.js"></script>
+	<script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			var $btnAddEvent = $('.js-btnAddEvent');
+			var $btnRemoveEvent = $('.js-btnRemoveEvent');
+			var $btnTrigger = $('.js-btnTrigger');
+
+			$btnAddEvent.bind('click.namespace', function() {
+				console.log('click namespace');
+			});
+
+			$btnAddEvent.bind('click.my', function() {
+				console.log('click my');
+			});
+
+			$btnTrigger.bind('click', function() {
+				$btnAddEvent.trigger('click');
+			});
+
+			$btnRemoveEvent.bind('click', function() {
+				console.log('off')
+				$btnAddEvent.off('click.namespace');
+			});
+		});
+	</script>
+</body>
+</html>

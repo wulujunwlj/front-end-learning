@@ -36,3 +36,8 @@
 	http://www.ruanyifeng.com/blog/2012/10/javascript_module.html
 	requirejs 中文文档：
 	http://www.requirejs.cn/
+
+11、jQuery 事件绑定命名空间：
+	http://blog.csdn.net/testkingxqlun/article/details/15844293
+
+12、
