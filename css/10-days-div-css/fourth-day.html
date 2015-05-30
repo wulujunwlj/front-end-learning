@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>第四天 纵向导航菜单及二级弹出菜单</title>
+	<style>
+	body { font-size: 12px; line-height: 1.5em; }
+	#menu { border: 1px solid #ccc; width: 100px; }
+	#menu ul { list-style: none; margin: 0; padding: 0;}
+	#menu ul li { background-color: #eee; height: 26px; padding: 0 8px; line-height: 26px; border-bottom: 1px solid #CCC; position: relative; }
+	#menu ul li ul { display: none; border: 1px solid #ccc; border-bottom: none; position: absolute; top: 0; left: 100px; }
+	#menu ul li:hover ul {
+		display: block; 
+	}
+	a { text-decoration: none; color: #000; }
+	a:hover { color: #F00; }
+	</style>
+</head>
+
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="">首页</a></li>
+			<li><a href="">网页版式布局</a>
+				<ul>
+					<li><a href="">自适应宽度</a></li>
+					<li><a href="">固定宽度</a></li>
+				</ul>
+			</li>
+			<li><a href="">div+css教程</a>
+			<ul>
+				<li><a href="#">新手入门</a></li>
+				<li><a href="#">视频教程</a></li>
+				<li><a href="#">常见问题</a></li>
+			</ul>
+			</li>
+			<li><a href="">div+css实例</a></li>
+			<li><a href="">常用代码</a></li>
+			<li><a href="">站长杂谈</a></li>
+			<li><a href="">技术文档</a></li>
+			<li><a href="">资源下载</a></li>
+			<li><a href="">图片素材</a></li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+* { margin-right: 0; padding: 0; }
+body { font-size: 12px; }
+#header { height: 50px; background-color: #000; }
+h1 { font-size: 20px; font-weight: normal; font-family: '微软雅黑', '黑体'; }
+#header h1 { width: 130px; color: #fff; }
+#header ul { list-style: none; float: left; }
+#nav { float: right; height: 30px; overflow: hidden; margin-top: 10px; }
+#container { width: 980px; margin: 0 auto;}
+#main { }
+#main p { margin: 8px 0 14px; text-indent: 2em; }

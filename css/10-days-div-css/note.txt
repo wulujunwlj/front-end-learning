@@ -1,0 +1,15 @@
+
+1、改变元素类型：display: inline;[转变为内联元素] display: block;[转变为块级元素]
+
+2、在CSS中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素；且要指明一个宽度，否则它会尽可能的窄[根据内容多少]；另外，当可供浮动的空间小于浮动元素时，它会跑到下一行，直到拥有足够放下它的空间。
+
+3、IE6 的3 像素bug
+	当浮动元素与非浮动元素相邻时，会出现3px margin 的bug。
+	body { margin:0;}
+	#side { float: left; background:#99FF99; height: 300px; width: 120px;}
+	#main { background: #99FFFF; height: 300px;}
+
+	<div id="side">此处显示 id "side" 的内容</div>
+	<div id="main">此处显示 id "main" 的内容</div>
+
+	解决办法：#side 加上 _margin-right: -3px; 
