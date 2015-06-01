@@ -40,4 +40,5 @@
 11、jQuery 事件绑定命名空间：
 	http://blog.csdn.net/testkingxqlun/article/details/15844293
 
-12、
+12、逐渐深入地理解Ajax
+	http://web.jobbole.com/82447/
