@@ -1,0 +1,15 @@
+
+1、Chrome插件（Extensions）开发攻略
+	http://www.cnblogs.com/guogangj/p/3235703.html
+
+2、Chrome extension "Refused to evaluate a string as JavaScript because 'unsafe-eval'
+	http://stackoverflow.com/questions/24798669/chrome-extension-refused-to-evaluate-a-string-as-javascript-because-unsafe-eva
+
+3、chrome插件中文开发文档(非官方)
+	http://chrome.liuyixi.com/docs.html
+
+4、360 极速浏览器应用开放平台
+	http://open.chrome.360.cn/extension_dev/extension.html
+
+5、https://developer.chrome.com/extensions/overview
+
