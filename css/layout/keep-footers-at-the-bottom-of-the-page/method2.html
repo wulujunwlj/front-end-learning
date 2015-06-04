@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+	html, body { height: 100%; margin: 0; padding: 0; }
+	#container { min-height: 100%; height: auto !important; height: 100%; }
+	#page { padding-bottom: 60px; }
+	#footer { position: relative; margin-top: -60px; height: 60px; clear: both; background-color: #c6f; }
+	#header { padding: 10px; background-color: lime; }
+	#left { width: 18%; float: left; margin-right: 2%; background-color: orange; }
+	#content { width: 60%; float: left; margin-right: 2%; background: green; }
+	#right { width: 18%; float: left; background-color: yellow; }
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">Header Section</div>
+		<div id="page" class="clearfix">
+			<div id="left">Left sidebar</div>
+			<div id="content">Main Content</div>
+			<div id="right">Right sidebar</div>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div id="footer">Footer Section</div>
+</body>
+</html>
