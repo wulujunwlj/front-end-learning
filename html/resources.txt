@@ -4,3 +4,7 @@
 
 	HTML5 3D相册：http://www.html5tricks.com/html5-3d-gallery.html
 	
+2、HTML5中类jQuery选择器querySelector的使用
+	http://www.cnblogs.com/Wayou/p/html5_web_api_queryselector.html
+
+3、

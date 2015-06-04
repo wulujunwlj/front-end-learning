@@ -1,0 +1,8 @@
+
+1、github上值得关注的前端项目
+	http://segmentfault.com/a/1190000002804472
+
+2、前端不为人知的一面--前端冷知识集锦
+	http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html
+
+3、

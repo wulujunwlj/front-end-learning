@@ -42,3 +42,23 @@
 
 12、逐渐深入地理解Ajax
 	http://web.jobbole.com/82447/
+
+13、jQuery插件开发精品教程，让你的jQuery提升一个台阶
+	http://www.cnblogs.com/Wayou/p/jquery_plugin_tutorial.html
+
+14、Javascript 面向对象编程
+	http://blogread.cn/it/article/4830?f=wb
+
+15、JavaScript 中的闭包
+	http://segmentfault.com/a/1190000002805295
+
+16、深入剖析 JavaScript 的深复制
+	http://segmentfault.com/a/1190000002801042
+
+17、[JS 进阶] 闭包，作用域链，垃圾回收，内存泄露
+	http://segmentfault.com/a/1190000002778015?_ea=211736
+
+18、js闭包在循环语句中的一个问题
+	http://segmentfault.com/q/1010000002794318?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly
+
+19、
