@@ -170,10 +170,53 @@
 
 28、map/reduce
 	map(func, list):map 将传入的函数依次作用到序列的每个元素，并把结果作为新的list返回。
-	
+	reduce(func, list):reduce 把一个函数作用在一个序列上，这个函数接收两个参数，reduce把结果继续和序列的下一个元素做累积计算。类似效果：reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
+
+29、filter:
+	filter() 函数用于过滤序列。filter 把传入的函数依次作用于每个元素，然后根据返回值是 True 还是 False 决定保留还是丢弃该元素。
+
+30、sorted
+	通常规定，对于两个元素x和y，如果认为x < y，则返回-1，如果认为x == y，则返回0，如果认为x > y，则返回1，这样，排序算法就不用关心具体的比较过程，而是根据比较结果直接排序。
+	sort(list, func_cmp)
+
+31、返回函数 --> closure
+	def outer_func(*args):
+		def inner_func():
+			pass
+		return inner_func
+
+	闭包：返回闭包的函数不要饮用任何循环变量，或者后续会发生变化的变量。
+	解决办法：再创建一个函数，用该函数的参数绑定循环变量当前的值，无论该循环变量后续如何更改，已绑定到函数参数的值不变
+
+32、匿名函数：
+	map(lambda x: x * x, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+	关键字 lambda 表示匿名函数，冒号前面的x表示函数参数。
+	匿名函数只能有一个表达式，不用写 return，返回值就是该表达式的结果。
+
+33、装饰器[decorator]：
+	在代码运行期间动态增加功能的方式，称之为装饰器。
+	本质上，decorator 就是一个返回函数的高阶函数。
+
+34、偏函数[Partial function]：
+	functools.partial 的作用是，把一个函数的某些参数给固定住（设定默认值），返回一个新的函数，调用这个函数会更简单。
+
+35、模块（module）：
+	在 Python 中，一个 .py 文件就称之为一个模块。（module）
+	包(package)：按目录来组织模块的方法。
+	每一个包目录下面都会有一个__init__.py的文件，这个文件是必须存在的，否则，Python就把这个目录当成普通目录，而不是一个包。__init__.py可以是空文件，也可以有Python代码，因为__init__.py本身就是一个模块，而它的模块名就是mycompany。
+	任何模块代码的第一个字符串都被视为模块的文档注释；
+	if __name__ == '__main__':
+		test()
+	当我们在命令行运行hello模块文件时，Python解释器把一个特殊变量__name__置为__main__，而如果在其他地方导入该hello模块时，if判断将失败，因此，这种if测试可以让一个模块通过命令行运行时执行一些额外的代码，最常见的就是运行测试。
+
+
 
 http://hax.iteye.com/blog/1128269
 http://zhuanlan.zhihu.com/FrontendMagazine/20058966
 https://github.com/tastejs/todomvc
 
-http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00138681965108490cb4c13182e472f8d87830f13be6e88000
+http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/0014186131194415d50558b7a1c424f9fb52b84dc9c965c000
+http://www.codeceo.com/article/javascript-plugin.html
+http://www.360doc.com/content/15/0314/11/9065871_455017557.shtml
+http://blogread.cn/it/article/4871?f=wb
+http://blogread.cn/it/article/4873?f=wb
