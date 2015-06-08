@@ -61,4 +61,19 @@
 18、js闭包在循环语句中的一个问题
 	http://segmentfault.com/q/1010000002794318?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly
 
-19、
+19、JavaScript中getter/setter的实现
+	http://www.codeceo.com/article/javascript-getter-setter.html
+
+20、每个Javascript开发者都应当知道的那些事
+	http://web.jobbole.com/82446/
+
+21、编写更加稳定、可读性强的JavaScript代码
+	http://www.codeceo.com/article/write-stable-readable-javascript.html
+
+22、AngularJS + CoffeeScript 前端开发环境配置详解
+	http://www.codeceo.com/article/angularjs-coffeescript.html
+
+23、Google 爬虫如何抓取 JavaScript 的？
+	http://web.jobbole.com/82457/
+
+24、

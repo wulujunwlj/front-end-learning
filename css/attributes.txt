@@ -21,4 +21,5 @@
 	系统默认 cursor:default;
 	用户自定义 cursor:url('#');#=光标文件地址(注意文件格式必须为.cur或.ani)
 
-2、
+2、页面内容太多出现垂直滚动条：
+	body { height: 100%; overflow: hidden; }

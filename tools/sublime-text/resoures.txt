@@ -1,0 +1,8 @@
+
+1、Sublime Text非官方文档（中文翻译版）
+	http://sublime-text.readthedocs.org/en/latest/index.html
+
+2、Gif多图：我常用的 16 个 Sublime Text 快捷键
+    http://blog.jobbole.com/82527/
+
+3、

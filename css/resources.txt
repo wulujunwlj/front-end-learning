@@ -13,3 +13,8 @@
 
 5、如何将页脚固定在页面底部
     http://blog.jobbole.com/10408/
+
+6、CSS3弹性盒模型布局模块 (aka Flex Box)介绍和demo/测试用例
+    http://blogread.cn/it/article/4887?f=wb
+
+7、

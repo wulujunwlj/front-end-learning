@@ -7,4 +7,8 @@
 2、HTML5中类jQuery选择器querySelector的使用
 	http://www.cnblogs.com/Wayou/p/html5_web_api_queryselector.html
 
-3、
+3、HTML5视频播放器Video.Js 播放器外观可自定义
+
+    http://www.html5tricks.com/html5-video-js.html
+
+4、

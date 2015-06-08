@@ -1,0 +1,8 @@
+
+1、提高你的Python能力：理解单元测试
+	http://blog.jobbole.com/55180/
+
+2、Python爬虫入门（1）：综述
+    http://python.jobbole.com/81332/
+
+3、
