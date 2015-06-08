@@ -209,6 +209,20 @@
 		test()
 	当我们在命令行运行hello模块文件时，Python解释器把一个特殊变量__name__置为__main__，而如果在其他地方导入该hello模块时，if判断将失败，因此，这种if测试可以让一个模块通过命令行运行时执行一些额外的代码，最常见的就是运行测试。
 
+36、作用域：[变量名约定]
+	在 Python 中，不同类型的变量和函数通过 _ 前缀实现。
+	不带前缀的函数和变量名[abc, x123]，public;
+	模块自带的变量[__author__, __name__, __doc__];
+	非公开变量[_abc, __abc]，不应该被直接引用。
+
+37、安装第三方模块：
+	在 Python中，安装第三方模块时通过setuptools。包括：easy_install 和 pip。
+	python 第三方库注册网站[Python Package Index]: pypi.python.org/pypi
+	
+
+38、
+
+
 
 
 http://hax.iteye.com/blog/1128269
@@ -220,3 +234,6 @@ http://www.codeceo.com/article/javascript-plugin.html
 http://www.360doc.com/content/15/0314/11/9065871_455017557.shtml
 http://blogread.cn/it/article/4871?f=wb
 http://blogread.cn/it/article/4873?f=wb
+http://www.codeceo.com/article/write-stable-readable-javascript.html
+http://www.codeceo.com/article/javascript-strong-type.html
+http://www.html5tricks.com/demo/jiaoben1041/index.html
