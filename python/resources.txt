@@ -5,4 +5,5 @@
 2、Python爬虫入门（1）：综述
     http://python.jobbole.com/81332/
 
-3、
+3、一起写一个 Web 服务器
+    http://python.jobbole.com/81524/#comment-93047
