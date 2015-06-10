@@ -13,3 +13,8 @@
 
 5、https://developer.chrome.com/extensions/overview
 
+6、chrome扩展应用开发教程之开发chrome应用基础
+	http://blogread.cn/it/article/4873?f=wb
+
+7、
+
