@@ -85,4 +85,5 @@
 26、Javascript高性能动画与页面渲染
 	http://www.codeceo.com/article/javascript-high-performance-2.html
 
-27、
+27、js 闭包 详解
+	http://bbs.php-z.com/thread-1563-1-1.html
