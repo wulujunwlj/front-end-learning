@@ -76,4 +76,13 @@
 23、Google 爬虫如何抓取 JavaScript 的？
 	http://web.jobbole.com/82457/
 
-24、
+24、请不要在JavaScript中使用new关键字
+	http://www.codeceo.com/article/not-use-new-in-javascript.html
+
+25、你若触发，我就处理——浅谈JavaScript的事件响应
+	http://web.jobbole.com/51889/
+
+26、Javascript高性能动画与页面渲染
+	http://www.codeceo.com/article/javascript-high-performance-2.html
+
+27、

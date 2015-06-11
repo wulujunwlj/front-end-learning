@@ -5,4 +5,7 @@
 2、前端不为人知的一面--前端冷知识集锦
 	http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html
 
-3、
+3、【前端福利】用grunt搭建自动化的web前端开发环境-完整教程
+    http://www.cnblogs.com/wangfupeng1988/p/4561993.html
+
+4、
