@@ -1,0 +1,4 @@
+
+1、Angular config 中调用 service的方法：[方法执行时机的问题]
+
+2、

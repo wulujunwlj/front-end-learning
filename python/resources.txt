@@ -8,4 +8,9 @@
 3、一起写一个 Web 服务器
     http://python.jobbole.com/81524/#comment-93047
 
+4、如何在Python中使用static、class、abstract方法（权威指南）
+    http://python.jobbole.com/81595/
+
+5、
+
    
