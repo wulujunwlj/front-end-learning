@@ -87,3 +87,26 @@
 
 27、js 闭包 详解
 	http://bbs.php-z.com/thread-1563-1-1.html
+
+28、如何实现对象的深度克隆
+	http://web.jobbole.com/82517/
+
+29、详解javascript立即执行函数表达式（IIFE）
+	http://web.jobbole.com/82520/
+
+30、闭包初窥
+	http://web.jobbole.com/82523/
+
+31、详解js变量、作用域及内存 
+	http://saebbs.com/forum.php?mod=viewthread&tid=29203&highlight=%E8%AF%A6%E8%A7%A3js%E5%8F%98%E9%87%8F%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%8F%8A%E5%86%85%E5%AD%98
+
+32、JavaScript 开发的45个经典技巧
+	http://www.codeceo.com/article/javascript-45-tips.html
+
+33、Web性能优化系列：10个JavaScript性能提升的技巧
+	http://web.jobbole.com/82469/
+
+34、React 入门教程
+	http://www.codeceo.com/article/react-guide.html
+
+35、

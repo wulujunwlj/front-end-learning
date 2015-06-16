@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#el { width: 10px; height: 10px; background-color: red; position: relative; left: 100px; }
+	#el2 { width: 10px; height: 10px; background-color: red; position: relative; left: 100px; margin-top: 10px; }
+	</style>
+</head>
+
+<body>
+
+	<div id="el"></div>
+	<div id="el2"></div>
+
+	<script>
+		(function() {
+			var begin,
+					el,
+					start,
+					end,
+					duration;
+
+			var INTERVAL = 13;
+
+			function now() {
+				return (new Date).getTime();
+			};
+
+			function ease (time) {
+				return time * time;
+			}
+
+			function ease2 (time) {
+				return time * time * time;
+			}
+
+			function _animLeft() {
+				var pos = (now() - begin) /duration;
+
+				if(pos >= 1.0) {
+					return false;
+				}
+				pos = ease(pos);
+
+				return !!(el.style.left = (start + (end - start) * pos) + 'px');
+			};
+
+			function _animLeft2() {
+				var pos = (now() - begin) /duration;
+
+				if(pos >= 1.0) {
+					return false;
+				}
+				pos = ease2(pos);
+
+				return !!(el.style.left = (start + (end - start) * pos) + 'px');
+			};
+
+			function animLeft(_el, _start, _end, _duration) {
+				stopped = false;
+				begin = now();
+				el = _el;
+				start = _start;
+				end = _end;
+				duration = _duration || 1000;
+
+				var step = function() {
+					if(_animLeft()) {
+						setTimeout(step, INTERVAL);
+					}
+				};
+
+				setTimeout(step, INTERVAL);
+			}
+
+			function animLeft2(_el, _start, _end, _duration) {
+				stopped = false;
+				begin = now();
+				el = _el;
+				start = _start;
+				end = _end;
+				duration = _duration || 1000;
+
+				var step = function() {
+					if(_animLeft2()) {
+						setTimeout(step, INTERVAL);
+					}
+				};
+
+				setTimeout(step, INTERVAL);
+			}
+
+			window.animLeft = animLeft;
+			window.animLeft2 = animLeft2;
+		})();
+
+		animLeft(document.getElementById('el'), 100, 200);
+		animLeft2(document.getElementById('el2'), 100, 200);
+	</script>
+</body>
+</html>

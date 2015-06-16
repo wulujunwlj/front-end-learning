@@ -1,0 +1,10 @@
+
+1、动画时间进程：
+	指从时间上看动画的完成度，是一个[0, 1]之间的数字。
+	动画时间进程 = (currentTime - startTime) / (endTime - startTime)
+
+2、动画效果进程：
+	指被动画的属性值当前的增量。
+	动画效果进程 = currentState - startState
+
+3、

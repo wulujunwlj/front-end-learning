@@ -20,4 +20,7 @@
 7、CSS 布局模块
     http://web.jobbole.com/82482/
 
-8、
+8、前端必看！各大浏览器 CSS Hack 收集
+	http://www.codeceo.com/article/css-hack.html
+
+9、
