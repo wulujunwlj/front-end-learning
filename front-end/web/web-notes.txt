@@ -1,0 +1,82 @@
+
+1、WEB 标准：
+	WEB 标准不是某一个标准，而是一系列标准的集合。
+	网页主要由三部分组成：结构（structrue）、表现（presentation）、和行为（behavior）。
+	结构化标准语言主要包括 XHTML 和 XML；表现标准语言主要包括 CSS；行为标准语言主要包括对象模型、ECMAScript 等。
+
+2、网站架构的流程：
+	设计稿的分析；
+	切图；
+	编写 xhtml 和 css；
+	编写 Javascript
+
+3、调用样式的方法比较：
+	引用：link
+	导入：@import 
+
+4、布局页面的 div id 命名：
+
+	div#container>(div#header+(div#content>div#col_left+div#col_right)+div#footer)
+
+5、页面各种元素 id 命名集合 class 命名：
+	元素 ID：
+		容器：container
+		页头：header
+		登录条：loginBar
+		标志：logo
+		侧栏：sideBar
+		广告：banner
+		导航：nav
+		子导航：subnav
+		菜单：menu
+		子菜单：submenu
+		搜索：search
+		滚动：scroll
+		页面主体：main
+		内容：content
+		列：column
+		左边列：col_left
+		右边列：col_right
+		标签页：tab
+		文章列表：list
+		提示信息：msg
+		小技巧：tips
+		栏目标题：title
+		加入：joinus
+		指南：guild
+		热点：hot
+		新闻：news
+		下载：download
+		注册：register
+		状态：status
+		按钮：btn
+		投票：vote
+		合作伙伴：partner
+		友情链接：friendlink
+		页脚：footer
+		版权：copyright
+	元素 class：
+		.bold { font-weight: bold; }
+		.cl { clear: left; }
+		.cr { clear: right; }
+		.cb { clear: both; }
+		.fl { float: left; }
+		.fr { float: right; }
+		.fn { float: none;}
+		.fontn { font: normal; }
+		.txtl { text-align: left; }
+		.txtr { text-align: right; }
+		.txtc { text-align: center; }
+		.inbox { padding: 10px; }
+		.pointer { cursor: pointer; }
+
+		当前：current
+		内容器：inbox / innerbox
+		标题：title
+		内容：content
+		输入框：txtbox
+		按钮：btn
+		当鼠标 over：xxx_over
+		当鼠标 out：xxx_out
+
+6、
