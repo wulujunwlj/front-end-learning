@@ -11,6 +11,9 @@
 4、如何在Python中使用static、class、abstract方法（权威指南）
     http://python.jobbole.com/81595/
 
-5、
+5、Computational Statistics in Python
+    http://people.duke.edu/~ccc14/sta-663/index.html
+
+6、
 
    
