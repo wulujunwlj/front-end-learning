@@ -11,4 +11,7 @@
 4、CSS动画 vs JS动画
     http://segmentfault.com/a/1190000002907711
 
-5、
+5、GitHub上有趣的资源
+    http://www.jianshu.com/collection/e2a2a0073e2d
+
+6、
