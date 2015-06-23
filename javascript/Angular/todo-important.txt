@@ -4,4 +4,7 @@
 2、angularjs directive 实例 详解
     http://blog.51yip.com/jsjquery/1607.html
 
-3、
+3、Angularjs 源码分析
+	http://www.angularjs.cn/A0Ad
+
+4、

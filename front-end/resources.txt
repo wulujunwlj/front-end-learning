@@ -14,4 +14,7 @@
 5、GitHub上有趣的资源
     http://www.jianshu.com/collection/e2a2a0073e2d
 
-6、
+6、直接拿来用！最火的前端开源项目
+	http://www.csdn.net/article/2013-06-25/2815979-front-end-development
+
+7、
