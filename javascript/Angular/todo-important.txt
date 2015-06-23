@@ -7,4 +7,19 @@
 3、Angularjs 源码分析
 	http://www.angularjs.cn/A0Ad
 
-4、
+4、AngularJS的数据双向绑定是怎么实现的？
+	http://www.zhihu.com/question/23275373
+
+5、vue，angular，avalon这三种MVVM框架之间有什么优缺点？
+	http://www.zhihu.com/question/27791075
+
+6、AngularJS中的依赖注入实际应用场景？
+	http://www.zhihu.com/question/28097646
+
+7、请问AngualrJs在做路由控制的时候如何不让链接里面带有符号“#”呢？需要配合服务器端的方法来实现么？
+	http://www.zhihu.com/question/20990088
+
+8、如何看2015年1月Peter-Paul Koch对Angular的看法？
+	http://www.zhihu.com/question/27601964
+
+9、
