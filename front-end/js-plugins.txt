@@ -1,0 +1,12 @@
+
+1、jQuery 滑动插件：swiper
+	https://github.com/nolimits4web/Swiper
+
+2、CSS 命名和 JS 命名：
+	CSS 通过加前缀 tabview_xx 形成命名空间；
+	JS 通过匿名空间隔开共有私有。[匿名函数，闭包]
+
+3、模块化和 require.js：
+	http://requirejs.org/
+	
+4、
