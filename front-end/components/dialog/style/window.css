@@ -1,0 +1,39 @@
+/* 2015-6-27 10:19:08 */
+
+.window_boundingBox {
+    position: fixed;
+    border: 1px solid #000;    
+    margin-left: -250px;    
+    box-shadow: 0 0 12px rgba(0, 0, 0.5);
+}
+
+.window_boundingBox input {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.window_header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.window_body {
+    padding: 10px;
+}
+
+.window_closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #3F29C5;
+    color: #fff;
+    cursor: pointer;
+}

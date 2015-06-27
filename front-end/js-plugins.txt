@@ -8,5 +8,43 @@
 
 3、模块化和 require.js：
 	http://requirejs.org/
-	
-4、
+
+	define 定义模块
+	require 引入模块
+
+	// mod1.js
+	define(function() {
+		return { a: 3};
+	});
+
+	// mod2.js
+	define(['mod1'], function(m1) {
+		var a, b = 2, c = 3;
+
+		a = c * m1.a;
+
+		return {
+			a: a,
+			b: b
+		};
+	});
+
+	// main.js
+	require(['mod2'], function(m2) {
+		console.log(m2.a * m2.b);
+	});
+
+	// index.html
+	<script src="js/require.js" data-main="js/main"></script>
+
+4、写一个 requirejs 的 demo
+
+5、弹窗组件：
+	浏览器自带弹窗的问题：
+		(1)阻塞进程
+		(2)不同浏览器样式不同
+		(3)不可定制样式
+
+6、
+http://requirejs.org/
+http://www.codeceo.com/article/javascript-do-cookie.html
