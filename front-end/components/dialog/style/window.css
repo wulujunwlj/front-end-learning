@@ -2,12 +2,23 @@
 
 .window_boundingBox {
     position: fixed;
-    border: 1px solid #000;    
-    margin-left: -250px;    
+    border: 1px solid #000;
+    margin-left: -250px;
     box-shadow: 0 0 12px rgba(0, 0, 0.5);
+    background-color: #fff;
 }
 
-.window_boundingBox input {
+.window_mask {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .3; 
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.window_alertBtn {
     width: 100px;
     position: absolute;
     bottom: 10px;
@@ -36,4 +47,45 @@
     background-color: #3F29C5;
     color: #fff;
     cursor: pointer;
+}
+
+#btn_trigger {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+/* skin for a */
+/* 子孙选择器 */
+.window_skin_a .window_boundingBox {
+	box-shadow: none;
+	border: 10px solid rgba(0, 0, 0.3);
+	border-radius: 8px;
+}
+
+.window_skin_a .window_alertBtn {
+	width: 50px;
+	left: auto;
+	right: 20px;
+	margin-left: 0;
+	background: red;
+	border: none;
+}
+
+.window_skin_a .window_header {
+	background-color: red;
+	text-align: left;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.window_skin_a .window_closeBtn {
+	width: 45px;
+	height: 45px;
+	border-radius: 45px;
+	line-height: 45px;
+	padding: 0;
+	font-weight: bold;
+	right: -15px;
+	top: -15px;
 }

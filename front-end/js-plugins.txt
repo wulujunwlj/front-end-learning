@@ -48,3 +48,18 @@
 6、
 http://requirejs.org/
 http://www.codeceo.com/article/javascript-do-cookie.html
+
+固定边栏滚动：
+	http://www.imooc.com/view/52
+
+分页页码制作
+	http://www.imooc.com/learn/15
+
+http://www.imooc.com/view/403
+	http://www.imooc.com/view/403
+
+javascript异步编程
+	http://segmentfault.com/a/1190000002938132
+
+JavaScript事件机制兼容性解决方案
+	http://www.codeceo.com/article/javascript-event-compatible.html

@@ -11,7 +11,7 @@ require.config({
 // });
 
 require(['jquery', 'window'], function($, w) {
-	$('#a').click(function() {
+	$('#btn_trigger').click(function() {
 		new w.Window().alert({
 			title: '提示',
 			content: 'Welcome wlj',
@@ -24,6 +24,13 @@ require(['jquery', 'window'], function($, w) {
 			hasCloseBtn: true,
 			handler4CloseBtn: function() {
 				console.log('You just canceled...');
+			}
+			,
+			skinClassName: 'window_skin_a'
+			,
+			text4AlertBtn: 'OK',
+			handler4CancelBtn: function() {
+				console.log('You just clicked the mask div...');
 			}
 		});
 
