@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="./dist/Swiper3.0.7.css">
+
+	<style>
+	body { background: #eee; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #000; margin: 0; padding: 0; }
+	ul { margin: 0; padding: 0; }
+	.swiper-container { width: 100%; height: 300px; margin: 20px auto; }
+	.swiper-slide { text-align: center; font-size: 18px; background: #fff; width: 60%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+	.swiper-slide:nth-child(2n) { width: 40%; }
+	.swiper-slide:nth-child(3n) { width: 20%; }
+
+	.contact-list { width: 200px; height: 60px; background: #17B5F0; margin: 0 auto; vertical-align: middle; }
+	.contact-list .swiper-slide { width: auto !important; height: 50px; }
+	.no-padder { padding: 0px;}
+	.p-l-sm { padding: 0 0 0 10px;}
+	.m-xs { margin: 5px; }
+	</style>
+</head>
+
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">Slider 1</div>
+			<div class="swiper-slide">Slider 2</div>
+			<div class="swiper-slide">Slider 3</div>
+			<div class="swiper-slide">Slider 4</div>
+			<div class="swiper-slide">Slider 5</div>
+			<div class="swiper-slide">Slider 6</div>
+			<div class="swiper-slide">Slider 7</div>
+			<div class="swiper-slide">Slider 8</div>
+			<div class="swiper-slide">Slider 9</div>
+			<div class="swiper-slide">Slider 10</div>
+		</div>
+	</div>
+
+	<div class="breadcrumb swiper-container contact-list">
+		<ul class="swiper-wrapper p-l-sm m-xs">
+			<li class="swiper-slide">11111</li>
+			<li class="swiper-slide">22222</li>
+			<li class="swiper-slide">33333</li>
+			<li class="swiper-slide">44444</li>
+			<li class="swiper-slide">55555</li>
+		</ul>
+	</div>
+	<script src="./dist/Swiper3.0.7.js"></script>
+
+	<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		// slidesPerView: 4,
+		centeredSlides: true,
+		paginationClickable: true,
+		spaceBetween: 10,
+		grabCursor: true,
+		watchSlidesProgress: true
+	});
+	</script>
+</body>
+</html>
