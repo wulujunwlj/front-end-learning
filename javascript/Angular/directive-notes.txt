@@ -1,0 +1,46 @@
+
+from：http://blog.51yip.com/jsjquery/1607.html
+
+1、定义方式：
+	app.directive('directiveName', ['$filter', 
+		function () {
+			return {
+				restrict: 'A',
+				link: function (scope, iElement, iAttrs) {
+					
+				}
+			};
+		}
+	]);
+
+	或者：
+
+	app.directive('directiveName', ['$filter', 
+		function () {
+
+			var directive = {
+				restrict: 'A',
+				link: function (scope, iElement, iAttrs) {
+					
+				}
+			};
+
+			return directive;
+		}
+	]);
+
+2、参数说明：
+	name：当前 scope 的名称，注册时可以使用默认值(不填)；
+	priority：当有多个 directive 定义在同一个 DOM 元素时，确定它们的执行顺序。用于在 directive 的 compile function 调用之前进行排序；
+	terminal：如果设置为 'true'，则表示当前的 priority 将会成为最后一组执行的 directive；
+	scope：
+		true：创建一个新的 scope；
+		{}：创建一个新的、独立(isolate)的 scope；[isolate scope与一般的 scope 的区别在于它不是通过原型继承于父 scope的]
+			@/@attr：
+			=/=expression：
+			&/&attr：
+	controller：controller 构造函数。会在pre-link之前进行初始化，并允许其他directive通过制定名称的 require 进行共享，从而允许 directive 之间进行沟通，其默认注入的对象包括：
+		$scope
+		$element
+		$attrs
+		$transclude：一个预先绑定到当前转置 scope的转置 linking funciton.
