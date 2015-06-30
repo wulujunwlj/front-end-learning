@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>swiper demo</title>
 
 	<link rel="stylesheet" href="./dist/Swiper3.0.7.css">
 
@@ -10,7 +10,7 @@
 	body { background: #eee; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; color: #000; margin: 0; padding: 0; }
 	ul { margin: 0; padding: 0; }
 	.swiper-container { width: 100%; height: 300px; margin: 20px auto; }
-	.swiper-slide { text-align: center; font-size: 18px; background: #fff; width: 60%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+	.swiper-slide { text-align: center; font-size: 18px; background: #fff;  display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
 	.swiper-slide:nth-child(2n) { width: 40%; }
 	.swiper-slide:nth-child(3n) { width: 20%; }
 
@@ -52,7 +52,7 @@
 	<script>
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
-		// slidesPerView: 4,
+		slidesPerView: 4,
 		centeredSlides: true,
 		paginationClickable: true,
 		spaceBetween: 10,

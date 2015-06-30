@@ -1,0 +1,63 @@
+
+AMD：异步模块规范[requirejs]
+	
+	define(['jquery', 'underscore'], function($, _) {
+		// 没有被返回，为私有方法
+		function a() {};
+
+		function b() {};
+
+		function c() {};
+
+		// 返回的为公共方法
+		return {
+			b: b,
+			c: c
+		}
+	});
+
+CMD:[NodeJS、Browserify]
+	
+	var $ = require('jquery');
+	var _ = require('underscore');
+
+	// 没有被返回，为私有方法
+	function a() {};
+
+	function b() {};
+
+	function c() {};
+
+	// 返回的为公共方法
+	module.exports = {
+		b: b,
+		c: c
+	};
+
+UMD：通用模块规范
+	
+	(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+			// AMD
+      define(['jquery', 'underscore'], factory);
+    } else if (typeof exports === 'object') {
+			// Node, CommonJS之类的
+      module.exports = factory(require('jquery'), require('underscore'));
+    } else {
+			// 浏览器全局变量(root 即 window)
+      root.returnExports = factory(root.jQuery, root._);
+    }
+	}(this, function ($, _) {	    
+		// 私有方法，因为它没被返回 (见下面)
+    function a() {};    
+
+    function b() {};    
+
+    function c() {};    
+
+		//    暴露公共方法
+    return {
+      b: b,
+      c: c
+    }
+	}));
