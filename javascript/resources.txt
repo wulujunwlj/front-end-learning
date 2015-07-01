@@ -121,4 +121,10 @@
 38、mozilla js
 	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 
-39、
+39、JavaScript 异步机制及应用 入门教程
+	http://segmentfault.com/a/1190000002941748
+
+40、ECMAScript 6 入门
+	http://es6.ruanyifeng.com/
+
+41、

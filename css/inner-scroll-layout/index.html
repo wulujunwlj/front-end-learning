@@ -1,0 +1,24 @@
+<!-- from:http://www.pmtoo.com/ucd/2015/0623/7996.html?comefrom=http://blogread.cn/news/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内滚动布局</title>
+	<style>
+	html, body { margin: 0; padding: 0; }
+	.page { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: #fff; }
+	/*.page { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }*/
+	.header { height: 62px; position: absolute; top: 0; right: 0; left: 0; background-color: #4E25D0; }
+	.side { width: 200px; position: absolute; top: 62px; bottom: 0; background-color: #0D0C0C; }
+	.content { position: absolute; top: 62px; right: 0px; bottom: 0; left: 200px; overflow: auto; background-color: #CECCCC;}
+	</style>
+</head>
+
+<body>
+	<div class="page"></div>
+	<div class="header"></div>
+	<div class="side"></div>
+	<div class="content"></div>
+</body>
+</html>

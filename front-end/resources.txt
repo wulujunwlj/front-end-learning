@@ -17,4 +17,10 @@
 6、直接拿来用！最火的前端开源项目
 	http://www.csdn.net/article/2013-06-25/2815979-front-end-development
 
-7、
+7、前端骚客志
+	http://www.ituring.com.cn/minibook/608
+
+8、前端模块及依赖管理的新选择：Browserify
+	http://segmentfault.com/a/1190000002941361
+
+9、
