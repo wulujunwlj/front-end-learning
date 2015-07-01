@@ -112,4 +112,13 @@
 35、Mozilla 官方 JS 教程：重新介绍 JavaScript
 	http://web.jobbole.com/82531/
 
-36、
+36、谈谈 ES6 的 Promise 对象
+	http://segmentfault.com/a/1190000002928371
+
+37、把玩 JavaScript 中的 bind
+	http://segmentfault.com/a/1190000002929289
+
+38、mozilla js
+	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+
+39、

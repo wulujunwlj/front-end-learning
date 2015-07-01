@@ -7,4 +7,7 @@ Github 上需要了解、熟悉的项目集合：
 2、requirejs
 	https://github.com/jrburke/requirejs
 
-3、
+3、monment
+    https://github.com/moment/moment/
+
+4、
