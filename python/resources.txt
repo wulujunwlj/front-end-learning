@@ -14,6 +14,7 @@
 5、Computational Statistics in Python
     http://people.duke.edu/~ccc14/sta-663/index.html
 
-6、
+6、Python 入门建议
+    http://zengrong.net/post/2335.htm?comefrom=http://blogread.cn/news/
 
    

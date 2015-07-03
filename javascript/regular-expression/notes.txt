@@ -1,0 +1,14 @@
+
+from：http://www.codeceo.com/article/javascript-reg-expression.html
+
+1、字面量定义正则表达式：/pattern/attributes
+	i:case insensitive
+	m:multiply lines
+	g:global
+
+	var pattern = /hello/ig;
+
+2、RegExp 的方法：
+	test：检测指定字符串是否包含某个子串（或者匹配模式），返回true或者false；
+	exec：提取字符串中的符合要求的子串（或者匹配模式），返回一个数组存放匹配结果；如果没有，则返回null；
+	compile：
