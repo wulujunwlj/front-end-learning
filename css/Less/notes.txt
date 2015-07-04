@@ -4,11 +4,78 @@
 	它使用类似 CSS 的语法，为 CSS 的赋予了动态语言的特性，如变量、集成、运算、函数等，更方便 CSS 的编写和维护；
 	LESS CSS 可以在多种语言、环境中使用。包括浏览器端、桌面客户端、服务器。
 
-2、编译工具：
-	koala-app.com
+2、LESS 的使用方法：
+	客户端：
+		(1) 下载 less.js 文件
+		(2) 并在 HTML 中加入代码：<link rel="stylesheet/less" type="text/css" href="style.less">
+		(3) HTML中引入 less.js 文件[less 文件之后引入]
 
-3、注释
+	服务器端：
+		借助 npm
 
-4、变量：
+	一般的用法：
+		将 LESS 文件编译生成静态 CSS 文件，并在 HTML文档中应用。
 
-5、
+3、编译工具：
+	koala-app.com | npm
+
+4、语法：
+	(1)、变量：变量是 VALUE(值)界别的复用。类似于 JS 变量作用域的概念，查找的顺序是现在局部定义中找，然后再到上级定义；
+	(2)、混入(mixins)：是多重继承的一种实现。在LESS中，混入是指在一个 CLASS 中引入另外一个已经定义的 CLASS，就像在当前 CLASS 中增加一个属性一样。混入是规则级别的复用；
+	(3)、@arguments：表示所有的参数；
+	(4)、命名空间：引用 #mynamespace>.user
+		#mynamespace { 
+			.home {}
+			.user {}
+		}
+	(5)、&：有 & 时解析的是同一个元素或此元素的伪类，没有 & 解析是后代元素；
+		a {
+			color: red;
+			text-decoration: none;
+			&:hover {
+				color: black;
+				text-decoration: underline;
+			}
+		}
+	(6)、运算及函数：对数值型的 value(数字、颜色、变量等)进行加减乘除四则运算。
+		针对 color：lighten/darken/saturate/desaturate/fadein/fadeout(@color, 10%)/spin(@color, 10/-10)
+	(7)、注释：单行注释和多行注释。单行注释不能显示在编译后的 CSS 中；
+	(8)、模式匹配：@switch；
+		.mixin (@s, @color) {}
+		.class { .mixin(@switch, #888); }
+	(9)、引导：when 关键字用以定义一个导引序列；
+		.mixin (@a) when (lightness(@a) >= 50%) { background-color: black; }
+		.mixin (@a) when (lightness(@a) <= 50%) { background-color: white; }
+		.mixin(@a) { color: @a; }
+
+		.class1 { .mixin(#ddd) }
+		.class2 { .mixin(#555) }
+		
+		引导中可用的全部比较运算有：> >= = =< <。关键字 true 只表示布尔真值，除去 true 以外的值都被视为布尔假。导引序列使用逗号 ',' 分隔，当且仅当所有条件都符合时，才会被视为匹配成功；
+	(10)、如果想基于值得类型进行匹配，可以使用 is* 函数：
+		iscolor/isnumber/isstring/iskeyword/isurl/ispixel/ispercentage/isem
+		可以使用 and 关键字实现与条件；使用 not 关键字实现或条件。
+	(11)、嵌套规则：类似于 DOM 结构的样式写法；
+	(12)、避免编译：
+		需要输出不正确的 CSS 语法或者使用一些 LESS 不认识的专有语法，需要在值的字符串前加上 ~[~'']。
+	(13)、!important
+		会为所有混合所带来的样式，加上 !important
+	(14)、importing
+		可以在 main 文件中引入 .less 文件，可不带后缀；
+		@import 'lib.less';
+		@import 'lib'; 
+		可以直接导入 CSS 文件而不通过 LESS 进行处理：@import 'lib.css'
+	(15)、字符串插值：@{name}
+		@base-url: 'http//assets.fnord.com';
+		background-image: url('@{base-url}/images/bg.png')
+	(16)、JavaScript 表达式：反引号：``
+		@var: `'hello'.toUpperCase() + '!'`;
+			或者
+		@str: 'hello';
+		@var: ~`'@{str}'.toUpperCase() + '!'`;
+
+
+资源：
+	http://www.lesscss.net/
+	http://www.w3cplus.com/css/less
+	http://www.cnblogs.com/fsjohnhuang/p/4187675.html
