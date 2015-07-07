@@ -130,4 +130,16 @@
 41、JavaScript中的this陷阱的最全收集--没有之一
 	http://segmentfault.com/a/1190000002640298
 
-42、
+42、promises 很酷，但很多人并没有理解就在用了
+	http://web.jobbole.com/82601/
+
+43、理解AngularJS中的Promise
+	http://wwsun.me/posts/angularjs-promise.html
+
+44、JavaScript 异步机制及应用 入门教程
+	http://segmentfault.com/a/1190000002941748
+
+45、[旧文重发至SF] - RESTful Best Practices
+	http://segmentfault.com/a/1190000002949234
+
+46、

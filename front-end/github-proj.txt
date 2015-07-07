@@ -7,7 +7,19 @@ Github 上需要了解、熟悉的项目集合：
 2、requirejs
 	https://github.com/jrburke/requirejs
 
-3、monment
+3、moment
     https://github.com/moment/moment/
 
-4、
+4、qrcodejs
+    https://github.com/davidshimjs/qrcodejs
+
+5、jquery-qrcode
+    https://github.com/jeromeetienne/jquery-qrcode
+
+6、angular-qr
+    https://github.com/janantala/angular-qr
+
+7、angular-qrcode
+    https://github.com/monospaced/angular-qrcode
+
+8、

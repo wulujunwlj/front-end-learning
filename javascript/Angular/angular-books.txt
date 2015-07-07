@@ -1,0 +1,6 @@
+
+1、angular recipes
+	http://fdietz.github.io/recipes-with-angular-js/
+	https://github.com/fdietz/recipes-with-angular-js-examples
+
+2、

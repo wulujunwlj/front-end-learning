@@ -1,0 +1,8 @@
+
+1、Delaying AngularJS route change until model loaded to prevent flicker
+	http://stackoverflow.com/questions/11972026/delaying-angularjs-route-change-until-model-loaded-to-prevent-flicker
+
+2、Initialize AngularJS service with asynchronous data
+	http://stackoverflow.com/questions/16286605/initialize-angularjs-service-with-asynchronous-data?rq=1
+
+3、
