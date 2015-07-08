@@ -1,0 +1,16 @@
+
+1、控制台查看 Angular 属性：
+	访问作用域：
+		angular.element(targetNode).scope()
+		angular.element(targetNode).isolateScope()
+	查看作用域树：
+		Batarang
+	抓取服务：
+		angular.element('html').injector().get('MyService')
+	访问控制器使用指令：
+		angular.element(targetNode).controller()
+	控制台特性：
+		$0-$4：访问最近在查看窗口中进行选取的5个DOm元素；
+		$(selector)和$$(selector)：分别是querySelector() 和 querySelectorAll() 的替代。
+
+2、

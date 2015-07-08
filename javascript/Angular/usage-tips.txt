@@ -1,0 +1,19 @@
+
+1、HTML 在绑定模型时， {{}} 内可以是一个 scope 中对应的方法调用[不能使用原生函数]，绑定的值是方法执行的结果。一般是采用通过自定义 filter 实现相同的功能
+
+2、ng-repeat 不使用 track by 时，遇到数组里有重复元素时不起作用，原因是 Angular 默认需要在数组中使用唯一索引。解决办法：添加 track by $index；
+	ng-repeat 可以使用 object 的 (key, value)：<li ng-repeat="(key, value) in obj">{{ key }} : {{ value }}</li>
+
+3、样式的绑定：
+	ng-class：<div ng-class="{'text-primary': param, 'text-danger': !param}">文字</div>
+	ng-style：<div ng-style="{'font-size': x + 'px'}">文字</div>
+
+4、ng 内置指令：
+	ng-bind
+	ng-repeat
+	ng-class
+	ng-style
+	ng-show/ng-hide
+	ng-if
+	ng-switch[ng-switch-when、ng-switch-default]
+	ng-options
