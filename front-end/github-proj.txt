@@ -22,4 +22,13 @@ Github 上需要了解、熟悉的项目集合：
 7、angular-qrcode
     https://github.com/monospaced/angular-qrcode
 
-8、
+8、underscore.js
+    https://github.com/jashkenas/underscore
+    
+9、pure
+    https://github.com/yahoo/pure
+
+10、loaders.css
+    https://github.com/ConnorAtherton/loaders.css
+
+11、

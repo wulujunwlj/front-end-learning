@@ -5,4 +5,7 @@
 2、Gif多图：我常用的 16 个 Sublime Text 快捷键
     http://blog.jobbole.com/82527/
 
-3、
+3、emmet 文档：
+    http://docs.emmet.io/cheat-sheet/
+
+4、
