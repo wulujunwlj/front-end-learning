@@ -26,4 +26,11 @@
 9、Web前端浏览器兼容初探
     http://blog.jobbole.com/38638/
 
-10、
+10、jsonp
+    http://web.jobbole.com/82628/
+    https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy
+    http://segmentfault.com/a/1190000002979897
+    http://gold.xitu.io/entry/55a083aae4b06d11d312ac84
+    http://web.jobbole.com/82625/
+
+11、
