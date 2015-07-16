@@ -38,4 +38,7 @@
 11、flexbox：更加优雅的Web布局
     http://segmentfault.com/a/1190000002616717
 
-12、
+12、解读CSS布局之-水平垂直居中
+    http://f2e.souche.com/blog/jie-du-cssbu-ju-zhi-shui-ping-chui-zhi-ju-zhong/
+
+13、

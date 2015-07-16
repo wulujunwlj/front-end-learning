@@ -2,4 +2,7 @@
 1、15个必须知道的chrome开发者技巧(GIF)	
 	http://www.html-js.com/article/3003
 
-2、
+2、Chrome 开发者不完全指南
+    http://web.jobbole.com/82558/
+
+3、

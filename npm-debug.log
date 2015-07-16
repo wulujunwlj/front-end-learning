@@ -1,0 +1,2220 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\ProgramFiles\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\ProgramFiles\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bower',
+1 verbose cli   '-g' ]
+2 info using npm@1.2.15
+3 info using node@v0.10.2
+4 verbose node symlink D:\ProgramFiles\nodejs\\node.exe
+5 verbose read json C:\Users\wlj\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\wlj\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'bower', null ]
+8 verbose cache add name=undefined spec="bower" args=["bower",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'bower',
+9 verbose parsed url   path: 'bower',
+9 verbose parsed url   href: 'bower' }
+10 silly lockFile 206e3ce5-bower bower
+11 verbose lock bower C:\Users\wlj\AppData\Roaming\npm-cache\206e3ce5-bower.lock
+12 silly lockFile 206e3ce5-bower bower
+13 silly lockFile 206e3ce5-bower bower
+14 verbose addNamed [ 'bower', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 1240aab1-bower bower@
+17 verbose lock bower@ C:\Users\wlj\AppData\Roaming\npm-cache\1240aab1-bower.lock
+18 silly addNameRange { name: 'bower', range: '', hasData: false }
+19 verbose url raw bower
+20 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+21 verbose url resolved https://registry.npmjs.org/bower
+22 info trying registry request attempt 1 at 19:12:53
+23 verbose etag "AL5RMD0TBAFJ867KRYTPRHAFN"
+24 http GET https://registry.npmjs.org/bower
+25 http 200 https://registry.npmjs.org/bower
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"A43REGJB0FNH7JK5U2UAJ2NVI"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '112654',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Thu, 16 Jul 2015 11:12:54 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '18',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-hkg6826-HKG',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1437045174.532371,VS0,VE0',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'bower', range: '', hasData: true }
+28 silly addNameRange versions [ 'bower',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.4',
+28 silly addNameRange     '0.6.5',
+28 silly addNameRange     '0.6.6',
+28 silly addNameRange     '0.6.7',
+28 silly addNameRange     '0.6.8',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.8.3',
+28 silly addNameRange     '0.8.4',
+28 silly addNameRange     '0.8.5',
+28 silly addNameRange     '0.8.6',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.2',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.2.3',
+28 silly addNameRange     '1.2.4',
+28 silly addNameRange     '1.2.5',
+28 silly addNameRange     '1.2.6',
+28 silly addNameRange     '1.2.7',
+28 silly addNameRange     '1.2.8',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.3.3',
+28 silly addNameRange     '1.3.4',
+28 silly addNameRange     '1.3.5',
+28 silly addNameRange     '1.3.6',
+28 silly addNameRange     '1.3.7',
+28 silly addNameRange     '1.3.8',
+28 silly addNameRange     '1.3.9',
+28 silly addNameRange     '1.3.10',
+28 silly addNameRange     '1.3.11',
+28 silly addNameRange     '1.3.12',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1' ] ]
+29 verbose addNamed [ 'bower', '1.4.1' ]
+30 verbose addNamed [ '1.4.1', '1.4.1' ]
+31 silly lockFile 185f46c0-bower-1-4-1 bower@1.4.1
+32 verbose lock bower@1.4.1 C:\Users\wlj\AppData\Roaming\npm-cache\185f46c0-bower-1-4-1.lock
+33 verbose read json C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package\package.json
+34 silly lockFile 185f46c0-bower-1-4-1 bower@1.4.1
+35 silly lockFile 185f46c0-bower-1-4-1 bower@1.4.1
+36 silly lockFile 1240aab1-bower bower@
+37 silly lockFile 1240aab1-bower bower@
+38 silly resolved [ { name: 'bower',
+38 silly resolved     version: '1.4.1',
+38 silly resolved     description: 'The browser package manager',
+38 silly resolved     author: { name: 'Twitter' },
+38 silly resolved     licenses: [ [Object] ],
+38 silly resolved     repository: { type: 'git', url: 'bower/bower' },
+38 silly resolved     main: 'lib',
+38 silly resolved     homepage: 'http://bower.io',
+38 silly resolved     engines: { node: '>=0.10.0' },
+38 silly resolved     dependencies:
+38 silly resolved      { abbrev: '^1.0.5',
+38 silly resolved        archy: '1.0.0',
+38 silly resolved        'bower-config': '^0.6.1',
+38 silly resolved        'bower-endpoint-parser': '^0.2.2',
+38 silly resolved        'bower-json': '^0.4.0',
+38 silly resolved        'bower-logger': '^0.2.2',
+38 silly resolved        'bower-registry-client': '^0.3.0',
+38 silly resolved        cardinal: '0.4.4',
+38 silly resolved        chalk: '^1.0.0',
+38 silly resolved        chmodr: '0.1.0',
+38 silly resolved        configstore: '^0.3.2',
+38 silly resolved        'decompress-zip': '^0.1.0',
+38 silly resolved        fstream: '^1.0.3',
+38 silly resolved        'fstream-ignore': '^1.0.2',
+38 silly resolved        github: '^0.2.3',
+38 silly resolved        glob: '^4.3.2',
+38 silly resolved        'graceful-fs': '^3.0.5',
+38 silly resolved        handlebars: '^2.0.0',
+38 silly resolved        inquirer: '0.8.0',
+38 silly resolved        insight: '^0.5.0',
+38 silly resolved        'is-root': '^1.0.0',
+38 silly resolved        junk: '^1.0.0',
+38 silly resolved        lockfile: '^1.0.0',
+38 silly resolved        'lru-cache': '^2.5.0',
+38 silly resolved        mkdirp: '0.5.0',
+38 silly resolved        mout: '^0.11.0',
+38 silly resolved        nopt: '^3.0.1',
+38 silly resolved        opn: '^1.0.1',
+38 silly resolved        'p-throttler': '0.1.1',
+38 silly resolved        promptly: '0.2.0',
+38 silly resolved        q: '^1.1.2',
+38 silly resolved        request: '2.53.0',
+38 silly resolved        'request-progress': '0.3.1',
+38 silly resolved        retry: '0.6.1',
+38 silly resolved        rimraf: '^2.2.8',
+38 silly resolved        semver: '^2.3.0',
+38 silly resolved        'shell-quote': '^1.4.2',
+38 silly resolved        'stringify-object': '^1.0.0',
+38 silly resolved        'tar-fs': '^1.4.1',
+38 silly resolved        tmp: '0.0.24',
+38 silly resolved        'update-notifier': '^0.3.0',
+38 silly resolved        'user-home': '^1.1.0',
+38 silly resolved        which: '^1.0.8' },
+38 silly resolved     devDependencies:
+38 silly resolved      { chai: '^1.10.0',
+38 silly resolved        coveralls: '^2.11.2',
+38 silly resolved        'expect.js': '^0.3.1',
+38 silly resolved        grunt: '^0.4.5',
+38 silly resolved        'grunt-cli': '^0.1.13',
+38 silly resolved        'grunt-contrib-jshint': '^0.10.0',
+38 silly resolved        'grunt-contrib-watch': '^0.6.1',
+38 silly resolved        'grunt-exec': '^0.4.6',
+38 silly resolved        'grunt-simple-mocha': '^0.4.0',
+38 silly resolved        istanbul: '^0.3.5',
+38 silly resolved        'load-grunt-tasks': '^2.0.0',
+38 silly resolved        mocha: '^2.1.0',
+38 silly resolved        multiline: '^1.0.2',
+38 silly resolved        nock: '^0.56.0',
+38 silly resolved        'node-uuid': '^1.4.2',
+38 silly resolved        proxyquire: '^1.3.0',
+38 silly resolved        'spawn-sync': '^1.0.5' },
+38 silly resolved     scripts: { test: 'grunt test' },
+38 silly resolved     bin: { bower: 'bin/bower' },
+38 silly resolved     preferGlobal: true,
+38 silly resolved     readme: '# Bower\n\n[![Build Status](https://travis-ci.org/bower/bower.svg?branch=master)](https://travis-ci.org/bower/bower) [![Windows Build](https://ci.appveyor.com/api/projects/status/jr6vfra8w84plh2g/branch/master?svg=true)](https://ci.appveyor.com/project/sheerun/bower/history) [![Coverage Status](https://img.shields.io/coveralls/bower/bower.svg)](https://coveralls.io/r/bower/bower?branch=master) \n\n<img align="right" height="300" src="http://bower.io/img/bower-logo.png">\n\n> A package manager for the web\n\nBower offers a generic, unopinionated solution to the problem of **front-end package management**, while exposing the package dependency model via an API that can be consumed by a more opinionated build stack. There are no system wide dependencies, no dependencies are shared between different apps, and the dependency tree is flat.\n\nBower runs over Git, and is package-agnostic. A packaged component can be made up of any type of asset, and use any type of transport (e.g., AMD, CommonJS, etc.).\n\n**View complete docs on [bower.io](http://bower.io)**\n\n[View all packages available through Bower\'s registry](http://bower.io/search/).\n\n## Install\n\n```sh\n$ npm install -g bower\n```\n\nBower depends on [Node.js](http://nodejs.org/) and [npm](http://npmjs.org/). Also make sure that [git](http://git-scm.com/) is installed as some bower\npackages require it to be fetched and installed.\n\n\n## Usage\n\nSee complete command line reference at [bower.io/docs/api/](http://bower.io/docs/api/)\n\n### Installing packages and dependencies\n\n```sh\n# install dependencies listed in bower.json\n$ bower install\n\n# install a package and add it to bower.json\n$ bower install <package> --save\n\n# install specific version of a package and add it to bower.json\n$ bower install <package>#<version> --save\n```\n\n### Using packages\n\nWe discourage using bower components statically for performance and security reasons (if component has an `upload.php` file that is not ignored, that can be easily exploited to do malicious stuff).\n\nThe best approach is to process components installed by bower with build tool (like [Grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/)), and serve them concatenated or using module loader (like [RequireJS](http://requirejs.org/)).\n\n### Uninstalling packages\n\nTo uninstall a locally installed package:\n\n```sh\n$ bower uninstall <package-name>\n```\n\n### prezto and oh-my-zsh users\n\nOn `prezto` or `oh-my-zsh`, do not forget to `alias bower=\'noglob bower\'` or `bower install jquery\\#1.9.1`\n\n### Running commands with sudo\n\nBower is a user command, there is no need to execute it with superuser permissions.\nHowever, if you still want to run commands with sudo, use `--allow-root` option.\n\n### Windows users\n\nTo use Bower on Windows, you must install\n[msysgit](http://msysgit.github.io/) correctly. Be sure to check the\noption shown below:\n\n![msysgit](http://f.cl.ly/items/2V2O3i1p3R2F1r2v0a12/mysgit.png)\n\nNote that if you use TortoiseGit and if Bower keeps asking for your SSH\npassword, you should add the following environment variable: `GIT_SSH -\nC:\\Program Files\\TortoiseGit\\bin\\TortoisePlink.exe`. Adjust the `TortoisePlink`\npath if needed.\n\n## Configuration\n\nBower can be configured using JSON in a `.bowerrc` file. Read over available options at [bower.io/docs/config](http://bower.io/docs/config).\n\n## Completion (experimental)\n\n_NOTE_: Completion is still not implemented for the 1.0.0 release\n\nBower now has an experimental `completion` command that is based on, and works\nsimilarly to the [npm completion](https://npmjs.org/doc/cli/completion.html). It is\nnot available for Windows users.\n\nThis command will output a Bash / ZSH script to put into your `~/.bashrc`,\n`~/.bash_profile`, or `~/.zshrc` file.\n\n```sh\n$ bower completion >> ~/.bash_profile\n```\n\n\n## Support\n\n* [StackOverflow](http://stackoverflow.com/questions/tagged/bower)\n* [Mailinglist](http://groups.google.com/group/twitter-bower) - twitter-bower@googlegroups.com\n* [\\#bower](http://webchat.freenode.net/?channels=bower) on Freenode\n\n\n## Contributing\n\nWe welcome contributions of all kinds from anyone. Please take a moment to\nreview the [guidelines for contributing](CONTRIBUTING.md).\n\n* [Bug reports](CONTRIBUTING.md#bugs)\n* [Feature requests](CONTRIBUTING.md#features)\n* [Pull requests](CONTRIBUTING.md#pull-requests)\n\n\nNote that on Windows for tests to pass you need to configure Git before cloning:\n\n```\ngit config --global core.autocrlf input\n```\n\n## Bower Team\n\nBower is made by lots of people across the globe, contributions large and small. Our thanks to everyone who has played a part.\n\n### Core team\n\n* [@satazor](https://github.com/satazor)\n* [@wibblymat](https://github.com/wibblymat)\n* [@paulirish](https://github.com/paulirish)\n* [@benschwarz](https://github.com/benschwarz)\n* [@svnlto](https://github.com/svnlto)\n* [@sheerun](https://github.com/sheerun)\n\n### Bower Alumni\n\n* [@fat](https://github.com/fat)\n* [@maccman](https://github.com/maccman)\n\n\n## License\n\nCopyright (c) 2015 Twitter and other contributors\n\nLicensed under the MIT License\n',
+38 silly resolved     readmeFilename: 'README.md',
+38 silly resolved     _id: 'bower@1.4.1',
+38 silly resolved     _from: 'bower@' } ]
+39 info install bower@1.4.1 into C:\Users\wlj\AppData\Roaming\npm
+40 info installOne bower@1.4.1
+41 verbose from cache C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package\package.json
+42 info C:\Users\wlj\AppData\Roaming\npm\node_modules\bower unbuild
+43 verbose read json C:\Users\wlj\AppData\Roaming\npm\node_modules\bower\package.json
+44 verbose tar unpack C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package.tgz
+45 silly lockFile e3fc455b-a-Roaming-npm-node-modules-bower C:\Users\wlj\AppData\Roaming\npm\node_modules\bower
+46 verbose lock C:\Users\wlj\AppData\Roaming\npm\node_modules\bower C:\Users\wlj\AppData\Roaming\npm-cache\e3fc455b-a-Roaming-npm-node-modules-bower.lock
+47 silly lockFile 98ffd532-pm-cache-bower-1-4-1-package-tgz C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package.tgz
+48 verbose lock C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package.tgz C:\Users\wlj\AppData\Roaming\npm-cache\98ffd532-pm-cache-bower-1-4-1-package-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+52 silly gunzTarPerm extractEntry .npmignore
+53 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+56 silly gunzTarPerm extractEntry LICENSE
+57 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+58 silly gunzTarPerm extractEntry Gruntfile.js
+59 silly gunzTarPerm modified mode [ 'Gruntfile.js', 438, 420 ]
+60 silly gunzTarPerm extractEntry bin/bower
+61 silly gunzTarPerm modified mode [ 'bin/bower', 438, 420 ]
+62 silly gunzTarPerm extractEntry CHANGELOG.md
+63 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+64 silly gunzTarPerm extractEntry CONTRIBUTING.md
+65 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 420 ]
+66 silly gunzTarPerm extractEntry .jshintrc
+67 silly gunzTarPerm modified mode [ '.jshintrc', 438, 420 ]
+68 silly gunzTarPerm extractEntry HOOKS.md
+69 silly gunzTarPerm modified mode [ 'HOOKS.md', 438, 420 ]
+70 silly gunzTarPerm extractEntry lib/config.js
+71 silly gunzTarPerm modified mode [ 'lib/config.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry lib/index.js
+73 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+74 silly gunzTarPerm extractEntry lib/commands/version.js
+75 silly gunzTarPerm modified mode [ 'lib/commands/version.js', 438, 420 ]
+76 silly gunzTarPerm extractEntry lib/commands/init.js
+77 silly gunzTarPerm modified mode [ 'lib/commands/init.js', 438, 420 ]
+78 silly gunzTarPerm extractEntry lib/commands/install.js
+79 silly gunzTarPerm modified mode [ 'lib/commands/install.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry lib/commands/link.js
+81 silly gunzTarPerm modified mode [ 'lib/commands/link.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry lib/commands/list.js
+83 silly gunzTarPerm modified mode [ 'lib/commands/list.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry lib/commands/info.js
+85 silly gunzTarPerm modified mode [ 'lib/commands/info.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry lib/commands/lookup.js
+87 silly gunzTarPerm modified mode [ 'lib/commands/lookup.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry lib/commands/prune.js
+89 silly gunzTarPerm modified mode [ 'lib/commands/prune.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry lib/commands/register.js
+91 silly gunzTarPerm modified mode [ 'lib/commands/register.js', 438, 420 ]
+92 silly gunzTarPerm extractEntry lib/commands/search.js
+93 silly gunzTarPerm modified mode [ 'lib/commands/search.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry lib/commands/uninstall.js
+95 silly gunzTarPerm modified mode [ 'lib/commands/uninstall.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry lib/commands/index.js
+97 silly gunzTarPerm modified mode [ 'lib/commands/index.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry lib/commands/unregister.js
+99 silly gunzTarPerm modified mode [ 'lib/commands/unregister.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry lib/commands/home.js
+101 silly gunzTarPerm modified mode [ 'lib/commands/home.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry lib/commands/update.js
+103 silly gunzTarPerm modified mode [ 'lib/commands/update.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry lib/commands/help.js
+105 silly gunzTarPerm modified mode [ 'lib/commands/help.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry lib/commands/login.js
+107 silly gunzTarPerm modified mode [ 'lib/commands/login.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry lib/commands/cache/clean.js
+109 silly gunzTarPerm modified mode [ 'lib/commands/cache/clean.js', 438, 420 ]
+110 silly gunzTarPerm extractEntry lib/commands/cache/list.js
+111 silly gunzTarPerm modified mode [ 'lib/commands/cache/list.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry lib/core/Manager.js
+113 silly gunzTarPerm modified mode [ 'lib/core/Manager.js', 438, 420 ]
+114 silly gunzTarPerm extractEntry lib/core/PackageRepository.js
+115 silly gunzTarPerm modified mode [ 'lib/core/PackageRepository.js', 438, 420 ]
+116 silly gunzTarPerm extractEntry lib/core/Project.js
+117 silly gunzTarPerm modified mode [ 'lib/core/Project.js', 438, 420 ]
+118 silly gunzTarPerm extractEntry lib/core/ResolveCache.js
+119 silly gunzTarPerm modified mode [ 'lib/core/ResolveCache.js', 438, 420 ]
+120 silly gunzTarPerm extractEntry lib/core/resolverFactory.js
+121 silly gunzTarPerm modified mode [ 'lib/core/resolverFactory.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry lib/core/scripts.js
+123 silly gunzTarPerm modified mode [ 'lib/core/scripts.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry lib/core/resolvers/FsResolver.js
+125 silly gunzTarPerm modified mode [ 'lib/core/resolvers/FsResolver.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry lib/core/resolvers/GitFsResolver.js
+127 silly gunzTarPerm modified mode [ 'lib/core/resolvers/GitFsResolver.js', 438, 420 ]
+128 silly gunzTarPerm extractEntry lib/core/resolvers/GitHubResolver.js
+129 silly gunzTarPerm modified mode [ 'lib/core/resolvers/GitHubResolver.js', 438, 420 ]
+130 silly gunzTarPerm extractEntry lib/core/resolvers/GitRemoteResolver.js
+131 silly gunzTarPerm modified mode [ 'lib/core/resolvers/GitRemoteResolver.js', 438, 420 ]
+132 silly gunzTarPerm extractEntry lib/core/resolvers/GitResolver.js
+133 silly gunzTarPerm modified mode [ 'lib/core/resolvers/GitResolver.js', 438, 420 ]
+134 silly gunzTarPerm extractEntry lib/core/resolvers/index.js
+135 silly gunzTarPerm modified mode [ 'lib/core/resolvers/index.js', 438, 420 ]
+136 silly gunzTarPerm extractEntry lib/core/resolvers/Resolver.js
+137 silly gunzTarPerm modified mode [ 'lib/core/resolvers/Resolver.js', 438, 420 ]
+138 silly gunzTarPerm extractEntry lib/core/resolvers/SvnResolver.js
+139 silly gunzTarPerm modified mode [ 'lib/core/resolvers/SvnResolver.js', 438, 420 ]
+140 silly gunzTarPerm extractEntry lib/core/resolvers/UrlResolver.js
+141 silly gunzTarPerm modified mode [ 'lib/core/resolvers/UrlResolver.js', 438, 420 ]
+142 silly gunzTarPerm extractEntry lib/renderers/index.js
+143 silly gunzTarPerm modified mode [ 'lib/renderers/index.js', 438, 420 ]
+144 silly gunzTarPerm extractEntry lib/renderers/JsonRenderer.js
+145 silly gunzTarPerm modified mode [ 'lib/renderers/JsonRenderer.js', 438, 420 ]
+146 silly gunzTarPerm extractEntry lib/renderers/StandardRenderer.js
+147 silly gunzTarPerm modified mode [ 'lib/renderers/StandardRenderer.js', 438, 420 ]
+148 silly gunzTarPerm extractEntry lib/util/analytics.js
+149 silly gunzTarPerm modified mode [ 'lib/util/analytics.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry lib/util/createError.js
+151 silly gunzTarPerm modified mode [ 'lib/util/createError.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry lib/util/createLink.js
+153 silly gunzTarPerm modified mode [ 'lib/util/createLink.js', 438, 420 ]
+154 silly gunzTarPerm extractEntry lib/util/download.js
+155 silly gunzTarPerm modified mode [ 'lib/util/download.js', 438, 420 ]
+156 silly gunzTarPerm extractEntry lib/util/copy.js
+157 silly gunzTarPerm modified mode [ 'lib/util/copy.js', 438, 420 ]
+158 silly gunzTarPerm extractEntry lib/util/md5.js
+159 silly gunzTarPerm modified mode [ 'lib/util/md5.js', 438, 420 ]
+160 silly gunzTarPerm extractEntry lib/util/readJson.js
+161 silly gunzTarPerm modified mode [ 'lib/util/readJson.js', 438, 420 ]
+162 silly gunzTarPerm extractEntry lib/util/removeIgnores.js
+163 silly gunzTarPerm modified mode [ 'lib/util/removeIgnores.js', 438, 420 ]
+164 silly gunzTarPerm extractEntry lib/util/rootCheck.js
+165 silly gunzTarPerm modified mode [ 'lib/util/rootCheck.js', 438, 420 ]
+166 silly gunzTarPerm extractEntry lib/util/semver.js
+167 silly gunzTarPerm modified mode [ 'lib/util/semver.js', 438, 420 ]
+168 silly gunzTarPerm extractEntry lib/util/cmd.js
+169 silly gunzTarPerm modified mode [ 'lib/util/cmd.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry lib/util/template.js
+171 silly gunzTarPerm modified mode [ 'lib/util/template.js', 438, 420 ]
+172 silly gunzTarPerm extractEntry lib/util/cli.js
+173 silly gunzTarPerm modified mode [ 'lib/util/cli.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry lib/util/validLink.js
+175 silly gunzTarPerm modified mode [ 'lib/util/validLink.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry lib/util/extract.js
+177 silly gunzTarPerm modified mode [ 'lib/util/extract.js', 438, 420 ]
+178 silly gunzTarPerm extractEntry .editorconfig
+179 silly gunzTarPerm modified mode [ '.editorconfig', 438, 420 ]
+180 silly gunzTarPerm extractEntry .travis.yml
+181 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+182 silly gunzTarPerm extractEntry appveyor.yml
+183 silly gunzTarPerm modified mode [ 'appveyor.yml', 438, 420 ]
+184 silly gunzTarPerm extractEntry templates/helpers/colors.js
+185 silly gunzTarPerm modified mode [ 'templates/helpers/colors.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry templates/helpers/condense.js
+187 silly gunzTarPerm modified mode [ 'templates/helpers/condense.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry templates/helpers/indent.js
+189 silly gunzTarPerm modified mode [ 'templates/helpers/indent.js', 438, 420 ]
+190 silly gunzTarPerm extractEntry templates/helpers/index.js
+191 silly gunzTarPerm modified mode [ 'templates/helpers/index.js', 438, 420 ]
+192 silly gunzTarPerm extractEntry templates/helpers/rpad.js
+193 silly gunzTarPerm modified mode [ 'templates/helpers/rpad.js', 438, 420 ]
+194 silly gunzTarPerm extractEntry templates/helpers/sum.js
+195 silly gunzTarPerm modified mode [ 'templates/helpers/sum.js', 438, 420 ]
+196 silly gunzTarPerm extractEntry templates/json/help-lookup.json
+197 silly gunzTarPerm modified mode [ 'templates/json/help-lookup.json', 438, 420 ]
+198 silly gunzTarPerm extractEntry templates/json/help-cache/clean.json
+199 silly gunzTarPerm modified mode [ 'templates/json/help-cache/clean.json', 438, 420 ]
+200 silly gunzTarPerm extractEntry templates/json/help-cache/list.json
+201 silly gunzTarPerm modified mode [ 'templates/json/help-cache/list.json', 438, 420 ]
+202 silly gunzTarPerm extractEntry templates/json/help-home.json
+203 silly gunzTarPerm modified mode [ 'templates/json/help-home.json', 438, 420 ]
+204 silly gunzTarPerm extractEntry templates/json/help-info.json
+205 silly gunzTarPerm modified mode [ 'templates/json/help-info.json', 438, 420 ]
+206 silly gunzTarPerm extractEntry templates/json/help-init.json
+207 silly gunzTarPerm modified mode [ 'templates/json/help-init.json', 438, 420 ]
+208 silly gunzTarPerm extractEntry templates/json/help-install.json
+209 silly gunzTarPerm modified mode [ 'templates/json/help-install.json', 438, 420 ]
+210 silly gunzTarPerm extractEntry templates/json/help-link.json
+211 silly gunzTarPerm modified mode [ 'templates/json/help-link.json', 438, 420 ]
+212 silly gunzTarPerm extractEntry templates/json/help-list.json
+213 silly gunzTarPerm modified mode [ 'templates/json/help-list.json', 438, 420 ]
+214 silly gunzTarPerm extractEntry templates/json/help-login.json
+215 silly gunzTarPerm modified mode [ 'templates/json/help-login.json', 438, 420 ]
+216 silly gunzTarPerm extractEntry templates/json/help-cache.json
+217 silly gunzTarPerm modified mode [ 'templates/json/help-cache.json', 438, 420 ]
+218 silly gunzTarPerm extractEntry templates/json/help-prune.json
+219 silly gunzTarPerm modified mode [ 'templates/json/help-prune.json', 438, 420 ]
+220 silly gunzTarPerm extractEntry templates/json/help-register.json
+221 silly gunzTarPerm modified mode [ 'templates/json/help-register.json', 438, 420 ]
+222 silly gunzTarPerm extractEntry templates/json/help-search.json
+223 silly gunzTarPerm modified mode [ 'templates/json/help-search.json', 438, 420 ]
+224 silly gunzTarPerm extractEntry templates/json/help-uninstall.json
+225 silly gunzTarPerm modified mode [ 'templates/json/help-uninstall.json', 438, 420 ]
+226 silly gunzTarPerm extractEntry templates/json/help-unregister.json
+227 silly gunzTarPerm modified mode [ 'templates/json/help-unregister.json', 438, 420 ]
+228 silly gunzTarPerm extractEntry templates/json/help-update.json
+229 silly gunzTarPerm modified mode [ 'templates/json/help-update.json', 438, 420 ]
+230 silly gunzTarPerm extractEntry templates/json/help-version.json
+231 silly gunzTarPerm modified mode [ 'templates/json/help-version.json', 438, 420 ]
+232 silly gunzTarPerm extractEntry templates/json/help.json
+233 silly gunzTarPerm modified mode [ 'templates/json/help.json', 438, 420 ]
+234 silly gunzTarPerm extractEntry templates/std/conflict-resolved.std
+235 silly gunzTarPerm modified mode [ 'templates/std/conflict-resolved.std', 438, 420 ]
+236 silly gunzTarPerm extractEntry templates/std/conflict.std
+237 silly gunzTarPerm modified mode [ 'templates/std/conflict.std', 438, 420 ]
+238 silly gunzTarPerm extractEntry templates/std/help-cache.std
+239 silly gunzTarPerm modified mode [ 'templates/std/help-cache.std', 438, 420 ]
+240 silly gunzTarPerm extractEntry templates/std/help-generic.std
+241 silly gunzTarPerm modified mode [ 'templates/std/help-generic.std', 438, 420 ]
+242 silly gunzTarPerm extractEntry templates/std/help.std
+243 silly gunzTarPerm modified mode [ 'templates/std/help.std', 438, 420 ]
+244 silly gunzTarPerm extractEntry templates/std/info.std
+245 silly gunzTarPerm modified mode [ 'templates/std/info.std', 438, 420 ]
+246 silly gunzTarPerm extractEntry templates/std/lookup.std
+247 silly gunzTarPerm modified mode [ 'templates/std/lookup.std', 438, 420 ]
+248 silly gunzTarPerm extractEntry templates/std/register.std
+249 silly gunzTarPerm modified mode [ 'templates/std/register.std', 438, 420 ]
+250 silly gunzTarPerm extractEntry templates/std/search-results.std
+251 silly gunzTarPerm modified mode [ 'templates/std/search-results.std', 438, 420 ]
+252 silly gunzTarPerm extractEntry test/helpers.js
+253 silly gunzTarPerm modified mode [ 'test/helpers.js', 438, 420 ]
+254 silly gunzTarPerm extractEntry test/packages-svn.js
+255 silly gunzTarPerm modified mode [ 'test/packages-svn.js', 438, 420 ]
+256 silly gunzTarPerm extractEntry test/packages.js
+257 silly gunzTarPerm modified mode [ 'test/packages.js', 438, 420 ]
+258 silly gunzTarPerm extractEntry test/test.js
+259 silly gunzTarPerm modified mode [ 'test/test.js', 438, 420 ]
+260 silly gunzTarPerm extractEntry test/packages-svn.json
+261 silly gunzTarPerm modified mode [ 'test/packages-svn.json', 438, 420 ]
+262 silly gunzTarPerm extractEntry test/commands/bower.js
+263 silly gunzTarPerm modified mode [ 'test/commands/bower.js', 438, 420 ]
+264 silly gunzTarPerm extractEntry test/commands/info.js
+265 silly gunzTarPerm modified mode [ 'test/commands/info.js', 438, 420 ]
+266 silly gunzTarPerm extractEntry test/commands/init.js
+267 silly gunzTarPerm modified mode [ 'test/commands/init.js', 438, 420 ]
+268 silly gunzTarPerm extractEntry test/commands/install.js
+269 silly gunzTarPerm modified mode [ 'test/commands/install.js', 438, 420 ]
+270 silly gunzTarPerm extractEntry test/commands/link.js
+271 silly gunzTarPerm modified mode [ 'test/commands/link.js', 438, 420 ]
+272 silly gunzTarPerm extractEntry test/commands/index.js
+273 silly gunzTarPerm modified mode [ 'test/commands/index.js', 438, 420 ]
+274 silly gunzTarPerm extractEntry test/commands/login.js
+275 silly gunzTarPerm modified mode [ 'test/commands/login.js', 438, 420 ]
+276 silly gunzTarPerm extractEntry test/commands/lookup.js
+277 silly gunzTarPerm modified mode [ 'test/commands/lookup.js', 438, 420 ]
+278 silly gunzTarPerm extractEntry test/commands/prune.js
+279 silly gunzTarPerm modified mode [ 'test/commands/prune.js', 438, 420 ]
+280 silly gunzTarPerm extractEntry test/commands/register.js
+281 silly gunzTarPerm modified mode [ 'test/commands/register.js', 438, 420 ]
+282 silly gunzTarPerm extractEntry test/commands/search.js
+283 silly gunzTarPerm modified mode [ 'test/commands/search.js', 438, 420 ]
+284 silly gunzTarPerm extractEntry test/commands/home.js
+285 silly gunzTarPerm modified mode [ 'test/commands/home.js', 438, 420 ]
+286 silly gunzTarPerm extractEntry test/commands/uninstall.js
+287 silly gunzTarPerm modified mode [ 'test/commands/uninstall.js', 438, 420 ]
+288 silly gunzTarPerm extractEntry test/commands/help.js
+289 silly gunzTarPerm modified mode [ 'test/commands/help.js', 438, 420 ]
+290 silly gunzTarPerm extractEntry test/commands/unregister.js
+291 silly gunzTarPerm modified mode [ 'test/commands/unregister.js', 438, 420 ]
+292 silly gunzTarPerm extractEntry test/commands/update.js
+293 silly gunzTarPerm modified mode [ 'test/commands/update.js', 438, 420 ]
+294 silly gunzTarPerm extractEntry test/commands/version.js
+295 silly gunzTarPerm modified mode [ 'test/commands/version.js', 438, 420 ]
+296 silly gunzTarPerm extractEntry test/commands/list.js
+297 silly gunzTarPerm modified mode [ 'test/commands/list.js', 438, 420 ]
+298 silly gunzTarPerm extractEntry test/commands/cache/clean.js
+299 silly gunzTarPerm modified mode [ 'test/commands/cache/clean.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry test/commands/cache/list.js
+301 silly gunzTarPerm modified mode [ 'test/commands/cache/list.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry test/assets/package-tar.tar.gz
+303 silly gunzTarPerm modified mode [ 'test/assets/package-tar.tar.gz', 438, 420 ]
+304 silly gunzTarPerm extractEntry test/assets/package-zip-folder-single-file.zip
+305 silly gunzTarPerm modified mode [ 'test/assets/package-zip-folder-single-file.zip', 438, 420 ]
+306 silly gunzTarPerm extractEntry test/assets/package-zip-folder.zip
+307 silly gunzTarPerm modified mode [ 'test/assets/package-zip-folder.zip', 438, 420 ]
+308 silly gunzTarPerm extractEntry test/assets/package-zip-single-bower-json.zip
+309 silly gunzTarPerm modified mode [ 'test/assets/package-zip-single-bower-json.zip', 438, 420 ]
+310 silly gunzTarPerm extractEntry test/assets/package-zip-single-component-json.zip
+311 silly gunzTarPerm modified mode [ 'test/assets/package-zip-single-component-json.zip', 438, 420 ]
+312 silly gunzTarPerm extractEntry test/assets/package-zip-single-file.zip
+313 silly gunzTarPerm modified mode [ 'test/assets/package-zip-single-file.zip', 438, 420 ]
+314 silly gunzTarPerm extractEntry test/assets/package-zip.zip
+315 silly gunzTarPerm modified mode [ 'test/assets/package-zip.zip', 438, 420 ]
+316 silly gunzTarPerm extractEntry test/assets/resolve-cache/list-json-1.json
+317 silly gunzTarPerm modified mode [ 'test/assets/resolve-cache/list-json-1.json', 438, 420 ]
+318 silly gunzTarPerm extractEntry test/assets/test-temp-dir/test-exception.js
+319 silly gunzTarPerm modified mode [ 'test/assets/test-temp-dir/test-exception.js', 438, 420 ]
+320 silly gunzTarPerm extractEntry test/assets/test-temp-dir/test.js
+321 silly gunzTarPerm modified mode [ 'test/assets/test-temp-dir/test.js', 438, 420 ]
+322 silly gunzTarPerm extractEntry test/packages.json
+323 silly gunzTarPerm modified mode [ 'test/packages.json', 438, 420 ]
+324 silly gunzTarPerm extractEntry test/renderers/JsonRenderer.js
+325 silly gunzTarPerm modified mode [ 'test/renderers/JsonRenderer.js', 438, 420 ]
+326 silly gunzTarPerm extractEntry test/renderers/StandardRenderer.js
+327 silly gunzTarPerm modified mode [ 'test/renderers/StandardRenderer.js', 438, 420 ]
+328 silly gunzTarPerm extractEntry test/core/Manager.js
+329 silly gunzTarPerm modified mode [ 'test/core/Manager.js', 438, 420 ]
+330 silly gunzTarPerm extractEntry test/core/packageRepository.js
+331 silly gunzTarPerm modified mode [ 'test/core/packageRepository.js', 438, 420 ]
+332 silly gunzTarPerm extractEntry test/core/resolveCache.js
+333 silly gunzTarPerm modified mode [ 'test/core/resolveCache.js', 438, 420 ]
+334 silly gunzTarPerm extractEntry test/core/resolverFactory.js
+335 silly gunzTarPerm modified mode [ 'test/core/resolverFactory.js', 438, 420 ]
+336 silly gunzTarPerm extractEntry test/core/scripts.js
+337 silly gunzTarPerm modified mode [ 'test/core/scripts.js', 438, 420 ]
+338 silly gunzTarPerm extractEntry test/core/resolvers/fsResolver.js
+339 silly gunzTarPerm modified mode [ 'test/core/resolvers/fsResolver.js', 438, 420 ]
+340 silly gunzTarPerm extractEntry test/core/resolvers/gitFsResolver.js
+341 silly gunzTarPerm modified mode [ 'test/core/resolvers/gitFsResolver.js', 438, 420 ]
+342 silly gunzTarPerm extractEntry test/core/resolvers/gitHubResolver.js
+343 silly gunzTarPerm modified mode [ 'test/core/resolvers/gitHubResolver.js', 438, 420 ]
+344 silly gunzTarPerm extractEntry test/core/resolvers/gitRemoteResolver.js
+345 silly gunzTarPerm modified mode [ 'test/core/resolvers/gitRemoteResolver.js', 438, 420 ]
+346 silly gunzTarPerm extractEntry test/core/resolvers/gitResolver.js
+347 silly gunzTarPerm modified mode [ 'test/core/resolvers/gitResolver.js', 438, 420 ]
+348 silly gunzTarPerm extractEntry test/core/resolvers/resolver.js
+349 silly gunzTarPerm modified mode [ 'test/core/resolvers/resolver.js', 438, 420 ]
+350 silly gunzTarPerm extractEntry test/core/resolvers/svnResolver.js
+351 silly gunzTarPerm modified mode [ 'test/core/resolvers/svnResolver.js', 438, 420 ]
+352 silly gunzTarPerm extractEntry test/core/resolvers/urlResolver.js
+353 silly gunzTarPerm modified mode [ 'test/core/resolvers/urlResolver.js', 438, 420 ]
+354 silly gunzTarPerm extractEntry test/util/analytics.js
+355 silly gunzTarPerm modified mode [ 'test/util/analytics.js', 438, 420 ]
+356 silly gunzTarPerm extractEntry test/util/index.js
+357 silly gunzTarPerm modified mode [ 'test/util/index.js', 438, 420 ]
+358 silly gunzTarPerm extractEntry test/util/removeIgnores.js
+359 silly gunzTarPerm modified mode [ 'test/util/removeIgnores.js', 438, 420 ]
+360 verbose read json C:\Users\wlj\AppData\Roaming\npm\node_modules\bower\package.json
+361 silly lockFile e3fc455b-a-Roaming-npm-node-modules-bower C:\Users\wlj\AppData\Roaming\npm\node_modules\bower
+362 silly lockFile e3fc455b-a-Roaming-npm-node-modules-bower C:\Users\wlj\AppData\Roaming\npm\node_modules\bower
+363 silly lockFile 98ffd532-pm-cache-bower-1-4-1-package-tgz C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package.tgz
+364 silly lockFile 98ffd532-pm-cache-bower-1-4-1-package-tgz C:\Users\wlj\AppData\Roaming\npm-cache\bower\1.4.1\package.tgz
+365 info preinstall bower@1.4.1
+366 verbose from cache C:\Users\wlj\AppData\Roaming\npm\node_modules\bower\package.json
+367 verbose readDependencies using package.json deps
+368 verbose from cache C:\Users\wlj\AppData\Roaming\npm\node_modules\bower\package.json
+369 verbose readDependencies using package.json deps
+370 verbose cache add [ 'abbrev@^1.0.5', null ]
+371 verbose cache add name=undefined spec="abbrev@^1.0.5" args=["abbrev@^1.0.5",null]
+372 verbose parsed url { protocol: null,
+372 verbose parsed url   slashes: null,
+372 verbose parsed url   auth: null,
+372 verbose parsed url   host: null,
+372 verbose parsed url   port: null,
+372 verbose parsed url   hostname: null,
+372 verbose parsed url   hash: null,
+372 verbose parsed url   search: null,
+372 verbose parsed url   query: null,
+372 verbose parsed url   pathname: 'abbrev@^1.0.5',
+372 verbose parsed url   path: 'abbrev@^1.0.5',
+372 verbose parsed url   href: 'abbrev@^1.0.5' }
+373 verbose cache add name="abbrev" spec="^1.0.5" args=["abbrev","^1.0.5"]
+374 verbose parsed url { protocol: null,
+374 verbose parsed url   slashes: null,
+374 verbose parsed url   auth: null,
+374 verbose parsed url   host: null,
+374 verbose parsed url   port: null,
+374 verbose parsed url   hostname: null,
+374 verbose parsed url   hash: null,
+374 verbose parsed url   search: null,
+374 verbose parsed url   query: null,
+374 verbose parsed url   pathname: '^1.0.5',
+374 verbose parsed url   path: '^1.0.5',
+374 verbose parsed url   href: '^1.0.5' }
+375 verbose addNamed [ 'abbrev', '^1.0.5' ]
+376 verbose addNamed [ null, null ]
+377 silly lockFile ec559f65-abbrev-1-0-5 abbrev@^1.0.5
+378 verbose lock abbrev@^1.0.5 C:\Users\wlj\AppData\Roaming\npm-cache\ec559f65-abbrev-1-0-5.lock
+379 verbose cache add [ 'archy@1.0.0', null ]
+380 verbose cache add name=undefined spec="archy@1.0.0" args=["archy@1.0.0",null]
+381 verbose parsed url { protocol: null,
+381 verbose parsed url   slashes: null,
+381 verbose parsed url   auth: null,
+381 verbose parsed url   host: null,
+381 verbose parsed url   port: null,
+381 verbose parsed url   hostname: null,
+381 verbose parsed url   hash: null,
+381 verbose parsed url   search: null,
+381 verbose parsed url   query: null,
+381 verbose parsed url   pathname: 'archy@1.0.0',
+381 verbose parsed url   path: 'archy@1.0.0',
+381 verbose parsed url   href: 'archy@1.0.0' }
+382 verbose cache add name="archy" spec="1.0.0" args=["archy","1.0.0"]
+383 verbose parsed url { protocol: null,
+383 verbose parsed url   slashes: null,
+383 verbose parsed url   auth: null,
+383 verbose parsed url   host: null,
+383 verbose parsed url   port: null,
+383 verbose parsed url   hostname: null,
+383 verbose parsed url   hash: null,
+383 verbose parsed url   search: null,
+383 verbose parsed url   query: null,
+383 verbose parsed url   pathname: '1.0.0',
+383 verbose parsed url   path: '1.0.0',
+383 verbose parsed url   href: '1.0.0' }
+384 verbose addNamed [ 'archy', '1.0.0' ]
+385 verbose addNamed [ '1.0.0', '1.0.0' ]
+386 silly lockFile 21c4cc2a-archy-1-0-0 archy@1.0.0
+387 verbose lock archy@1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\21c4cc2a-archy-1-0-0.lock
+388 verbose cache add [ 'bower-config@^0.6.1', null ]
+389 verbose cache add name=undefined spec="bower-config@^0.6.1" args=["bower-config@^0.6.1",null]
+390 verbose parsed url { protocol: null,
+390 verbose parsed url   slashes: null,
+390 verbose parsed url   auth: null,
+390 verbose parsed url   host: null,
+390 verbose parsed url   port: null,
+390 verbose parsed url   hostname: null,
+390 verbose parsed url   hash: null,
+390 verbose parsed url   search: null,
+390 verbose parsed url   query: null,
+390 verbose parsed url   pathname: 'bower-config@^0.6.1',
+390 verbose parsed url   path: 'bower-config@^0.6.1',
+390 verbose parsed url   href: 'bower-config@^0.6.1' }
+391 verbose cache add name="bower-config" spec="^0.6.1" args=["bower-config","^0.6.1"]
+392 verbose parsed url { protocol: null,
+392 verbose parsed url   slashes: null,
+392 verbose parsed url   auth: null,
+392 verbose parsed url   host: null,
+392 verbose parsed url   port: null,
+392 verbose parsed url   hostname: null,
+392 verbose parsed url   hash: null,
+392 verbose parsed url   search: null,
+392 verbose parsed url   query: null,
+392 verbose parsed url   pathname: '^0.6.1',
+392 verbose parsed url   path: '^0.6.1',
+392 verbose parsed url   href: '^0.6.1' }
+393 verbose addNamed [ 'bower-config', '^0.6.1' ]
+394 verbose addNamed [ null, null ]
+395 silly lockFile b1e84b7d-bower-config-0-6-1 bower-config@^0.6.1
+396 verbose lock bower-config@^0.6.1 C:\Users\wlj\AppData\Roaming\npm-cache\b1e84b7d-bower-config-0-6-1.lock
+397 verbose cache add [ 'bower-endpoint-parser@^0.2.2', null ]
+398 verbose cache add name=undefined spec="bower-endpoint-parser@^0.2.2" args=["bower-endpoint-parser@^0.2.2",null]
+399 verbose parsed url { protocol: null,
+399 verbose parsed url   slashes: null,
+399 verbose parsed url   auth: null,
+399 verbose parsed url   host: null,
+399 verbose parsed url   port: null,
+399 verbose parsed url   hostname: null,
+399 verbose parsed url   hash: null,
+399 verbose parsed url   search: null,
+399 verbose parsed url   query: null,
+399 verbose parsed url   pathname: 'bower-endpoint-parser@^0.2.2',
+399 verbose parsed url   path: 'bower-endpoint-parser@^0.2.2',
+399 verbose parsed url   href: 'bower-endpoint-parser@^0.2.2' }
+400 verbose cache add name="bower-endpoint-parser" spec="^0.2.2" args=["bower-endpoint-parser","^0.2.2"]
+401 verbose parsed url { protocol: null,
+401 verbose parsed url   slashes: null,
+401 verbose parsed url   auth: null,
+401 verbose parsed url   host: null,
+401 verbose parsed url   port: null,
+401 verbose parsed url   hostname: null,
+401 verbose parsed url   hash: null,
+401 verbose parsed url   search: null,
+401 verbose parsed url   query: null,
+401 verbose parsed url   pathname: '^0.2.2',
+401 verbose parsed url   path: '^0.2.2',
+401 verbose parsed url   href: '^0.2.2' }
+402 verbose addNamed [ 'bower-endpoint-parser', '^0.2.2' ]
+403 verbose addNamed [ null, null ]
+404 silly lockFile 5f551f4b-bower-endpoint-parser-0-2-2 bower-endpoint-parser@^0.2.2
+405 verbose lock bower-endpoint-parser@^0.2.2 C:\Users\wlj\AppData\Roaming\npm-cache\5f551f4b-bower-endpoint-parser-0-2-2.lock
+406 verbose cache add [ 'bower-json@^0.4.0', null ]
+407 verbose cache add name=undefined spec="bower-json@^0.4.0" args=["bower-json@^0.4.0",null]
+408 verbose parsed url { protocol: null,
+408 verbose parsed url   slashes: null,
+408 verbose parsed url   auth: null,
+408 verbose parsed url   host: null,
+408 verbose parsed url   port: null,
+408 verbose parsed url   hostname: null,
+408 verbose parsed url   hash: null,
+408 verbose parsed url   search: null,
+408 verbose parsed url   query: null,
+408 verbose parsed url   pathname: 'bower-json@^0.4.0',
+408 verbose parsed url   path: 'bower-json@^0.4.0',
+408 verbose parsed url   href: 'bower-json@^0.4.0' }
+409 verbose cache add name="bower-json" spec="^0.4.0" args=["bower-json","^0.4.0"]
+410 verbose parsed url { protocol: null,
+410 verbose parsed url   slashes: null,
+410 verbose parsed url   auth: null,
+410 verbose parsed url   host: null,
+410 verbose parsed url   port: null,
+410 verbose parsed url   hostname: null,
+410 verbose parsed url   hash: null,
+410 verbose parsed url   search: null,
+410 verbose parsed url   query: null,
+410 verbose parsed url   pathname: '^0.4.0',
+410 verbose parsed url   path: '^0.4.0',
+410 verbose parsed url   href: '^0.4.0' }
+411 verbose addNamed [ 'bower-json', '^0.4.0' ]
+412 verbose addNamed [ null, null ]
+413 silly lockFile c093c21d-bower-json-0-4-0 bower-json@^0.4.0
+414 verbose lock bower-json@^0.4.0 C:\Users\wlj\AppData\Roaming\npm-cache\c093c21d-bower-json-0-4-0.lock
+415 verbose cache add [ 'bower-logger@^0.2.2', null ]
+416 verbose cache add name=undefined spec="bower-logger@^0.2.2" args=["bower-logger@^0.2.2",null]
+417 verbose parsed url { protocol: null,
+417 verbose parsed url   slashes: null,
+417 verbose parsed url   auth: null,
+417 verbose parsed url   host: null,
+417 verbose parsed url   port: null,
+417 verbose parsed url   hostname: null,
+417 verbose parsed url   hash: null,
+417 verbose parsed url   search: null,
+417 verbose parsed url   query: null,
+417 verbose parsed url   pathname: 'bower-logger@^0.2.2',
+417 verbose parsed url   path: 'bower-logger@^0.2.2',
+417 verbose parsed url   href: 'bower-logger@^0.2.2' }
+418 verbose cache add name="bower-logger" spec="^0.2.2" args=["bower-logger","^0.2.2"]
+419 verbose parsed url { protocol: null,
+419 verbose parsed url   slashes: null,
+419 verbose parsed url   auth: null,
+419 verbose parsed url   host: null,
+419 verbose parsed url   port: null,
+419 verbose parsed url   hostname: null,
+419 verbose parsed url   hash: null,
+419 verbose parsed url   search: null,
+419 verbose parsed url   query: null,
+419 verbose parsed url   pathname: '^0.2.2',
+419 verbose parsed url   path: '^0.2.2',
+419 verbose parsed url   href: '^0.2.2' }
+420 verbose addNamed [ 'bower-logger', '^0.2.2' ]
+421 verbose addNamed [ null, null ]
+422 silly lockFile 1b248943-bower-logger-0-2-2 bower-logger@^0.2.2
+423 verbose lock bower-logger@^0.2.2 C:\Users\wlj\AppData\Roaming\npm-cache\1b248943-bower-logger-0-2-2.lock
+424 verbose cache add [ 'bower-registry-client@^0.3.0', null ]
+425 verbose cache add name=undefined spec="bower-registry-client@^0.3.0" args=["bower-registry-client@^0.3.0",null]
+426 verbose parsed url { protocol: null,
+426 verbose parsed url   slashes: null,
+426 verbose parsed url   auth: null,
+426 verbose parsed url   host: null,
+426 verbose parsed url   port: null,
+426 verbose parsed url   hostname: null,
+426 verbose parsed url   hash: null,
+426 verbose parsed url   search: null,
+426 verbose parsed url   query: null,
+426 verbose parsed url   pathname: 'bower-registry-client@^0.3.0',
+426 verbose parsed url   path: 'bower-registry-client@^0.3.0',
+426 verbose parsed url   href: 'bower-registry-client@^0.3.0' }
+427 verbose cache add name="bower-registry-client" spec="^0.3.0" args=["bower-registry-client","^0.3.0"]
+428 verbose parsed url { protocol: null,
+428 verbose parsed url   slashes: null,
+428 verbose parsed url   auth: null,
+428 verbose parsed url   host: null,
+428 verbose parsed url   port: null,
+428 verbose parsed url   hostname: null,
+428 verbose parsed url   hash: null,
+428 verbose parsed url   search: null,
+428 verbose parsed url   query: null,
+428 verbose parsed url   pathname: '^0.3.0',
+428 verbose parsed url   path: '^0.3.0',
+428 verbose parsed url   href: '^0.3.0' }
+429 verbose addNamed [ 'bower-registry-client', '^0.3.0' ]
+430 verbose addNamed [ null, null ]
+431 silly lockFile 2ef9f29d-bower-registry-client-0-3-0 bower-registry-client@^0.3.0
+432 verbose lock bower-registry-client@^0.3.0 C:\Users\wlj\AppData\Roaming\npm-cache\2ef9f29d-bower-registry-client-0-3-0.lock
+433 verbose cache add [ 'cardinal@0.4.4', null ]
+434 verbose cache add name=undefined spec="cardinal@0.4.4" args=["cardinal@0.4.4",null]
+435 verbose parsed url { protocol: null,
+435 verbose parsed url   slashes: null,
+435 verbose parsed url   auth: null,
+435 verbose parsed url   host: null,
+435 verbose parsed url   port: null,
+435 verbose parsed url   hostname: null,
+435 verbose parsed url   hash: null,
+435 verbose parsed url   search: null,
+435 verbose parsed url   query: null,
+435 verbose parsed url   pathname: 'cardinal@0.4.4',
+435 verbose parsed url   path: 'cardinal@0.4.4',
+435 verbose parsed url   href: 'cardinal@0.4.4' }
+436 verbose cache add name="cardinal" spec="0.4.4" args=["cardinal","0.4.4"]
+437 verbose parsed url { protocol: null,
+437 verbose parsed url   slashes: null,
+437 verbose parsed url   auth: null,
+437 verbose parsed url   host: null,
+437 verbose parsed url   port: null,
+437 verbose parsed url   hostname: null,
+437 verbose parsed url   hash: null,
+437 verbose parsed url   search: null,
+437 verbose parsed url   query: null,
+437 verbose parsed url   pathname: '0.4.4',
+437 verbose parsed url   path: '0.4.4',
+437 verbose parsed url   href: '0.4.4' }
+438 verbose addNamed [ 'cardinal', '0.4.4' ]
+439 verbose addNamed [ '0.4.4', '0.4.4' ]
+440 silly lockFile 6295c634-cardinal-0-4-4 cardinal@0.4.4
+441 verbose lock cardinal@0.4.4 C:\Users\wlj\AppData\Roaming\npm-cache\6295c634-cardinal-0-4-4.lock
+442 verbose cache add [ 'chalk@^1.0.0', null ]
+443 verbose cache add name=undefined spec="chalk@^1.0.0" args=["chalk@^1.0.0",null]
+444 verbose parsed url { protocol: null,
+444 verbose parsed url   slashes: null,
+444 verbose parsed url   auth: null,
+444 verbose parsed url   host: null,
+444 verbose parsed url   port: null,
+444 verbose parsed url   hostname: null,
+444 verbose parsed url   hash: null,
+444 verbose parsed url   search: null,
+444 verbose parsed url   query: null,
+444 verbose parsed url   pathname: 'chalk@^1.0.0',
+444 verbose parsed url   path: 'chalk@^1.0.0',
+444 verbose parsed url   href: 'chalk@^1.0.0' }
+445 verbose cache add name="chalk" spec="^1.0.0" args=["chalk","^1.0.0"]
+446 verbose parsed url { protocol: null,
+446 verbose parsed url   slashes: null,
+446 verbose parsed url   auth: null,
+446 verbose parsed url   host: null,
+446 verbose parsed url   port: null,
+446 verbose parsed url   hostname: null,
+446 verbose parsed url   hash: null,
+446 verbose parsed url   search: null,
+446 verbose parsed url   query: null,
+446 verbose parsed url   pathname: '^1.0.0',
+446 verbose parsed url   path: '^1.0.0',
+446 verbose parsed url   href: '^1.0.0' }
+447 verbose addNamed [ 'chalk', '^1.0.0' ]
+448 verbose addNamed [ null, null ]
+449 silly lockFile 2b6848f7-chalk-1-0-0 chalk@^1.0.0
+450 verbose lock chalk@^1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\2b6848f7-chalk-1-0-0.lock
+451 verbose cache add [ 'chmodr@0.1.0', null ]
+452 verbose cache add name=undefined spec="chmodr@0.1.0" args=["chmodr@0.1.0",null]
+453 verbose parsed url { protocol: null,
+453 verbose parsed url   slashes: null,
+453 verbose parsed url   auth: null,
+453 verbose parsed url   host: null,
+453 verbose parsed url   port: null,
+453 verbose parsed url   hostname: null,
+453 verbose parsed url   hash: null,
+453 verbose parsed url   search: null,
+453 verbose parsed url   query: null,
+453 verbose parsed url   pathname: 'chmodr@0.1.0',
+453 verbose parsed url   path: 'chmodr@0.1.0',
+453 verbose parsed url   href: 'chmodr@0.1.0' }
+454 verbose cache add name="chmodr" spec="0.1.0" args=["chmodr","0.1.0"]
+455 verbose parsed url { protocol: null,
+455 verbose parsed url   slashes: null,
+455 verbose parsed url   auth: null,
+455 verbose parsed url   host: null,
+455 verbose parsed url   port: null,
+455 verbose parsed url   hostname: null,
+455 verbose parsed url   hash: null,
+455 verbose parsed url   search: null,
+455 verbose parsed url   query: null,
+455 verbose parsed url   pathname: '0.1.0',
+455 verbose parsed url   path: '0.1.0',
+455 verbose parsed url   href: '0.1.0' }
+456 verbose addNamed [ 'chmodr', '0.1.0' ]
+457 verbose addNamed [ '0.1.0', '0.1.0' ]
+458 silly lockFile 3c50e6b3-chmodr-0-1-0 chmodr@0.1.0
+459 verbose lock chmodr@0.1.0 C:\Users\wlj\AppData\Roaming\npm-cache\3c50e6b3-chmodr-0-1-0.lock
+460 verbose cache add [ 'configstore@^0.3.2', null ]
+461 verbose cache add name=undefined spec="configstore@^0.3.2" args=["configstore@^0.3.2",null]
+462 verbose parsed url { protocol: null,
+462 verbose parsed url   slashes: null,
+462 verbose parsed url   auth: null,
+462 verbose parsed url   host: null,
+462 verbose parsed url   port: null,
+462 verbose parsed url   hostname: null,
+462 verbose parsed url   hash: null,
+462 verbose parsed url   search: null,
+462 verbose parsed url   query: null,
+462 verbose parsed url   pathname: 'configstore@^0.3.2',
+462 verbose parsed url   path: 'configstore@^0.3.2',
+462 verbose parsed url   href: 'configstore@^0.3.2' }
+463 verbose cache add name="configstore" spec="^0.3.2" args=["configstore","^0.3.2"]
+464 verbose parsed url { protocol: null,
+464 verbose parsed url   slashes: null,
+464 verbose parsed url   auth: null,
+464 verbose parsed url   host: null,
+464 verbose parsed url   port: null,
+464 verbose parsed url   hostname: null,
+464 verbose parsed url   hash: null,
+464 verbose parsed url   search: null,
+464 verbose parsed url   query: null,
+464 verbose parsed url   pathname: '^0.3.2',
+464 verbose parsed url   path: '^0.3.2',
+464 verbose parsed url   href: '^0.3.2' }
+465 verbose addNamed [ 'configstore', '^0.3.2' ]
+466 verbose addNamed [ null, null ]
+467 silly lockFile fa6a014c-configstore-0-3-2 configstore@^0.3.2
+468 verbose lock configstore@^0.3.2 C:\Users\wlj\AppData\Roaming\npm-cache\fa6a014c-configstore-0-3-2.lock
+469 verbose cache add [ 'decompress-zip@^0.1.0', null ]
+470 verbose cache add name=undefined spec="decompress-zip@^0.1.0" args=["decompress-zip@^0.1.0",null]
+471 verbose parsed url { protocol: null,
+471 verbose parsed url   slashes: null,
+471 verbose parsed url   auth: null,
+471 verbose parsed url   host: null,
+471 verbose parsed url   port: null,
+471 verbose parsed url   hostname: null,
+471 verbose parsed url   hash: null,
+471 verbose parsed url   search: null,
+471 verbose parsed url   query: null,
+471 verbose parsed url   pathname: 'decompress-zip@^0.1.0',
+471 verbose parsed url   path: 'decompress-zip@^0.1.0',
+471 verbose parsed url   href: 'decompress-zip@^0.1.0' }
+472 verbose cache add name="decompress-zip" spec="^0.1.0" args=["decompress-zip","^0.1.0"]
+473 verbose parsed url { protocol: null,
+473 verbose parsed url   slashes: null,
+473 verbose parsed url   auth: null,
+473 verbose parsed url   host: null,
+473 verbose parsed url   port: null,
+473 verbose parsed url   hostname: null,
+473 verbose parsed url   hash: null,
+473 verbose parsed url   search: null,
+473 verbose parsed url   query: null,
+473 verbose parsed url   pathname: '^0.1.0',
+473 verbose parsed url   path: '^0.1.0',
+473 verbose parsed url   href: '^0.1.0' }
+474 verbose addNamed [ 'decompress-zip', '^0.1.0' ]
+475 verbose addNamed [ null, null ]
+476 silly lockFile eb420c69-decompress-zip-0-1-0 decompress-zip@^0.1.0
+477 verbose lock decompress-zip@^0.1.0 C:\Users\wlj\AppData\Roaming\npm-cache\eb420c69-decompress-zip-0-1-0.lock
+478 verbose cache add [ 'fstream@^1.0.3', null ]
+479 verbose cache add name=undefined spec="fstream@^1.0.3" args=["fstream@^1.0.3",null]
+480 verbose parsed url { protocol: null,
+480 verbose parsed url   slashes: null,
+480 verbose parsed url   auth: null,
+480 verbose parsed url   host: null,
+480 verbose parsed url   port: null,
+480 verbose parsed url   hostname: null,
+480 verbose parsed url   hash: null,
+480 verbose parsed url   search: null,
+480 verbose parsed url   query: null,
+480 verbose parsed url   pathname: 'fstream@^1.0.3',
+480 verbose parsed url   path: 'fstream@^1.0.3',
+480 verbose parsed url   href: 'fstream@^1.0.3' }
+481 verbose cache add name="fstream" spec="^1.0.3" args=["fstream","^1.0.3"]
+482 verbose parsed url { protocol: null,
+482 verbose parsed url   slashes: null,
+482 verbose parsed url   auth: null,
+482 verbose parsed url   host: null,
+482 verbose parsed url   port: null,
+482 verbose parsed url   hostname: null,
+482 verbose parsed url   hash: null,
+482 verbose parsed url   search: null,
+482 verbose parsed url   query: null,
+482 verbose parsed url   pathname: '^1.0.3',
+482 verbose parsed url   path: '^1.0.3',
+482 verbose parsed url   href: '^1.0.3' }
+483 verbose addNamed [ 'fstream', '^1.0.3' ]
+484 verbose addNamed [ null, null ]
+485 silly lockFile 73ef0ca1-fstream-1-0-3 fstream@^1.0.3
+486 verbose lock fstream@^1.0.3 C:\Users\wlj\AppData\Roaming\npm-cache\73ef0ca1-fstream-1-0-3.lock
+487 verbose cache add [ 'fstream-ignore@^1.0.2', null ]
+488 verbose cache add name=undefined spec="fstream-ignore@^1.0.2" args=["fstream-ignore@^1.0.2",null]
+489 verbose parsed url { protocol: null,
+489 verbose parsed url   slashes: null,
+489 verbose parsed url   auth: null,
+489 verbose parsed url   host: null,
+489 verbose parsed url   port: null,
+489 verbose parsed url   hostname: null,
+489 verbose parsed url   hash: null,
+489 verbose parsed url   search: null,
+489 verbose parsed url   query: null,
+489 verbose parsed url   pathname: 'fstream-ignore@^1.0.2',
+489 verbose parsed url   path: 'fstream-ignore@^1.0.2',
+489 verbose parsed url   href: 'fstream-ignore@^1.0.2' }
+490 verbose cache add name="fstream-ignore" spec="^1.0.2" args=["fstream-ignore","^1.0.2"]
+491 verbose parsed url { protocol: null,
+491 verbose parsed url   slashes: null,
+491 verbose parsed url   auth: null,
+491 verbose parsed url   host: null,
+491 verbose parsed url   port: null,
+491 verbose parsed url   hostname: null,
+491 verbose parsed url   hash: null,
+491 verbose parsed url   search: null,
+491 verbose parsed url   query: null,
+491 verbose parsed url   pathname: '^1.0.2',
+491 verbose parsed url   path: '^1.0.2',
+491 verbose parsed url   href: '^1.0.2' }
+492 verbose addNamed [ 'fstream-ignore', '^1.0.2' ]
+493 verbose addNamed [ null, null ]
+494 silly lockFile 19e979a0-fstream-ignore-1-0-2 fstream-ignore@^1.0.2
+495 verbose lock fstream-ignore@^1.0.2 C:\Users\wlj\AppData\Roaming\npm-cache\19e979a0-fstream-ignore-1-0-2.lock
+496 verbose cache add [ 'github@^0.2.3', null ]
+497 verbose cache add name=undefined spec="github@^0.2.3" args=["github@^0.2.3",null]
+498 verbose parsed url { protocol: null,
+498 verbose parsed url   slashes: null,
+498 verbose parsed url   auth: null,
+498 verbose parsed url   host: null,
+498 verbose parsed url   port: null,
+498 verbose parsed url   hostname: null,
+498 verbose parsed url   hash: null,
+498 verbose parsed url   search: null,
+498 verbose parsed url   query: null,
+498 verbose parsed url   pathname: 'github@^0.2.3',
+498 verbose parsed url   path: 'github@^0.2.3',
+498 verbose parsed url   href: 'github@^0.2.3' }
+499 verbose cache add name="github" spec="^0.2.3" args=["github","^0.2.3"]
+500 verbose parsed url { protocol: null,
+500 verbose parsed url   slashes: null,
+500 verbose parsed url   auth: null,
+500 verbose parsed url   host: null,
+500 verbose parsed url   port: null,
+500 verbose parsed url   hostname: null,
+500 verbose parsed url   hash: null,
+500 verbose parsed url   search: null,
+500 verbose parsed url   query: null,
+500 verbose parsed url   pathname: '^0.2.3',
+500 verbose parsed url   path: '^0.2.3',
+500 verbose parsed url   href: '^0.2.3' }
+501 verbose addNamed [ 'github', '^0.2.3' ]
+502 verbose addNamed [ null, null ]
+503 silly lockFile 24b6ccae-github-0-2-3 github@^0.2.3
+504 verbose lock github@^0.2.3 C:\Users\wlj\AppData\Roaming\npm-cache\24b6ccae-github-0-2-3.lock
+505 verbose cache add [ 'glob@^4.3.2', null ]
+506 verbose cache add name=undefined spec="glob@^4.3.2" args=["glob@^4.3.2",null]
+507 verbose parsed url { protocol: null,
+507 verbose parsed url   slashes: null,
+507 verbose parsed url   auth: null,
+507 verbose parsed url   host: null,
+507 verbose parsed url   port: null,
+507 verbose parsed url   hostname: null,
+507 verbose parsed url   hash: null,
+507 verbose parsed url   search: null,
+507 verbose parsed url   query: null,
+507 verbose parsed url   pathname: 'glob@^4.3.2',
+507 verbose parsed url   path: 'glob@^4.3.2',
+507 verbose parsed url   href: 'glob@^4.3.2' }
+508 verbose cache add name="glob" spec="^4.3.2" args=["glob","^4.3.2"]
+509 verbose parsed url { protocol: null,
+509 verbose parsed url   slashes: null,
+509 verbose parsed url   auth: null,
+509 verbose parsed url   host: null,
+509 verbose parsed url   port: null,
+509 verbose parsed url   hostname: null,
+509 verbose parsed url   hash: null,
+509 verbose parsed url   search: null,
+509 verbose parsed url   query: null,
+509 verbose parsed url   pathname: '^4.3.2',
+509 verbose parsed url   path: '^4.3.2',
+509 verbose parsed url   href: '^4.3.2' }
+510 verbose addNamed [ 'glob', '^4.3.2' ]
+511 verbose addNamed [ null, null ]
+512 silly lockFile fecc13ff-glob-4-3-2 glob@^4.3.2
+513 verbose lock glob@^4.3.2 C:\Users\wlj\AppData\Roaming\npm-cache\fecc13ff-glob-4-3-2.lock
+514 verbose cache add [ 'graceful-fs@^3.0.5', null ]
+515 verbose cache add name=undefined spec="graceful-fs@^3.0.5" args=["graceful-fs@^3.0.5",null]
+516 verbose parsed url { protocol: null,
+516 verbose parsed url   slashes: null,
+516 verbose parsed url   auth: null,
+516 verbose parsed url   host: null,
+516 verbose parsed url   port: null,
+516 verbose parsed url   hostname: null,
+516 verbose parsed url   hash: null,
+516 verbose parsed url   search: null,
+516 verbose parsed url   query: null,
+516 verbose parsed url   pathname: 'graceful-fs@^3.0.5',
+516 verbose parsed url   path: 'graceful-fs@^3.0.5',
+516 verbose parsed url   href: 'graceful-fs@^3.0.5' }
+517 verbose cache add name="graceful-fs" spec="^3.0.5" args=["graceful-fs","^3.0.5"]
+518 verbose parsed url { protocol: null,
+518 verbose parsed url   slashes: null,
+518 verbose parsed url   auth: null,
+518 verbose parsed url   host: null,
+518 verbose parsed url   port: null,
+518 verbose parsed url   hostname: null,
+518 verbose parsed url   hash: null,
+518 verbose parsed url   search: null,
+518 verbose parsed url   query: null,
+518 verbose parsed url   pathname: '^3.0.5',
+518 verbose parsed url   path: '^3.0.5',
+518 verbose parsed url   href: '^3.0.5' }
+519 verbose addNamed [ 'graceful-fs', '^3.0.5' ]
+520 verbose addNamed [ null, null ]
+521 silly lockFile d9390ef3-graceful-fs-3-0-5 graceful-fs@^3.0.5
+522 verbose lock graceful-fs@^3.0.5 C:\Users\wlj\AppData\Roaming\npm-cache\d9390ef3-graceful-fs-3-0-5.lock
+523 verbose cache add [ 'handlebars@^2.0.0', null ]
+524 verbose cache add name=undefined spec="handlebars@^2.0.0" args=["handlebars@^2.0.0",null]
+525 verbose parsed url { protocol: null,
+525 verbose parsed url   slashes: null,
+525 verbose parsed url   auth: null,
+525 verbose parsed url   host: null,
+525 verbose parsed url   port: null,
+525 verbose parsed url   hostname: null,
+525 verbose parsed url   hash: null,
+525 verbose parsed url   search: null,
+525 verbose parsed url   query: null,
+525 verbose parsed url   pathname: 'handlebars@^2.0.0',
+525 verbose parsed url   path: 'handlebars@^2.0.0',
+525 verbose parsed url   href: 'handlebars@^2.0.0' }
+526 verbose cache add name="handlebars" spec="^2.0.0" args=["handlebars","^2.0.0"]
+527 verbose parsed url { protocol: null,
+527 verbose parsed url   slashes: null,
+527 verbose parsed url   auth: null,
+527 verbose parsed url   host: null,
+527 verbose parsed url   port: null,
+527 verbose parsed url   hostname: null,
+527 verbose parsed url   hash: null,
+527 verbose parsed url   search: null,
+527 verbose parsed url   query: null,
+527 verbose parsed url   pathname: '^2.0.0',
+527 verbose parsed url   path: '^2.0.0',
+527 verbose parsed url   href: '^2.0.0' }
+528 verbose addNamed [ 'handlebars', '^2.0.0' ]
+529 verbose addNamed [ null, null ]
+530 silly lockFile 0eb14452-handlebars-2-0-0 handlebars@^2.0.0
+531 verbose lock handlebars@^2.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\0eb14452-handlebars-2-0-0.lock
+532 verbose cache add [ 'inquirer@0.8.0', null ]
+533 verbose cache add name=undefined spec="inquirer@0.8.0" args=["inquirer@0.8.0",null]
+534 verbose parsed url { protocol: null,
+534 verbose parsed url   slashes: null,
+534 verbose parsed url   auth: null,
+534 verbose parsed url   host: null,
+534 verbose parsed url   port: null,
+534 verbose parsed url   hostname: null,
+534 verbose parsed url   hash: null,
+534 verbose parsed url   search: null,
+534 verbose parsed url   query: null,
+534 verbose parsed url   pathname: 'inquirer@0.8.0',
+534 verbose parsed url   path: 'inquirer@0.8.0',
+534 verbose parsed url   href: 'inquirer@0.8.0' }
+535 verbose cache add name="inquirer" spec="0.8.0" args=["inquirer","0.8.0"]
+536 verbose parsed url { protocol: null,
+536 verbose parsed url   slashes: null,
+536 verbose parsed url   auth: null,
+536 verbose parsed url   host: null,
+536 verbose parsed url   port: null,
+536 verbose parsed url   hostname: null,
+536 verbose parsed url   hash: null,
+536 verbose parsed url   search: null,
+536 verbose parsed url   query: null,
+536 verbose parsed url   pathname: '0.8.0',
+536 verbose parsed url   path: '0.8.0',
+536 verbose parsed url   href: '0.8.0' }
+537 verbose addNamed [ 'inquirer', '0.8.0' ]
+538 verbose addNamed [ '0.8.0', '0.8.0' ]
+539 silly lockFile 200a5243-inquirer-0-8-0 inquirer@0.8.0
+540 verbose lock inquirer@0.8.0 C:\Users\wlj\AppData\Roaming\npm-cache\200a5243-inquirer-0-8-0.lock
+541 verbose cache add [ 'insight@^0.5.0', null ]
+542 verbose cache add name=undefined spec="insight@^0.5.0" args=["insight@^0.5.0",null]
+543 verbose parsed url { protocol: null,
+543 verbose parsed url   slashes: null,
+543 verbose parsed url   auth: null,
+543 verbose parsed url   host: null,
+543 verbose parsed url   port: null,
+543 verbose parsed url   hostname: null,
+543 verbose parsed url   hash: null,
+543 verbose parsed url   search: null,
+543 verbose parsed url   query: null,
+543 verbose parsed url   pathname: 'insight@^0.5.0',
+543 verbose parsed url   path: 'insight@^0.5.0',
+543 verbose parsed url   href: 'insight@^0.5.0' }
+544 verbose cache add name="insight" spec="^0.5.0" args=["insight","^0.5.0"]
+545 verbose parsed url { protocol: null,
+545 verbose parsed url   slashes: null,
+545 verbose parsed url   auth: null,
+545 verbose parsed url   host: null,
+545 verbose parsed url   port: null,
+545 verbose parsed url   hostname: null,
+545 verbose parsed url   hash: null,
+545 verbose parsed url   search: null,
+545 verbose parsed url   query: null,
+545 verbose parsed url   pathname: '^0.5.0',
+545 verbose parsed url   path: '^0.5.0',
+545 verbose parsed url   href: '^0.5.0' }
+546 verbose addNamed [ 'insight', '^0.5.0' ]
+547 verbose addNamed [ null, null ]
+548 silly lockFile f953e2f0-insight-0-5-0 insight@^0.5.0
+549 verbose lock insight@^0.5.0 C:\Users\wlj\AppData\Roaming\npm-cache\f953e2f0-insight-0-5-0.lock
+550 verbose cache add [ 'is-root@^1.0.0', null ]
+551 verbose cache add name=undefined spec="is-root@^1.0.0" args=["is-root@^1.0.0",null]
+552 verbose parsed url { protocol: null,
+552 verbose parsed url   slashes: null,
+552 verbose parsed url   auth: null,
+552 verbose parsed url   host: null,
+552 verbose parsed url   port: null,
+552 verbose parsed url   hostname: null,
+552 verbose parsed url   hash: null,
+552 verbose parsed url   search: null,
+552 verbose parsed url   query: null,
+552 verbose parsed url   pathname: 'is-root@^1.0.0',
+552 verbose parsed url   path: 'is-root@^1.0.0',
+552 verbose parsed url   href: 'is-root@^1.0.0' }
+553 verbose cache add name="is-root" spec="^1.0.0" args=["is-root","^1.0.0"]
+554 verbose parsed url { protocol: null,
+554 verbose parsed url   slashes: null,
+554 verbose parsed url   auth: null,
+554 verbose parsed url   host: null,
+554 verbose parsed url   port: null,
+554 verbose parsed url   hostname: null,
+554 verbose parsed url   hash: null,
+554 verbose parsed url   search: null,
+554 verbose parsed url   query: null,
+554 verbose parsed url   pathname: '^1.0.0',
+554 verbose parsed url   path: '^1.0.0',
+554 verbose parsed url   href: '^1.0.0' }
+555 verbose addNamed [ 'is-root', '^1.0.0' ]
+556 verbose addNamed [ null, null ]
+557 silly lockFile 42ef8871-is-root-1-0-0 is-root@^1.0.0
+558 verbose lock is-root@^1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\42ef8871-is-root-1-0-0.lock
+559 verbose cache add [ 'junk@^1.0.0', null ]
+560 verbose cache add name=undefined spec="junk@^1.0.0" args=["junk@^1.0.0",null]
+561 verbose parsed url { protocol: null,
+561 verbose parsed url   slashes: null,
+561 verbose parsed url   auth: null,
+561 verbose parsed url   host: null,
+561 verbose parsed url   port: null,
+561 verbose parsed url   hostname: null,
+561 verbose parsed url   hash: null,
+561 verbose parsed url   search: null,
+561 verbose parsed url   query: null,
+561 verbose parsed url   pathname: 'junk@^1.0.0',
+561 verbose parsed url   path: 'junk@^1.0.0',
+561 verbose parsed url   href: 'junk@^1.0.0' }
+562 verbose cache add name="junk" spec="^1.0.0" args=["junk","^1.0.0"]
+563 verbose parsed url { protocol: null,
+563 verbose parsed url   slashes: null,
+563 verbose parsed url   auth: null,
+563 verbose parsed url   host: null,
+563 verbose parsed url   port: null,
+563 verbose parsed url   hostname: null,
+563 verbose parsed url   hash: null,
+563 verbose parsed url   search: null,
+563 verbose parsed url   query: null,
+563 verbose parsed url   pathname: '^1.0.0',
+563 verbose parsed url   path: '^1.0.0',
+563 verbose parsed url   href: '^1.0.0' }
+564 verbose addNamed [ 'junk', '^1.0.0' ]
+565 verbose addNamed [ null, null ]
+566 silly lockFile de101e8f-junk-1-0-0 junk@^1.0.0
+567 verbose lock junk@^1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\de101e8f-junk-1-0-0.lock
+568 verbose cache add [ 'lockfile@^1.0.0', null ]
+569 verbose cache add name=undefined spec="lockfile@^1.0.0" args=["lockfile@^1.0.0",null]
+570 verbose parsed url { protocol: null,
+570 verbose parsed url   slashes: null,
+570 verbose parsed url   auth: null,
+570 verbose parsed url   host: null,
+570 verbose parsed url   port: null,
+570 verbose parsed url   hostname: null,
+570 verbose parsed url   hash: null,
+570 verbose parsed url   search: null,
+570 verbose parsed url   query: null,
+570 verbose parsed url   pathname: 'lockfile@^1.0.0',
+570 verbose parsed url   path: 'lockfile@^1.0.0',
+570 verbose parsed url   href: 'lockfile@^1.0.0' }
+571 verbose cache add name="lockfile" spec="^1.0.0" args=["lockfile","^1.0.0"]
+572 verbose parsed url { protocol: null,
+572 verbose parsed url   slashes: null,
+572 verbose parsed url   auth: null,
+572 verbose parsed url   host: null,
+572 verbose parsed url   port: null,
+572 verbose parsed url   hostname: null,
+572 verbose parsed url   hash: null,
+572 verbose parsed url   search: null,
+572 verbose parsed url   query: null,
+572 verbose parsed url   pathname: '^1.0.0',
+572 verbose parsed url   path: '^1.0.0',
+572 verbose parsed url   href: '^1.0.0' }
+573 verbose addNamed [ 'lockfile', '^1.0.0' ]
+574 verbose addNamed [ null, null ]
+575 silly lockFile 688d7dfe-lockfile-1-0-0 lockfile@^1.0.0
+576 verbose lock lockfile@^1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\688d7dfe-lockfile-1-0-0.lock
+577 verbose cache add [ 'lru-cache@^2.5.0', null ]
+578 verbose cache add name=undefined spec="lru-cache@^2.5.0" args=["lru-cache@^2.5.0",null]
+579 verbose parsed url { protocol: null,
+579 verbose parsed url   slashes: null,
+579 verbose parsed url   auth: null,
+579 verbose parsed url   host: null,
+579 verbose parsed url   port: null,
+579 verbose parsed url   hostname: null,
+579 verbose parsed url   hash: null,
+579 verbose parsed url   search: null,
+579 verbose parsed url   query: null,
+579 verbose parsed url   pathname: 'lru-cache@^2.5.0',
+579 verbose parsed url   path: 'lru-cache@^2.5.0',
+579 verbose parsed url   href: 'lru-cache@^2.5.0' }
+580 verbose cache add name="lru-cache" spec="^2.5.0" args=["lru-cache","^2.5.0"]
+581 verbose parsed url { protocol: null,
+581 verbose parsed url   slashes: null,
+581 verbose parsed url   auth: null,
+581 verbose parsed url   host: null,
+581 verbose parsed url   port: null,
+581 verbose parsed url   hostname: null,
+581 verbose parsed url   hash: null,
+581 verbose parsed url   search: null,
+581 verbose parsed url   query: null,
+581 verbose parsed url   pathname: '^2.5.0',
+581 verbose parsed url   path: '^2.5.0',
+581 verbose parsed url   href: '^2.5.0' }
+582 verbose addNamed [ 'lru-cache', '^2.5.0' ]
+583 verbose addNamed [ null, null ]
+584 silly lockFile f4c34f80-lru-cache-2-5-0 lru-cache@^2.5.0
+585 verbose lock lru-cache@^2.5.0 C:\Users\wlj\AppData\Roaming\npm-cache\f4c34f80-lru-cache-2-5-0.lock
+586 verbose cache add [ 'mkdirp@0.5.0', null ]
+587 verbose cache add name=undefined spec="mkdirp@0.5.0" args=["mkdirp@0.5.0",null]
+588 verbose parsed url { protocol: null,
+588 verbose parsed url   slashes: null,
+588 verbose parsed url   auth: null,
+588 verbose parsed url   host: null,
+588 verbose parsed url   port: null,
+588 verbose parsed url   hostname: null,
+588 verbose parsed url   hash: null,
+588 verbose parsed url   search: null,
+588 verbose parsed url   query: null,
+588 verbose parsed url   pathname: 'mkdirp@0.5.0',
+588 verbose parsed url   path: 'mkdirp@0.5.0',
+588 verbose parsed url   href: 'mkdirp@0.5.0' }
+589 verbose cache add name="mkdirp" spec="0.5.0" args=["mkdirp","0.5.0"]
+590 verbose parsed url { protocol: null,
+590 verbose parsed url   slashes: null,
+590 verbose parsed url   auth: null,
+590 verbose parsed url   host: null,
+590 verbose parsed url   port: null,
+590 verbose parsed url   hostname: null,
+590 verbose parsed url   hash: null,
+590 verbose parsed url   search: null,
+590 verbose parsed url   query: null,
+590 verbose parsed url   pathname: '0.5.0',
+590 verbose parsed url   path: '0.5.0',
+590 verbose parsed url   href: '0.5.0' }
+591 verbose addNamed [ 'mkdirp', '0.5.0' ]
+592 verbose addNamed [ '0.5.0', '0.5.0' ]
+593 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+594 verbose lock mkdirp@0.5.0 C:\Users\wlj\AppData\Roaming\npm-cache\bf9ae38d-mkdirp-0-5-0.lock
+595 verbose cache add [ 'mout@^0.11.0', null ]
+596 verbose cache add name=undefined spec="mout@^0.11.0" args=["mout@^0.11.0",null]
+597 verbose parsed url { protocol: null,
+597 verbose parsed url   slashes: null,
+597 verbose parsed url   auth: null,
+597 verbose parsed url   host: null,
+597 verbose parsed url   port: null,
+597 verbose parsed url   hostname: null,
+597 verbose parsed url   hash: null,
+597 verbose parsed url   search: null,
+597 verbose parsed url   query: null,
+597 verbose parsed url   pathname: 'mout@^0.11.0',
+597 verbose parsed url   path: 'mout@^0.11.0',
+597 verbose parsed url   href: 'mout@^0.11.0' }
+598 verbose cache add name="mout" spec="^0.11.0" args=["mout","^0.11.0"]
+599 verbose parsed url { protocol: null,
+599 verbose parsed url   slashes: null,
+599 verbose parsed url   auth: null,
+599 verbose parsed url   host: null,
+599 verbose parsed url   port: null,
+599 verbose parsed url   hostname: null,
+599 verbose parsed url   hash: null,
+599 verbose parsed url   search: null,
+599 verbose parsed url   query: null,
+599 verbose parsed url   pathname: '^0.11.0',
+599 verbose parsed url   path: '^0.11.0',
+599 verbose parsed url   href: '^0.11.0' }
+600 verbose addNamed [ 'mout', '^0.11.0' ]
+601 verbose addNamed [ null, null ]
+602 silly lockFile e28b7f80-mout-0-11-0 mout@^0.11.0
+603 verbose lock mout@^0.11.0 C:\Users\wlj\AppData\Roaming\npm-cache\e28b7f80-mout-0-11-0.lock
+604 verbose cache add [ 'nopt@^3.0.1', null ]
+605 verbose cache add name=undefined spec="nopt@^3.0.1" args=["nopt@^3.0.1",null]
+606 verbose parsed url { protocol: null,
+606 verbose parsed url   slashes: null,
+606 verbose parsed url   auth: null,
+606 verbose parsed url   host: null,
+606 verbose parsed url   port: null,
+606 verbose parsed url   hostname: null,
+606 verbose parsed url   hash: null,
+606 verbose parsed url   search: null,
+606 verbose parsed url   query: null,
+606 verbose parsed url   pathname: 'nopt@^3.0.1',
+606 verbose parsed url   path: 'nopt@^3.0.1',
+606 verbose parsed url   href: 'nopt@^3.0.1' }
+607 verbose cache add name="nopt" spec="^3.0.1" args=["nopt","^3.0.1"]
+608 verbose parsed url { protocol: null,
+608 verbose parsed url   slashes: null,
+608 verbose parsed url   auth: null,
+608 verbose parsed url   host: null,
+608 verbose parsed url   port: null,
+608 verbose parsed url   hostname: null,
+608 verbose parsed url   hash: null,
+608 verbose parsed url   search: null,
+608 verbose parsed url   query: null,
+608 verbose parsed url   pathname: '^3.0.1',
+608 verbose parsed url   path: '^3.0.1',
+608 verbose parsed url   href: '^3.0.1' }
+609 verbose addNamed [ 'nopt', '^3.0.1' ]
+610 verbose addNamed [ null, null ]
+611 silly lockFile a4366549-nopt-3-0-1 nopt@^3.0.1
+612 verbose lock nopt@^3.0.1 C:\Users\wlj\AppData\Roaming\npm-cache\a4366549-nopt-3-0-1.lock
+613 verbose cache add [ 'opn@^1.0.1', null ]
+614 verbose cache add name=undefined spec="opn@^1.0.1" args=["opn@^1.0.1",null]
+615 verbose parsed url { protocol: null,
+615 verbose parsed url   slashes: null,
+615 verbose parsed url   auth: null,
+615 verbose parsed url   host: null,
+615 verbose parsed url   port: null,
+615 verbose parsed url   hostname: null,
+615 verbose parsed url   hash: null,
+615 verbose parsed url   search: null,
+615 verbose parsed url   query: null,
+615 verbose parsed url   pathname: 'opn@^1.0.1',
+615 verbose parsed url   path: 'opn@^1.0.1',
+615 verbose parsed url   href: 'opn@^1.0.1' }
+616 verbose cache add name="opn" spec="^1.0.1" args=["opn","^1.0.1"]
+617 verbose parsed url { protocol: null,
+617 verbose parsed url   slashes: null,
+617 verbose parsed url   auth: null,
+617 verbose parsed url   host: null,
+617 verbose parsed url   port: null,
+617 verbose parsed url   hostname: null,
+617 verbose parsed url   hash: null,
+617 verbose parsed url   search: null,
+617 verbose parsed url   query: null,
+617 verbose parsed url   pathname: '^1.0.1',
+617 verbose parsed url   path: '^1.0.1',
+617 verbose parsed url   href: '^1.0.1' }
+618 verbose addNamed [ 'opn', '^1.0.1' ]
+619 verbose addNamed [ null, null ]
+620 silly lockFile b7106061-opn-1-0-1 opn@^1.0.1
+621 verbose lock opn@^1.0.1 C:\Users\wlj\AppData\Roaming\npm-cache\b7106061-opn-1-0-1.lock
+622 verbose cache add [ 'p-throttler@0.1.1', null ]
+623 verbose cache add name=undefined spec="p-throttler@0.1.1" args=["p-throttler@0.1.1",null]
+624 verbose parsed url { protocol: null,
+624 verbose parsed url   slashes: null,
+624 verbose parsed url   auth: null,
+624 verbose parsed url   host: null,
+624 verbose parsed url   port: null,
+624 verbose parsed url   hostname: null,
+624 verbose parsed url   hash: null,
+624 verbose parsed url   search: null,
+624 verbose parsed url   query: null,
+624 verbose parsed url   pathname: 'p-throttler@0.1.1',
+624 verbose parsed url   path: 'p-throttler@0.1.1',
+624 verbose parsed url   href: 'p-throttler@0.1.1' }
+625 verbose cache add name="p-throttler" spec="0.1.1" args=["p-throttler","0.1.1"]
+626 verbose parsed url { protocol: null,
+626 verbose parsed url   slashes: null,
+626 verbose parsed url   auth: null,
+626 verbose parsed url   host: null,
+626 verbose parsed url   port: null,
+626 verbose parsed url   hostname: null,
+626 verbose parsed url   hash: null,
+626 verbose parsed url   search: null,
+626 verbose parsed url   query: null,
+626 verbose parsed url   pathname: '0.1.1',
+626 verbose parsed url   path: '0.1.1',
+626 verbose parsed url   href: '0.1.1' }
+627 verbose addNamed [ 'p-throttler', '0.1.1' ]
+628 verbose addNamed [ '0.1.1', '0.1.1' ]
+629 silly lockFile 833f3def-p-throttler-0-1-1 p-throttler@0.1.1
+630 verbose lock p-throttler@0.1.1 C:\Users\wlj\AppData\Roaming\npm-cache\833f3def-p-throttler-0-1-1.lock
+631 verbose cache add [ 'promptly@0.2.0', null ]
+632 verbose cache add name=undefined spec="promptly@0.2.0" args=["promptly@0.2.0",null]
+633 verbose parsed url { protocol: null,
+633 verbose parsed url   slashes: null,
+633 verbose parsed url   auth: null,
+633 verbose parsed url   host: null,
+633 verbose parsed url   port: null,
+633 verbose parsed url   hostname: null,
+633 verbose parsed url   hash: null,
+633 verbose parsed url   search: null,
+633 verbose parsed url   query: null,
+633 verbose parsed url   pathname: 'promptly@0.2.0',
+633 verbose parsed url   path: 'promptly@0.2.0',
+633 verbose parsed url   href: 'promptly@0.2.0' }
+634 verbose cache add name="promptly" spec="0.2.0" args=["promptly","0.2.0"]
+635 verbose parsed url { protocol: null,
+635 verbose parsed url   slashes: null,
+635 verbose parsed url   auth: null,
+635 verbose parsed url   host: null,
+635 verbose parsed url   port: null,
+635 verbose parsed url   hostname: null,
+635 verbose parsed url   hash: null,
+635 verbose parsed url   search: null,
+635 verbose parsed url   query: null,
+635 verbose parsed url   pathname: '0.2.0',
+635 verbose parsed url   path: '0.2.0',
+635 verbose parsed url   href: '0.2.0' }
+636 verbose addNamed [ 'promptly', '0.2.0' ]
+637 verbose addNamed [ '0.2.0', '0.2.0' ]
+638 silly lockFile c940dc36-promptly-0-2-0 promptly@0.2.0
+639 verbose lock promptly@0.2.0 C:\Users\wlj\AppData\Roaming\npm-cache\c940dc36-promptly-0-2-0.lock
+640 verbose cache add [ 'q@^1.1.2', null ]
+641 verbose cache add name=undefined spec="q@^1.1.2" args=["q@^1.1.2",null]
+642 verbose parsed url { protocol: null,
+642 verbose parsed url   slashes: null,
+642 verbose parsed url   auth: null,
+642 verbose parsed url   host: null,
+642 verbose parsed url   port: null,
+642 verbose parsed url   hostname: null,
+642 verbose parsed url   hash: null,
+642 verbose parsed url   search: null,
+642 verbose parsed url   query: null,
+642 verbose parsed url   pathname: 'q@^1.1.2',
+642 verbose parsed url   path: 'q@^1.1.2',
+642 verbose parsed url   href: 'q@^1.1.2' }
+643 verbose cache add name="q" spec="^1.1.2" args=["q","^1.1.2"]
+644 verbose parsed url { protocol: null,
+644 verbose parsed url   slashes: null,
+644 verbose parsed url   auth: null,
+644 verbose parsed url   host: null,
+644 verbose parsed url   port: null,
+644 verbose parsed url   hostname: null,
+644 verbose parsed url   hash: null,
+644 verbose parsed url   search: null,
+644 verbose parsed url   query: null,
+644 verbose parsed url   pathname: '^1.1.2',
+644 verbose parsed url   path: '^1.1.2',
+644 verbose parsed url   href: '^1.1.2' }
+645 verbose addNamed [ 'q', '^1.1.2' ]
+646 verbose addNamed [ null, null ]
+647 silly lockFile b7624628-q-1-1-2 q@^1.1.2
+648 verbose lock q@^1.1.2 C:\Users\wlj\AppData\Roaming\npm-cache\b7624628-q-1-1-2.lock
+649 verbose cache add [ 'request@2.53.0', null ]
+650 verbose cache add name=undefined spec="request@2.53.0" args=["request@2.53.0",null]
+651 verbose parsed url { protocol: null,
+651 verbose parsed url   slashes: null,
+651 verbose parsed url   auth: null,
+651 verbose parsed url   host: null,
+651 verbose parsed url   port: null,
+651 verbose parsed url   hostname: null,
+651 verbose parsed url   hash: null,
+651 verbose parsed url   search: null,
+651 verbose parsed url   query: null,
+651 verbose parsed url   pathname: 'request@2.53.0',
+651 verbose parsed url   path: 'request@2.53.0',
+651 verbose parsed url   href: 'request@2.53.0' }
+652 verbose cache add name="request" spec="2.53.0" args=["request","2.53.0"]
+653 verbose parsed url { protocol: null,
+653 verbose parsed url   slashes: null,
+653 verbose parsed url   auth: null,
+653 verbose parsed url   host: null,
+653 verbose parsed url   port: null,
+653 verbose parsed url   hostname: null,
+653 verbose parsed url   hash: null,
+653 verbose parsed url   search: null,
+653 verbose parsed url   query: null,
+653 verbose parsed url   pathname: '2.53.0',
+653 verbose parsed url   path: '2.53.0',
+653 verbose parsed url   href: '2.53.0' }
+654 verbose addNamed [ 'request', '2.53.0' ]
+655 verbose addNamed [ '2.53.0', '2.53.0' ]
+656 silly lockFile aee8052e-request-2-53-0 request@2.53.0
+657 verbose lock request@2.53.0 C:\Users\wlj\AppData\Roaming\npm-cache\aee8052e-request-2-53-0.lock
+658 info addNameTag [ 'abbrev', '^1.0.5' ]
+659 info addNameTag [ 'bower-config', '^0.6.1' ]
+660 info addNameTag [ 'bower-endpoint-parser', '^0.2.2' ]
+661 info addNameTag [ 'bower-logger', '^0.2.2' ]
+662 info addNameTag [ 'bower-json', '^0.4.0' ]
+663 info addNameTag [ 'bower-registry-client', '^0.3.0' ]
+664 info addNameTag [ 'chalk', '^1.0.0' ]
+665 info addNameTag [ 'configstore', '^0.3.2' ]
+666 info addNameTag [ 'decompress-zip', '^0.1.0' ]
+667 info addNameTag [ 'fstream', '^1.0.3' ]
+668 info addNameTag [ 'github', '^0.2.3' ]
+669 info addNameTag [ 'fstream-ignore', '^1.0.2' ]
+670 info addNameTag [ 'glob', '^4.3.2' ]
+671 info addNameTag [ 'handlebars', '^2.0.0' ]
+672 info addNameTag [ 'graceful-fs', '^3.0.5' ]
+673 info addNameTag [ 'insight', '^0.5.0' ]
+674 info addNameTag [ 'is-root', '^1.0.0' ]
+675 info addNameTag [ 'lockfile', '^1.0.0' ]
+676 info addNameTag [ 'junk', '^1.0.0' ]
+677 info addNameTag [ 'lru-cache', '^2.5.0' ]
+678 info addNameTag [ 'mout', '^0.11.0' ]
+679 info addNameTag [ 'nopt', '^3.0.1' ]
+680 info addNameTag [ 'opn', '^1.0.1' ]
+681 info addNameTag [ 'q', '^1.1.2' ]
+682 verbose cache add [ 'request-progress@0.3.1', null ]
+683 verbose cache add name=undefined spec="request-progress@0.3.1" args=["request-progress@0.3.1",null]
+684 verbose parsed url { protocol: null,
+684 verbose parsed url   slashes: null,
+684 verbose parsed url   auth: null,
+684 verbose parsed url   host: null,
+684 verbose parsed url   port: null,
+684 verbose parsed url   hostname: null,
+684 verbose parsed url   hash: null,
+684 verbose parsed url   search: null,
+684 verbose parsed url   query: null,
+684 verbose parsed url   pathname: 'request-progress@0.3.1',
+684 verbose parsed url   path: 'request-progress@0.3.1',
+684 verbose parsed url   href: 'request-progress@0.3.1' }
+685 verbose cache add name="request-progress" spec="0.3.1" args=["request-progress","0.3.1"]
+686 verbose parsed url { protocol: null,
+686 verbose parsed url   slashes: null,
+686 verbose parsed url   auth: null,
+686 verbose parsed url   host: null,
+686 verbose parsed url   port: null,
+686 verbose parsed url   hostname: null,
+686 verbose parsed url   hash: null,
+686 verbose parsed url   search: null,
+686 verbose parsed url   query: null,
+686 verbose parsed url   pathname: '0.3.1',
+686 verbose parsed url   path: '0.3.1',
+686 verbose parsed url   href: '0.3.1' }
+687 verbose addNamed [ 'request-progress', '0.3.1' ]
+688 verbose addNamed [ '0.3.1', '0.3.1' ]
+689 silly lockFile a2b190cd-request-progress-0-3-1 request-progress@0.3.1
+690 verbose lock request-progress@0.3.1 C:\Users\wlj\AppData\Roaming\npm-cache\a2b190cd-request-progress-0-3-1.lock
+691 verbose cache add [ 'retry@0.6.1', null ]
+692 verbose cache add name=undefined spec="retry@0.6.1" args=["retry@0.6.1",null]
+693 verbose parsed url { protocol: null,
+693 verbose parsed url   slashes: null,
+693 verbose parsed url   auth: null,
+693 verbose parsed url   host: null,
+693 verbose parsed url   port: null,
+693 verbose parsed url   hostname: null,
+693 verbose parsed url   hash: null,
+693 verbose parsed url   search: null,
+693 verbose parsed url   query: null,
+693 verbose parsed url   pathname: 'retry@0.6.1',
+693 verbose parsed url   path: 'retry@0.6.1',
+693 verbose parsed url   href: 'retry@0.6.1' }
+694 verbose cache add name="retry" spec="0.6.1" args=["retry","0.6.1"]
+695 verbose parsed url { protocol: null,
+695 verbose parsed url   slashes: null,
+695 verbose parsed url   auth: null,
+695 verbose parsed url   host: null,
+695 verbose parsed url   port: null,
+695 verbose parsed url   hostname: null,
+695 verbose parsed url   hash: null,
+695 verbose parsed url   search: null,
+695 verbose parsed url   query: null,
+695 verbose parsed url   pathname: '0.6.1',
+695 verbose parsed url   path: '0.6.1',
+695 verbose parsed url   href: '0.6.1' }
+696 verbose addNamed [ 'retry', '0.6.1' ]
+697 verbose addNamed [ '0.6.1', '0.6.1' ]
+698 silly lockFile 505aaa9f-retry-0-6-1 retry@0.6.1
+699 verbose lock retry@0.6.1 C:\Users\wlj\AppData\Roaming\npm-cache\505aaa9f-retry-0-6-1.lock
+700 verbose cache add [ 'rimraf@^2.2.8', null ]
+701 verbose cache add name=undefined spec="rimraf@^2.2.8" args=["rimraf@^2.2.8",null]
+702 verbose parsed url { protocol: null,
+702 verbose parsed url   slashes: null,
+702 verbose parsed url   auth: null,
+702 verbose parsed url   host: null,
+702 verbose parsed url   port: null,
+702 verbose parsed url   hostname: null,
+702 verbose parsed url   hash: null,
+702 verbose parsed url   search: null,
+702 verbose parsed url   query: null,
+702 verbose parsed url   pathname: 'rimraf@^2.2.8',
+702 verbose parsed url   path: 'rimraf@^2.2.8',
+702 verbose parsed url   href: 'rimraf@^2.2.8' }
+703 verbose cache add name="rimraf" spec="^2.2.8" args=["rimraf","^2.2.8"]
+704 verbose parsed url { protocol: null,
+704 verbose parsed url   slashes: null,
+704 verbose parsed url   auth: null,
+704 verbose parsed url   host: null,
+704 verbose parsed url   port: null,
+704 verbose parsed url   hostname: null,
+704 verbose parsed url   hash: null,
+704 verbose parsed url   search: null,
+704 verbose parsed url   query: null,
+704 verbose parsed url   pathname: '^2.2.8',
+704 verbose parsed url   path: '^2.2.8',
+704 verbose parsed url   href: '^2.2.8' }
+705 verbose addNamed [ 'rimraf', '^2.2.8' ]
+706 verbose addNamed [ null, null ]
+707 silly lockFile e7d3f915-rimraf-2-2-8 rimraf@^2.2.8
+708 verbose lock rimraf@^2.2.8 C:\Users\wlj\AppData\Roaming\npm-cache\e7d3f915-rimraf-2-2-8.lock
+709 verbose cache add [ 'semver@^2.3.0', null ]
+710 verbose cache add name=undefined spec="semver@^2.3.0" args=["semver@^2.3.0",null]
+711 verbose parsed url { protocol: null,
+711 verbose parsed url   slashes: null,
+711 verbose parsed url   auth: null,
+711 verbose parsed url   host: null,
+711 verbose parsed url   port: null,
+711 verbose parsed url   hostname: null,
+711 verbose parsed url   hash: null,
+711 verbose parsed url   search: null,
+711 verbose parsed url   query: null,
+711 verbose parsed url   pathname: 'semver@^2.3.0',
+711 verbose parsed url   path: 'semver@^2.3.0',
+711 verbose parsed url   href: 'semver@^2.3.0' }
+712 verbose cache add name="semver" spec="^2.3.0" args=["semver","^2.3.0"]
+713 verbose parsed url { protocol: null,
+713 verbose parsed url   slashes: null,
+713 verbose parsed url   auth: null,
+713 verbose parsed url   host: null,
+713 verbose parsed url   port: null,
+713 verbose parsed url   hostname: null,
+713 verbose parsed url   hash: null,
+713 verbose parsed url   search: null,
+713 verbose parsed url   query: null,
+713 verbose parsed url   pathname: '^2.3.0',
+713 verbose parsed url   path: '^2.3.0',
+713 verbose parsed url   href: '^2.3.0' }
+714 verbose addNamed [ 'semver', '^2.3.0' ]
+715 verbose addNamed [ null, null ]
+716 silly lockFile 85d2d02f-semver-2-3-0 semver@^2.3.0
+717 verbose lock semver@^2.3.0 C:\Users\wlj\AppData\Roaming\npm-cache\85d2d02f-semver-2-3-0.lock
+718 verbose cache add [ 'shell-quote@^1.4.2', null ]
+719 verbose cache add name=undefined spec="shell-quote@^1.4.2" args=["shell-quote@^1.4.2",null]
+720 verbose parsed url { protocol: null,
+720 verbose parsed url   slashes: null,
+720 verbose parsed url   auth: null,
+720 verbose parsed url   host: null,
+720 verbose parsed url   port: null,
+720 verbose parsed url   hostname: null,
+720 verbose parsed url   hash: null,
+720 verbose parsed url   search: null,
+720 verbose parsed url   query: null,
+720 verbose parsed url   pathname: 'shell-quote@^1.4.2',
+720 verbose parsed url   path: 'shell-quote@^1.4.2',
+720 verbose parsed url   href: 'shell-quote@^1.4.2' }
+721 verbose cache add name="shell-quote" spec="^1.4.2" args=["shell-quote","^1.4.2"]
+722 verbose parsed url { protocol: null,
+722 verbose parsed url   slashes: null,
+722 verbose parsed url   auth: null,
+722 verbose parsed url   host: null,
+722 verbose parsed url   port: null,
+722 verbose parsed url   hostname: null,
+722 verbose parsed url   hash: null,
+722 verbose parsed url   search: null,
+722 verbose parsed url   query: null,
+722 verbose parsed url   pathname: '^1.4.2',
+722 verbose parsed url   path: '^1.4.2',
+722 verbose parsed url   href: '^1.4.2' }
+723 verbose addNamed [ 'shell-quote', '^1.4.2' ]
+724 verbose addNamed [ null, null ]
+725 silly lockFile a486ed4c-shell-quote-1-4-2 shell-quote@^1.4.2
+726 verbose lock shell-quote@^1.4.2 C:\Users\wlj\AppData\Roaming\npm-cache\a486ed4c-shell-quote-1-4-2.lock
+727 verbose cache add [ 'stringify-object@^1.0.0', null ]
+728 verbose cache add name=undefined spec="stringify-object@^1.0.0" args=["stringify-object@^1.0.0",null]
+729 verbose parsed url { protocol: null,
+729 verbose parsed url   slashes: null,
+729 verbose parsed url   auth: null,
+729 verbose parsed url   host: null,
+729 verbose parsed url   port: null,
+729 verbose parsed url   hostname: null,
+729 verbose parsed url   hash: null,
+729 verbose parsed url   search: null,
+729 verbose parsed url   query: null,
+729 verbose parsed url   pathname: 'stringify-object@^1.0.0',
+729 verbose parsed url   path: 'stringify-object@^1.0.0',
+729 verbose parsed url   href: 'stringify-object@^1.0.0' }
+730 verbose cache add name="stringify-object" spec="^1.0.0" args=["stringify-object","^1.0.0"]
+731 verbose parsed url { protocol: null,
+731 verbose parsed url   slashes: null,
+731 verbose parsed url   auth: null,
+731 verbose parsed url   host: null,
+731 verbose parsed url   port: null,
+731 verbose parsed url   hostname: null,
+731 verbose parsed url   hash: null,
+731 verbose parsed url   search: null,
+731 verbose parsed url   query: null,
+731 verbose parsed url   pathname: '^1.0.0',
+731 verbose parsed url   path: '^1.0.0',
+731 verbose parsed url   href: '^1.0.0' }
+732 verbose addNamed [ 'stringify-object', '^1.0.0' ]
+733 verbose addNamed [ null, null ]
+734 silly lockFile d0fcee5b-stringify-object-1-0-0 stringify-object@^1.0.0
+735 verbose lock stringify-object@^1.0.0 C:\Users\wlj\AppData\Roaming\npm-cache\d0fcee5b-stringify-object-1-0-0.lock
+736 verbose cache add [ 'tar-fs@^1.4.1', null ]
+737 verbose cache add name=undefined spec="tar-fs@^1.4.1" args=["tar-fs@^1.4.1",null]
+738 verbose parsed url { protocol: null,
+738 verbose parsed url   slashes: null,
+738 verbose parsed url   auth: null,
+738 verbose parsed url   host: null,
+738 verbose parsed url   port: null,
+738 verbose parsed url   hostname: null,
+738 verbose parsed url   hash: null,
+738 verbose parsed url   search: null,
+738 verbose parsed url   query: null,
+738 verbose parsed url   pathname: 'tar-fs@^1.4.1',
+738 verbose parsed url   path: 'tar-fs@^1.4.1',
+738 verbose parsed url   href: 'tar-fs@^1.4.1' }
+739 verbose cache add name="tar-fs" spec="^1.4.1" args=["tar-fs","^1.4.1"]
+740 verbose parsed url { protocol: null,
+740 verbose parsed url   slashes: null,
+740 verbose parsed url   auth: null,
+740 verbose parsed url   host: null,
+740 verbose parsed url   port: null,
+740 verbose parsed url   hostname: null,
+740 verbose parsed url   hash: null,
+740 verbose parsed url   search: null,
+740 verbose parsed url   query: null,
+740 verbose parsed url   pathname: '^1.4.1',
+740 verbose parsed url   path: '^1.4.1',
+740 verbose parsed url   href: '^1.4.1' }
+741 verbose addNamed [ 'tar-fs', '^1.4.1' ]
+742 verbose addNamed [ null, null ]
+743 silly lockFile a6971d78-tar-fs-1-4-1 tar-fs@^1.4.1
+744 verbose lock tar-fs@^1.4.1 C:\Users\wlj\AppData\Roaming\npm-cache\a6971d78-tar-fs-1-4-1.lock
+745 verbose cache add [ 'tmp@0.0.24', null ]
+746 verbose cache add name=undefined spec="tmp@0.0.24" args=["tmp@0.0.24",null]
+747 verbose parsed url { protocol: null,
+747 verbose parsed url   slashes: null,
+747 verbose parsed url   auth: null,
+747 verbose parsed url   host: null,
+747 verbose parsed url   port: null,
+747 verbose parsed url   hostname: null,
+747 verbose parsed url   hash: null,
+747 verbose parsed url   search: null,
+747 verbose parsed url   query: null,
+747 verbose parsed url   pathname: 'tmp@0.0.24',
+747 verbose parsed url   path: 'tmp@0.0.24',
+747 verbose parsed url   href: 'tmp@0.0.24' }
+748 verbose cache add name="tmp" spec="0.0.24" args=["tmp","0.0.24"]
+749 verbose parsed url { protocol: null,
+749 verbose parsed url   slashes: null,
+749 verbose parsed url   auth: null,
+749 verbose parsed url   host: null,
+749 verbose parsed url   port: null,
+749 verbose parsed url   hostname: null,
+749 verbose parsed url   hash: null,
+749 verbose parsed url   search: null,
+749 verbose parsed url   query: null,
+749 verbose parsed url   pathname: '0.0.24',
+749 verbose parsed url   path: '0.0.24',
+749 verbose parsed url   href: '0.0.24' }
+750 verbose addNamed [ 'tmp', '0.0.24' ]
+751 verbose addNamed [ '0.0.24', '0.0.24' ]
+752 silly lockFile 386a10cd-tmp-0-0-24 tmp@0.0.24
+753 verbose lock tmp@0.0.24 C:\Users\wlj\AppData\Roaming\npm-cache\386a10cd-tmp-0-0-24.lock
+754 verbose cache add [ 'update-notifier@^0.3.0', null ]
+755 verbose cache add name=undefined spec="update-notifier@^0.3.0" args=["update-notifier@^0.3.0",null]
+756 verbose parsed url { protocol: null,
+756 verbose parsed url   slashes: null,
+756 verbose parsed url   auth: null,
+756 verbose parsed url   host: null,
+756 verbose parsed url   port: null,
+756 verbose parsed url   hostname: null,
+756 verbose parsed url   hash: null,
+756 verbose parsed url   search: null,
+756 verbose parsed url   query: null,
+756 verbose parsed url   pathname: 'update-notifier@^0.3.0',
+756 verbose parsed url   path: 'update-notifier@^0.3.0',
+756 verbose parsed url   href: 'update-notifier@^0.3.0' }
+757 verbose cache add name="update-notifier" spec="^0.3.0" args=["update-notifier","^0.3.0"]
+758 verbose parsed url { protocol: null,
+758 verbose parsed url   slashes: null,
+758 verbose parsed url   auth: null,
+758 verbose parsed url   host: null,
+758 verbose parsed url   port: null,
+758 verbose parsed url   hostname: null,
+758 verbose parsed url   hash: null,
+758 verbose parsed url   search: null,
+758 verbose parsed url   query: null,
+758 verbose parsed url   pathname: '^0.3.0',
+758 verbose parsed url   path: '^0.3.0',
+758 verbose parsed url   href: '^0.3.0' }
+759 verbose addNamed [ 'update-notifier', '^0.3.0' ]
+760 verbose addNamed [ null, null ]
+761 silly lockFile c2368604-update-notifier-0-3-0 update-notifier@^0.3.0
+762 verbose lock update-notifier@^0.3.0 C:\Users\wlj\AppData\Roaming\npm-cache\c2368604-update-notifier-0-3-0.lock
+763 verbose cache add [ 'user-home@^1.1.0', null ]
+764 verbose cache add name=undefined spec="user-home@^1.1.0" args=["user-home@^1.1.0",null]
+765 verbose parsed url { protocol: null,
+765 verbose parsed url   slashes: null,
+765 verbose parsed url   auth: null,
+765 verbose parsed url   host: null,
+765 verbose parsed url   port: null,
+765 verbose parsed url   hostname: null,
+765 verbose parsed url   hash: null,
+765 verbose parsed url   search: null,
+765 verbose parsed url   query: null,
+765 verbose parsed url   pathname: 'user-home@^1.1.0',
+765 verbose parsed url   path: 'user-home@^1.1.0',
+765 verbose parsed url   href: 'user-home@^1.1.0' }
+766 verbose cache add name="user-home" spec="^1.1.0" args=["user-home","^1.1.0"]
+767 verbose parsed url { protocol: null,
+767 verbose parsed url   slashes: null,
+767 verbose parsed url   auth: null,
+767 verbose parsed url   host: null,
+767 verbose parsed url   port: null,
+767 verbose parsed url   hostname: null,
+767 verbose parsed url   hash: null,
+767 verbose parsed url   search: null,
+767 verbose parsed url   query: null,
+767 verbose parsed url   pathname: '^1.1.0',
+767 verbose parsed url   path: '^1.1.0',
+767 verbose parsed url   href: '^1.1.0' }
+768 verbose addNamed [ 'user-home', '^1.1.0' ]
+769 verbose addNamed [ null, null ]
+770 silly lockFile e402538d-user-home-1-1-0 user-home@^1.1.0
+771 verbose lock user-home@^1.1.0 C:\Users\wlj\AppData\Roaming\npm-cache\e402538d-user-home-1-1-0.lock
+772 verbose cache add [ 'which@^1.0.8', null ]
+773 verbose cache add name=undefined spec="which@^1.0.8" args=["which@^1.0.8",null]
+774 verbose parsed url { protocol: null,
+774 verbose parsed url   slashes: null,
+774 verbose parsed url   auth: null,
+774 verbose parsed url   host: null,
+774 verbose parsed url   port: null,
+774 verbose parsed url   hostname: null,
+774 verbose parsed url   hash: null,
+774 verbose parsed url   search: null,
+774 verbose parsed url   query: null,
+774 verbose parsed url   pathname: 'which@^1.0.8',
+774 verbose parsed url   path: 'which@^1.0.8',
+774 verbose parsed url   href: 'which@^1.0.8' }
+775 verbose cache add name="which" spec="^1.0.8" args=["which","^1.0.8"]
+776 verbose parsed url { protocol: null,
+776 verbose parsed url   slashes: null,
+776 verbose parsed url   auth: null,
+776 verbose parsed url   host: null,
+776 verbose parsed url   port: null,
+776 verbose parsed url   hostname: null,
+776 verbose parsed url   hash: null,
+776 verbose parsed url   search: null,
+776 verbose parsed url   query: null,
+776 verbose parsed url   pathname: '^1.0.8',
+776 verbose parsed url   path: '^1.0.8',
+776 verbose parsed url   href: '^1.0.8' }
+777 verbose addNamed [ 'which', '^1.0.8' ]
+778 verbose addNamed [ null, null ]
+779 silly lockFile b4c07d78-which-1-0-8 which@^1.0.8
+780 verbose lock which@^1.0.8 C:\Users\wlj\AppData\Roaming\npm-cache\b4c07d78-which-1-0-8.lock
+781 info addNameTag [ 'rimraf', '^2.2.8' ]
+782 info addNameTag [ 'semver', '^2.3.0' ]
+783 info addNameTag [ 'update-notifier', '^0.3.0' ]
+784 info addNameTag [ 'tar-fs', '^1.4.1' ]
+785 info addNameTag [ 'stringify-object', '^1.0.0' ]
+786 info addNameTag [ 'user-home', '^1.1.0' ]
+787 info addNameTag [ 'which', '^1.0.8' ]
+788 info addNameTag [ 'shell-quote', '^1.4.2' ]
+789 verbose url raw graceful-fs
+790 verbose url resolving [ 'https://registry.npmjs.org/', './graceful-fs' ]
+791 verbose url resolved https://registry.npmjs.org/graceful-fs
+792 info trying registry request attempt 1 at 19:12:55
+793 verbose etag "EAH1249Y9JB0MW2CHWKR8H2U"
+794 http GET https://registry.npmjs.org/graceful-fs
+795 verbose url raw lru-cache
+796 verbose url resolving [ 'https://registry.npmjs.org/', './lru-cache' ]
+797 verbose url resolved https://registry.npmjs.org/lru-cache
+798 info trying registry request attempt 1 at 19:12:55
+799 verbose etag "982M5AFJC69RMSWQXQS5H8HP9"
+800 http GET https://registry.npmjs.org/lru-cache
+801 verbose url raw bower-config
+802 verbose url resolving [ 'https://registry.npmjs.org/', './bower-config' ]
+803 verbose url resolved https://registry.npmjs.org/bower-config
+804 info trying registry request attempt 1 at 19:12:55
+805 verbose etag "2B2D97J9PJFU5GDKGPRKHA7YD"
+806 http GET https://registry.npmjs.org/bower-config
+807 verbose url raw insight
+808 verbose url resolving [ 'https://registry.npmjs.org/', './insight' ]
+809 verbose url resolved https://registry.npmjs.org/insight
+810 info trying registry request attempt 1 at 19:12:55
+811 verbose etag "24YTKCCO1LT984RN1C3SGV0P4"
+812 http GET https://registry.npmjs.org/insight
+813 verbose url raw fstream-ignore
+814 verbose url resolving [ 'https://registry.npmjs.org/', './fstream-ignore' ]
+815 verbose url resolved https://registry.npmjs.org/fstream-ignore
+816 info trying registry request attempt 1 at 19:12:55
+817 verbose etag "6O8QJ7N393JC7QUG8NS4M73WG"
+818 http GET https://registry.npmjs.org/fstream-ignore
+819 verbose url raw bower-logger
+820 verbose url resolving [ 'https://registry.npmjs.org/', './bower-logger' ]
+821 verbose url resolved https://registry.npmjs.org/bower-logger
+822 info trying registry request attempt 1 at 19:12:55
+823 verbose etag "6ZH05P85GTSJBDBSODJ70LH4Z"
+824 http GET https://registry.npmjs.org/bower-logger
+825 verbose url raw bower-registry-client
+826 verbose url resolving [ 'https://registry.npmjs.org/', './bower-registry-client' ]
+827 verbose url resolved https://registry.npmjs.org/bower-registry-client
+828 info trying registry request attempt 1 at 19:12:55
+829 verbose etag "ESQLHDBEHLJGVVYV811VO0SQC"
+830 http GET https://registry.npmjs.org/bower-registry-client
+831 verbose url raw github
+832 verbose url resolving [ 'https://registry.npmjs.org/', './github' ]
+833 verbose url resolved https://registry.npmjs.org/github
+834 info trying registry request attempt 1 at 19:12:55
+835 verbose etag "3YPOH6CGMVP6AWTUF0QJYYSWL"
+836 http GET https://registry.npmjs.org/github
+837 verbose url raw inquirer/0.8.0
+838 verbose url resolving [ 'https://registry.npmjs.org/', './inquirer/0.8.0' ]
+839 verbose url resolved https://registry.npmjs.org/inquirer/0.8.0
+840 info trying registry request attempt 1 at 19:12:55
+841 verbose etag "1US5EZNA64RX1HF5JXXT2A2J3"
+842 http GET https://registry.npmjs.org/inquirer/0.8.0
+843 verbose url raw archy/1.0.0
+844 verbose url resolving [ 'https://registry.npmjs.org/', './archy/1.0.0' ]
+845 verbose url resolved https://registry.npmjs.org/archy/1.0.0
+846 info trying registry request attempt 1 at 19:12:55
+847 verbose etag "A4ZR2B1YYP8ZNNB16W7W9PW5B"
+848 http GET https://registry.npmjs.org/archy/1.0.0
+849 verbose url raw is-root
+850 verbose url resolving [ 'https://registry.npmjs.org/', './is-root' ]
+851 verbose url resolved https://registry.npmjs.org/is-root
+852 info trying registry request attempt 1 at 19:12:55
+853 verbose etag "CWOW548IXZ8XYVS8KMOI0A0QQ"
+854 http GET https://registry.npmjs.org/is-root
+855 verbose url raw lockfile
+856 verbose url resolving [ 'https://registry.npmjs.org/', './lockfile' ]
+857 verbose url resolved https://registry.npmjs.org/lockfile
+858 info trying registry request attempt 1 at 19:12:55
+859 verbose etag "7AQ24APMOKFMLYGJTO90749B9"
+860 http GET https://registry.npmjs.org/lockfile
+861 verbose url raw bower-json
+862 verbose url resolving [ 'https://registry.npmjs.org/', './bower-json' ]
+863 verbose url resolved https://registry.npmjs.org/bower-json
+864 info trying registry request attempt 1 at 19:12:55
+865 verbose etag "V59XECEKEUNOVAWB0BE81U9N"
+866 http GET https://registry.npmjs.org/bower-json
+867 verbose url raw promptly/0.2.0
+868 verbose url resolving [ 'https://registry.npmjs.org/', './promptly/0.2.0' ]
+869 verbose url resolved https://registry.npmjs.org/promptly/0.2.0
+870 info trying registry request attempt 1 at 19:12:55
+871 verbose etag "AGN7MZEP8Z8EC5QSSD16HT5WW"
+872 http GET https://registry.npmjs.org/promptly/0.2.0
+873 verbose url raw fstream
+874 verbose url resolving [ 'https://registry.npmjs.org/', './fstream' ]
+875 verbose url resolved https://registry.npmjs.org/fstream
+876 info trying registry request attempt 1 at 19:12:55
+877 verbose etag "BZB8DO85TC54UE0N7UYBAQ3P8"
+878 http GET https://registry.npmjs.org/fstream
+879 verbose url raw cardinal/0.4.4
+880 verbose url resolving [ 'https://registry.npmjs.org/', './cardinal/0.4.4' ]
+881 verbose url resolved https://registry.npmjs.org/cardinal/0.4.4
+882 info trying registry request attempt 1 at 19:12:55
+883 verbose etag "3FCT4E4K3BPACK4QJ991KI2AT"
+884 http GET https://registry.npmjs.org/cardinal/0.4.4
+885 verbose url raw configstore
+886 verbose url resolving [ 'https://registry.npmjs.org/', './configstore' ]
+887 verbose url resolved https://registry.npmjs.org/configstore
+888 info trying registry request attempt 1 at 19:12:55
+889 verbose etag "4I1KUK8F6U04J1KHGX7ATJAKZ"
+890 http GET https://registry.npmjs.org/configstore
+891 verbose url raw decompress-zip
+892 verbose url resolving [ 'https://registry.npmjs.org/', './decompress-zip' ]
+893 verbose url resolved https://registry.npmjs.org/decompress-zip
+894 info trying registry request attempt 1 at 19:12:55
+895 verbose etag "5H46KK0BII7PE6OPBSOQEDZNN"
+896 http GET https://registry.npmjs.org/decompress-zip
+897 verbose url raw chmodr/0.1.0
+898 verbose url resolving [ 'https://registry.npmjs.org/', './chmodr/0.1.0' ]
+899 verbose url resolved https://registry.npmjs.org/chmodr/0.1.0
+900 info trying registry request attempt 1 at 19:12:55
+901 verbose etag "D0MV5HW850GKKQ1U1TQ9NRUEN"
+902 http GET https://registry.npmjs.org/chmodr/0.1.0
+903 verbose url raw bower-endpoint-parser
+904 verbose url resolving [ 'https://registry.npmjs.org/', './bower-endpoint-parser' ]
+905 verbose url resolved https://registry.npmjs.org/bower-endpoint-parser
+906 info trying registry request attempt 1 at 19:12:55
+907 verbose etag "3FMNLCPGK26OHT574O3Y97XJ3"
+908 http GET https://registry.npmjs.org/bower-endpoint-parser
+909 verbose url raw retry/0.6.1
+910 verbose url resolving [ 'https://registry.npmjs.org/', './retry/0.6.1' ]
+911 verbose url resolved https://registry.npmjs.org/retry/0.6.1
+912 info trying registry request attempt 1 at 19:12:55
+913 verbose etag "33XPCT5X5LKIEECCW7RBHQ5GS"
+914 http GET https://registry.npmjs.org/retry/0.6.1
+915 verbose url raw abbrev
+916 verbose url resolving [ 'https://registry.npmjs.org/', './abbrev' ]
+917 verbose url resolved https://registry.npmjs.org/abbrev
+918 info trying registry request attempt 1 at 19:12:55
+919 verbose etag "9LIZWD2QXRPQNVEKVLML5E2JN"
+920 http GET https://registry.npmjs.org/abbrev
+921 verbose url raw chalk
+922 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+923 verbose url resolved https://registry.npmjs.org/chalk
+924 info trying registry request attempt 1 at 19:12:55
+925 verbose etag "1YQ8HAVSKEN2FPX7CDKABPR5R"
+926 http GET https://registry.npmjs.org/chalk
+927 verbose url raw junk
+928 verbose url resolving [ 'https://registry.npmjs.org/', './junk' ]
+929 verbose url resolved https://registry.npmjs.org/junk
+930 info trying registry request attempt 1 at 19:12:55
+931 verbose etag "8ENIG96XFTBPBWNVIEYG8JXCC"
+932 http GET https://registry.npmjs.org/junk
+933 verbose url raw mkdirp/0.5.0
+934 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.5.0' ]
+935 verbose url resolved https://registry.npmjs.org/mkdirp/0.5.0
+936 info trying registry request attempt 1 at 19:12:55
+937 verbose etag "1PVL48LVUJKMJX26T2KIO0E9A"
+938 http GET https://registry.npmjs.org/mkdirp/0.5.0
+939 verbose url raw handlebars
+940 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+941 verbose url resolved https://registry.npmjs.org/handlebars
+942 info trying registry request attempt 1 at 19:12:55
+943 verbose etag "5MQ1BBQ8K6BL5151FBW6N7WMZ"
+944 http GET https://registry.npmjs.org/handlebars
+945 verbose url raw request/2.53.0
+946 verbose url resolving [ 'https://registry.npmjs.org/', './request/2.53.0' ]
+947 verbose url resolved https://registry.npmjs.org/request/2.53.0
+948 info trying registry request attempt 1 at 19:12:55
+949 verbose etag "7F1OD6615WE65QB8ISPAHS0CC"
+950 http GET https://registry.npmjs.org/request/2.53.0
+951 verbose url raw mout
+952 verbose url resolving [ 'https://registry.npmjs.org/', './mout' ]
+953 verbose url resolved https://registry.npmjs.org/mout
+954 info trying registry request attempt 1 at 19:12:55
+955 verbose etag "4OK9ML6D3U90MYO1LNNEBFTMA"
+956 http GET https://registry.npmjs.org/mout
+957 verbose url raw nopt
+958 verbose url resolving [ 'https://registry.npmjs.org/', './nopt' ]
+959 verbose url resolved https://registry.npmjs.org/nopt
+960 info trying registry request attempt 1 at 19:12:55
+961 verbose etag "1IA1PCOREFA1D278SXAMNMGJT"
+962 http GET https://registry.npmjs.org/nopt
+963 verbose url raw semver
+964 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+965 verbose url resolved https://registry.npmjs.org/semver
+966 info trying registry request attempt 1 at 19:12:55
+967 verbose etag "EZSRROWPWGYW1XLGVEY773XB5"
+968 http GET https://registry.npmjs.org/semver
+969 verbose url raw tar-fs
+970 verbose url resolving [ 'https://registry.npmjs.org/', './tar-fs' ]
+971 verbose url resolved https://registry.npmjs.org/tar-fs
+972 info trying registry request attempt 1 at 19:12:55
+973 verbose etag "KELUNQ3YFDAHM3TWZF6LG161"
+974 http GET https://registry.npmjs.org/tar-fs
+975 verbose url raw user-home
+976 verbose url resolving [ 'https://registry.npmjs.org/', './user-home' ]
+977 verbose url resolved https://registry.npmjs.org/user-home
+978 info trying registry request attempt 1 at 19:12:55
+979 verbose etag "AHHA9WCT7TBLBFI0789FRZEKK"
+980 http GET https://registry.npmjs.org/user-home
+981 verbose url raw update-notifier
+982 verbose url resolving [ 'https://registry.npmjs.org/', './update-notifier' ]
+983 verbose url resolved https://registry.npmjs.org/update-notifier
+984 info trying registry request attempt 1 at 19:12:55
+985 verbose etag "A1ZII42P9PPJMNEPIEIER383N"
+986 http GET https://registry.npmjs.org/update-notifier
+987 verbose url raw opn
+988 verbose url resolving [ 'https://registry.npmjs.org/', './opn' ]
+989 verbose url resolved https://registry.npmjs.org/opn
+990 info trying registry request attempt 1 at 19:12:55
+991 verbose etag "89BC556XHZQY8MD5OTKTBR4YY"
+992 http GET https://registry.npmjs.org/opn
+993 verbose url raw tmp/0.0.24
+994 verbose url resolving [ 'https://registry.npmjs.org/', './tmp/0.0.24' ]
+995 verbose url resolved https://registry.npmjs.org/tmp/0.0.24
+996 info trying registry request attempt 1 at 19:12:55
+997 verbose etag "7CM1KMGUPN12IUM4A3IBJ74EH"
+998 http GET https://registry.npmjs.org/tmp/0.0.24
+999 verbose url raw rimraf
+1000 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+1001 verbose url resolved https://registry.npmjs.org/rimraf
+1002 info trying registry request attempt 1 at 19:12:55
+1003 verbose etag "57AX2VCNX0K3WIFJ36VILDL32"
+1004 http GET https://registry.npmjs.org/rimraf
+1005 verbose url raw request-progress/0.3.1
+1006 verbose url resolving [ 'https://registry.npmjs.org/', './request-progress/0.3.1' ]
+1007 verbose url resolved https://registry.npmjs.org/request-progress/0.3.1
+1008 info trying registry request attempt 1 at 19:12:55
+1009 verbose etag "45Z3LXVQC1VF2WIHD73CKTE0J"
+1010 http GET https://registry.npmjs.org/request-progress/0.3.1
+1011 verbose url raw p-throttler/0.1.1
+1012 verbose url resolving [ 'https://registry.npmjs.org/', './p-throttler/0.1.1' ]
+1013 verbose url resolved https://registry.npmjs.org/p-throttler/0.1.1
+1014 info trying registry request attempt 1 at 19:12:55
+1015 verbose etag "5W7GJZLV9F8IYDR8FXHW0ZNCZ"
+1016 http GET https://registry.npmjs.org/p-throttler/0.1.1
+1017 verbose url raw shell-quote
+1018 verbose url resolving [ 'https://registry.npmjs.org/', './shell-quote' ]
+1019 verbose url resolved https://registry.npmjs.org/shell-quote
+1020 info trying registry request attempt 1 at 19:12:55
+1021 verbose etag "DL9YS7S3YWMPYWIWBBWEYC3UU"
+1022 http GET https://registry.npmjs.org/shell-quote
+1023 verbose url raw glob
+1024 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+1025 verbose url resolved https://registry.npmjs.org/glob
+1026 info trying registry request attempt 1 at 19:12:55
+1027 verbose etag "10WJKNYM9VGPDP58QDSZTR2WE"
+1028 http GET https://registry.npmjs.org/glob
+1029 verbose url raw stringify-object
+1030 verbose url resolving [ 'https://registry.npmjs.org/', './stringify-object' ]
+1031 verbose url resolved https://registry.npmjs.org/stringify-object
+1032 info trying registry request attempt 1 at 19:12:55
+1033 verbose etag "79C721U4642KQGVUQU4X16723"
+1034 http GET https://registry.npmjs.org/stringify-object
+1035 verbose url raw which
+1036 verbose url resolving [ 'https://registry.npmjs.org/', './which' ]
+1037 verbose url resolved https://registry.npmjs.org/which
+1038 info trying registry request attempt 1 at 19:12:55
+1039 verbose etag "96S32KNGR7RC2G6UDCTQWOHI9"
+1040 http GET https://registry.npmjs.org/which
+1041 verbose url raw q
+1042 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+1043 verbose url resolved https://registry.npmjs.org/q
+1044 info trying registry request attempt 1 at 19:12:55
+1045 verbose etag "48NTQKFOVP86T6T064HKH3NHC"
+1046 http GET https://registry.npmjs.org/q
+1047 http 304 https://registry.npmjs.org/graceful-fs
+1048 silly registry.get cb [ 304,
+1048 silly registry.get   { date: 'Thu, 16 Jul 2015 11:12:56 GMT',
+1048 silly registry.get     via: '1.1 varnish',
+1048 silly registry.get     'cache-control': 'max-age=60',
+1048 silly registry.get     etag: '"EAH1249Y9JB0MW2CHWKR8H2U"',
+1048 silly registry.get     age: '44',
+1048 silly registry.get     connection: 'keep-alive',
+1048 silly registry.get     'x-served-by': 'cache-hkg6827-HKG',
+1048 silly registry.get     'x-cache': 'HIT',
+1048 silly registry.get     'x-cache-hits': '3',
+1048 silly registry.get     'x-timer': 'S1437045176.139173,VS0,VE0',
+1048 silly registry.get     vary: 'Accept' } ]
+1049 verbose etag graceful-fs from cache
+1050 http 304 https://registry.npmjs.org/lru-cache
+1051 silly registry.get cb [ 304,
+1051 silly registry.get   { date: 'Thu, 16 Jul 2015 11:12:56 GMT',
+1051 silly registry.get     via: '1.1 varnish',
+1051 silly registry.get     'cache-control': 'max-age=60',
+1051 silly registry.get     etag: '"982M5AFJC69RMSWQXQS5H8HP9"',
+1051 silly registry.get     age: '56',
+1051 silly registry.get     connection: 'keep-alive',
+1051 silly registry.get     'x-served-by': 'cache-hkg6823-HKG',
+1051 silly registry.get     'x-cache': 'HIT',
+1051 silly registry.get     'x-cache-hits': '3',
+1051 silly registry.get     'x-timer': 'S1437045176.143833,VS0,VE0',
+1051 silly registry.get     vary: 'Accept' } ]
+1052 verbose etag lru-cache from cache
+1053 silly lockFile d9390ef3-graceful-fs-3-0-5 graceful-fs@^3.0.5
+1054 silly lockFile d9390ef3-graceful-fs-3-0-5 graceful-fs@^3.0.5
+1055 verbose about to build C:\Users\wlj\AppData\Roaming\npm\node_modules\bower
+1056 info C:\Users\wlj\AppData\Roaming\npm\node_modules\bower unbuild
+1057 verbose from cache C:\Users\wlj\AppData\Roaming\npm\node_modules\bower\package.json
+1058 info preuninstall bower@1.4.1
+1059 silly lockFile f4c34f80-lru-cache-2-5-0 lru-cache@^2.5.0
+1060 silly lockFile f4c34f80-lru-cache-2-5-0 lru-cache@^2.5.0
+1061 info uninstall bower@1.4.1
+1062 verbose true,C:\Users\wlj\AppData\Roaming\npm\node_modules,C:\Users\wlj\AppData\Roaming\npm\node_modules unbuild bower@1.4.1
+1063 verbose C:\Users\wlj\AppData\Roaming\npm,[object Object] binRoot
+1064 info postuninstall bower@1.4.1
+1065 error Error: No compatible version found: graceful-fs@'^3.0.5'
+1065 error Valid install targets:
+1065 error ["1.0.0","1.0.1","1.0.2","1.1.0","1.1.1","1.1.2","1.1.3","1.1.4","1.1.5","1.1.6","1.1.7","1.1.8","1.1.9","1.1.10","1.1.11","1.1.12","1.1.13","1.1.14","1.2.0","1.2.1","1.2.2","1.2.3","2.0.0","2.0.1","2.0.2","2.0.3","3.0.0","3.0.1","3.0.2","3.0.3","3.0.4","3.0.5","3.0.6","3.0.7","3.0.8","4.1.0","4.1.1","4.1.2"]
+1065 error     at installTargetsError (D:\ProgramFiles\nodejs\node_modules\npm\lib\cache.js:685:10)
+1065 error     at D:\ProgramFiles\nodejs\node_modules\npm\lib\cache.js:607:10
+1065 error     at saved (D:\ProgramFiles\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+1065 error     at Object.oncomplete (fs.js:107:15)
+1066 error If you need help, you may report this log at:
+1066 error     <http://github.com/isaacs/npm/issues>
+1066 error or email it to:
+1066 error     <npm-@googlegroups.com>
+1067 error System Windows_NT 6.2.9200
+1068 error command "D:\\ProgramFiles\\nodejs\\\\node.exe" "D:\\ProgramFiles\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bower" "-g"
+1069 error cwd D:\work\GitHub\front-end-learning
+1070 error node -v v0.10.2
+1071 error npm -v 1.2.15
+1072 verbose exit [ 1, true ]
