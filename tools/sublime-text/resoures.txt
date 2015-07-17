@@ -8,4 +8,7 @@
 3、emmet 文档：
     http://docs.emmet.io/cheat-sheet/
 
-4、
+4、在sublime-text中设置浏览器预览
+    http://www.cnblogs.com/jikey/archive/2013/03/12/2955230.html
+
+5、

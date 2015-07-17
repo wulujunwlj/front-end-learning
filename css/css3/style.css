@@ -1,0 +1,65 @@
+
+.inline {
+	display: inline-block;
+}
+
+.section-wrapper {
+	padding: 20px; 
+}
+
+.section-title {
+	padding: 10px;
+	background-color: #848080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.section-content {
+	padding: 10px;
+}
+
+.top-semi-circle {
+	width: 100px; 
+	height: 50px; 
+	background-color: #9da;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.bottom-semi-circle {
+	width: 100px;
+	height: 50px;
+	background-color: #9da;
+	border-radius: 0 0 50px 50px;
+}
+
+.left-semi-circle {
+	width: 50px;
+	height: 100px;
+	background-color: #9da;
+	border-radius: 50px 0 0 50px;
+}
+
+.right-semi-circle {
+	width: 50px;
+	height: 100px;
+	background-color: #9da;
+	border-radius: 0 50px 50px 0;
+}
+
+.outside-box-shadow {
+	width: 50px;
+	height: 50px; 
+	box-shadow: 4px 2px 6px #333;
+}
+
+.inside-box-shadow {
+	width: 50px;
+	height: 50px; 
+	box-shadow: 4px 2px 6px #333 inset;
+}
+
+.multi-box-shadow {
+	width: 50px;
+	height: 50px; 
+	box-shadow: 4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #3C0 inset;
+}
