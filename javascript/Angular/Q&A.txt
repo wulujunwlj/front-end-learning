@@ -5,4 +5,20 @@
 2、Initialize AngularJS service with asynchronous data
 	http://stackoverflow.com/questions/16286605/initialize-angularjs-service-with-asynchronous-data?rq=1
 
-3、
+3、$compile:multidir
+    http://stackoverflow.com/questions/19131617/angularjs-error-compilemultidir-multiple-directives-error
+    http://stackoverflow.com/questions/29062212/nested-directive-throws-error-compilemultidir
+    http://stackoverflow.com/questions/28886990/angularjs-multiple-directives-on-same-element-compilemultidir-error
+    http://blog.xebia.com/2013/08/28/bootstraps-tabs-and-lazy-data-loading-in-angularjs/
+    
+4、响应式表格：
+    https://github.com/esvit/ng-table
+    https://github.com/gdepourtales/ng-cells
+    https://github.com/samu/angular-table
+    https://github.com/Swimlane/angular-data-table
+    https://github.com/davidjnelson/angular-table
+    https://github.com/Zizzamia/ng-tasty
+    https://github.com/nadangergeo/RWD-Table-Patterns
+    
+
+5、
