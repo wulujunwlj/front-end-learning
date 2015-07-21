@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexible demo</title>
+	<style>
+	.m-t-sm { margin-top: 15px; }
+	.flex-box, .inline-flex-box { display: flex; background-color: #EE1313; width: 300px; height: 200px; }
+	.flex-box-child { padding: 5px 10px; }
+	.flex-box-child:nth-child(2) { background-color: #43D50F; }
+	</style>
+</head>
+
+<body>
+	<div class="flex-box">
+		<div class="flex-box-child">child1</div>
+		<div class="flex-box-child">child2</div>
+		<div class="flex-box-child">child3</div>
+	</div>
+	<div class="m-t-sm"></div>
+	<span class="inline-flex-box"></span>
+</body>
+</html>
