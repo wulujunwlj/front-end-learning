@@ -12,12 +12,15 @@
     http://blog.xebia.com/2013/08/28/bootstraps-tabs-and-lazy-data-loading-in-angularjs/
     
 4、响应式表格：
+    // ng 版本
     https://github.com/esvit/ng-table
     https://github.com/gdepourtales/ng-cells
     https://github.com/samu/angular-table
     https://github.com/Swimlane/angular-data-table
     https://github.com/davidjnelson/angular-table
     https://github.com/Zizzamia/ng-tasty
+
+    // jquery 版本
     https://github.com/nadangergeo/RWD-Table-Patterns
     
 
