@@ -1,0 +1,38 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		//- - var course = 'jade2'
+		title #{ course.toUpperCase() } study
+	body
+		style.
+			body { color: red; }
+		script.
+			var inta = 3;
+		- var data = 'text'
+		- var htmlData = '<script>alert(1);</script><span>script</span>;'
+		p #{ data }
+		h1.title.title2#title imooc #{ course } study
+		section This is a jade section
+		#id.className
+		a(href='http://imooc.com', title="imooc jade study", data-uid="1000") link
+		input(name='course', type='text', value='jade')
+		// input(name='type1', type='radio')	
+		p. 
+			1. aa 
+			2.bb 
+			3.cc 
+			4.dd
+
+		// 单行注释
+		// 编译成注释掉的html代码
+		// 非缓冲注释
+		// - #id.classname
+		// 块注释
+		// -
+			p
+				a(href='http://imooc.com', 
+				title='imooc jade study', 
+				data-uid='1000') link
+
+
