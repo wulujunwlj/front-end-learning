@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		- var pageTitle = 'Jade'
+		- var youAreUsingJade = true
+		title= pageTitle
+		script(type='text/javascript').
+			if(foo) {
+				bar(1 + 5)
+			}
+	body
+		h1 Jade - node template engine
+		#container.col
+			if youAreUsingJade
+				p You are amazing
+			else
+				p Get on it!
+			p.
+				Jade is a terse and simple
+				templating language with a 
+				strong focus on perfomance 
+				and powerful features.
+		
+		a(href='google.com') Google
+		a(class='button', href='google.com') Google
+		- var authenticated = true
+		div(class=authenticated ? 'authed' : 'anon')
+		input(
+			type='checkbox'
+			name='agreement'
+			value='多选'
+			checked
+		)
+
+		div(escaped='<code>') 111
+		div(unescaped!='<code>') 222 
+
+		a(style='color: red; background-color: green; ') 超链接
+		a(style={color: 'red', background-color: 'green'; }) 超链接

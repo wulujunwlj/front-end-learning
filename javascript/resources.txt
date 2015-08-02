@@ -148,4 +148,7 @@
 47、javascript garden:
 	http://bonsaiden.github.io/JavaScript-Garden/zh/
 
-48、
+48、promise
+	http://web.jobbole.com/82601/
+
+49、
