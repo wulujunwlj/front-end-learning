@@ -31,4 +31,7 @@ Github 上需要了解、熟悉的项目集合：
 10、loaders.css
     https://github.com/ConnorAtherton/loaders.css
 
-11、
+11、javascript algorithms
+    https://github.com/mgechev/javascript-algorithms
+
+12、
