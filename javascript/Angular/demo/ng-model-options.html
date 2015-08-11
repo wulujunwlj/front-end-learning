@@ -3,15 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<style>
+	.row { background-color: #F3EFEF; padding: 5px; margin: 5px; }
+	</style>
 </head>
 
 <body>
 	<div class="main" ng-app="demoApp">
-		<div ng-controller="ngModelOptionsCtrl">
-			<input type="text" ng-model="vm.input" ng-model-options="{updateOn: 'blur', debounce: 3000}">
-		</div>
-		<div>
-			<pre ng-bind="vm | json"></pre>
+		<div class="container" ng-controller="ngModelOptionsCtrl">
+			<div class="row">
+				<input type="text" ng-model="vm.input" ng-blur="blurTriggerFn($event)" ng-model-options="{ updateOn: 'blur', debounce: 3000}">
+			</div>
+			<div class="row">
+				<pre ng-bind="vm | json"></pre>
+			</div>
+
+			<form action="" name="form">
+				<div class="row">
+					<input type="text" name="test1" class="test1" ng-model="vm.test1" ng-model-options="{updateOn: 'blur'}" ng-keyup="withRollback($event)">
+				</div>
+
+				<div class="row">
+					<input type="text" name="test2" class="test2" ng-model="vm.test2" ng-model-options="{updateOn: 'blur'}" ng-keyup="withRollback($event)">
+				</div>
+			</form>
+			
 		</div>
 	</div>
 	<script src="../../../node_modules/angular/angular.js"></script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular filters</title>
+	<style>
+	.row { background-color: #F3EFEF; padding: 5px; margin: 5px; }
+
+	</style>
+</head>
+
+<body>
+	<div class="main" ng-app="demoApp">
+		<div class="container" ng-controller="ngFiltersCtrl">
+			<div class="row">
+				<pre>{{ vm | json }}</pre>
+			</div>
+			<div class="row">
+				<label for="">currency:</label>
+				<div ng-bind="vm.currency | currency"></div>
+				<div ng-bind="vm.currency | currency:'RMB ￥ '"></div>
+			</div>
+
+			<div class="row">
+				<label for="">date:</label>
+				<div ng-bind="vm.date | date"></div>
+				<div ng-bind="vm.date | date: 'yyyy-MM-dd'"></div>
+				<div ng-bind="vm.date | date: 'yyyy-MM-dd hh:mm:ss'"></div>
+			</div>
+
+			<div class="row">
+				<label for="">filter:</label>
+				<input type="text" ng-model="vm.searchKey">
+				<div>
+					<pre>{{ vm.filterObj | filter: vm.searchKey }}</pre>
+				</div>
+				<div>
+					<pre>{{ vm.filterObj | filter: {'name': vm.searchKey} }}</pre>
+				</div>
+				<div>
+					<pre>
+						{{ vm.filterObj | filter: filterFn }}
+					</pre>
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="">limitTo:</label>
+				<div ng-bind="vm.limitTo | limitTo"></div>
+				<div ng-bind="vm.limitTo | limitTo:3"></div>
+				<div ng-bind="vm.limitTo | limitTo:1:6"></div>
+			</div>
+
+			<div class="row">
+				<label for="">lowercase:</label>
+				<div ng-bind="vm.lowercase | lowercase"></div>
+			</div>
+
+			<div class="row">
+				<label for="">uppercase:</label>
+				<div ng-bind="vm.uppercase | uppercase"></div>
+			</div>
+
+			<div class="row">
+				<label for="">capital:</label>
+				<div ng-bind="vm.searchKey | capital"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="../../../node_modules/angular/angular.js"></script>
+	<script src="js/ng-filters.js"></script>	
+</body>
+</html>
