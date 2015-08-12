@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>ng-model-options demo</title>
 
 	<style>
 	.row { background-color: #F3EFEF; padding: 5px; margin: 5px; }
@@ -13,7 +13,12 @@
 	<div class="main" ng-app="demoApp">
 		<div class="container" ng-controller="ngModelOptionsCtrl">
 			<div class="row">
-				<input type="text" ng-model="vm.input" ng-blur="blurTriggerFn($event)" ng-model-options="{ updateOn: 'blur', debounce: 3000}">
+				<label for="">{ updateOn: 'blur' } </label>
+				<input type="text" ng-model="vm.input1" ng-model-options="{updateOn: 'blur'}">
+			</div>
+			<div class="row">
+				<label for="">{ updateOn: 'blur', debounce: 3000 }</label>				
+				<input type="text" ng-model="vm.input2" ng-blur="blurTriggerFn($event)" ng-model-options="{ updateOn: 'blur', debounce: 3000}">
 			</div>
 			<div class="row">
 				<pre ng-bind="vm | json"></pre>
@@ -21,17 +26,72 @@
 
 			<form action="" name="form">
 				<div class="row">
+					<label for="">with $rollbackViewValue()：输入内容，并按下enter</label>
 					<input type="text" name="test1" class="test1" ng-model="vm.test1" ng-model-options="{updateOn: 'blur'}" ng-keyup="withRollback($event)">
 				</div>
 
 				<div class="row">
-					<input type="text" name="test2" class="test2" ng-model="vm.test2" ng-model-options="{updateOn: 'blur'}" ng-keyup="withRollback($event)">
+					<label for="">without $rollbackViewValue()：输入内容，并按下enter</label>
+					<input type="text" name="test2" class="test2" ng-model="vm.test2" ng-model-options="{updateOn: 'blur'}" ng-keyup="withoutRollback($event)">
 				</div>
 			</form>
 			
 		</div>
 	</div>
 	<script src="../../../node_modules/angular/angular.js"></script>
-	<script src="js/ng-model-options.js"></script>
+	<!-- // <script src="js/ng-model-options.js"></script> -->
+
+	<script>
+	'use strict';
+
+	var app = angular.module('demoApp', []);
+
+	app.controller('ngModelOptionsCtrl', ['$scope', '$timeout', '$interval', 
+		function ($scope, $timeout, $interval) {
+			var vm = $scope.vm = {
+				debounceTime: 3000
+			};
+
+			// onblur 触发方法
+			$scope.blurTriggerFn = function(e) {
+				e.preventDefault();
+
+				vm.count = 0;
+
+				var intervalHandler = $interval(function() {
+					$timeout(function() {
+						vm.count ++;
+					});
+
+					if(vm.count > (vm.debounceTime / 1000)) {
+						$interval.cancel(intervalHandler);
+					}
+				}, 1000);
+
+			};
+
+			// 使用 $rollbackViewValue 方法
+			$scope.withRollback = function(e) {
+				e.preventDefault();
+				var $elem = $scope.form.test1;
+
+				if(e.keyCode === 13) {
+					$elem.$rollbackViewValue();
+				}
+			};
+
+			// 不使用 $rollbackViewValue 方法
+			$scope.withoutRollback = function(e) {
+				e.preventDefault();
+
+				var $elem = $scope.form.test2;
+				if(e.keyCode === 13) {
+					angular.noop();
+				}
+			};
+
+		}
+	]);
+	</script>
 </body>
 </html>
