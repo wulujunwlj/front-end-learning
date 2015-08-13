@@ -19,7 +19,7 @@ app.filter('capital', [
 app.controller('ngFiltersCtrl', ['$scope', '$filter', 
 	function($scope, $filter) {
 		var vm = $scope.vm = {
-			currency: 123,
+			currency: -123,
 			date: 3657413561000,
 			filterObj: [
 				{'name': 'abc', 'age': 3},
