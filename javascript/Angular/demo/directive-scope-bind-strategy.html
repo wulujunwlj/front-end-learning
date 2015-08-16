@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Directive Scope Bind Strategy</title>
+</head>
+
+<body>
+	<div ng-app="demoApp" ng-controller="bindStrategyDemoCtrl">
+		<div my-direct="" max="vm.max" min="{{ vm.min }}" bind-Fn="callbackFn(user)"></div>
+
+		<div>
+			<pre ng-bind="vm | json"></pre>
+		</div>
+	</div>
+	<script src="../../../node_modules/angular/angular.js"></script>
+	<script src="js/directive-scope-bind-strategy.js"></script>
+</body>
+</html>
