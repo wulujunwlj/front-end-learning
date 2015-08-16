@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电商网站物品筛选 demo</title>
+
+	<style>
+	body { background-color: #F6F4F4; }
+	.text-danger { color: #FF0000; }
+	.goods-container { width: 800px; margin: 0 auto; border: 1px solid #E4E0E0; background-color:#F0F0F0; }
+	.goods-container .title { font-size: 16px; border-bottom: 1px dashed #E1E0E0; }
+	.goods-container .label { display: inline-block; width: 100px; text-align: right; line-height: 40px; }
+	.goods-container .title-info { font-size: 12px; font-color: #F3F3F3; } 
+	.title-info .text-danger { padding: 0 2px; }
+	.goods-container .content { border-bottom: 1px dashed #E1E0E0; }
+	.goods-container .content .label { font-size: 14px; font-weight: bold; }
+	.goods-container .content .options { font-size: 14px; display: inline-block; }
+	.options a { margin: 0 5px; }
+	a { text-decoration: none; padding: 2px 4px; }
+	a.selected { color: #FFFFFF; background-color: #FF0000; }
+	.no-filter { color: #C9C8C8; padding: 2px 4px; }
+	</style>
+</head>
+
+<body>
+	<div class="goods-container">
+		<div class="title">
+			<span class="label">商品筛选</span>
+			<span class="title-info">(共<span class="text-danger">6.3</span>万个商品)</span>
+		</div>
+		<div class="content">
+			<div class="label">出版社:</div>
+			<div class="options">
+				<a href="#" class="selected">不限</a>
+				<a href="#">清华大学出版社</a>
+				<a href="#">机械工业出版社</a>
+				<a href="#">人民邮电出版社</a>
+				<a href="#">电子工业出版社</a>
+				<a href="#">化学工业出版社</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="label">包装:</div>
+			<div class="options">
+				<a href="#" class="selected">不限</a>
+				<a href="#">平装</a>
+				<a href="#">精装</a>
+				<a href="#">其他</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="label">客户评分:</div>
+			<div class="options">
+				<a href="#" class="selected">不限</a>
+				<a href="#">5星</a>
+				<a href="#">4星及以上</a>
+				<a href="#">三星及以上</a>
+				<a href="#">二星及以上</a>
+				<a href="#">一星及以上</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="label">折扣:</div>
+			<div class="options">
+				<a href="#" class="selected">不限</a>
+				<a href="#">0-3折</a>
+				<a href="#">3-5折</a>
+				<a href="#">5-7折</a>
+				<a href="#">7折以上</a>
+			</div>
+		</div>
+		<div class="content selected-filters">
+			<div class="label">已选条件</div>
+			<div class="options">
+				<span class="no-filter">暂时缺少筛选条件</span>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../../git_files/bower_components/jquery/dist/jquery.js"></script>
+	<script src="./shopping-goods-filter.js"></script>
+</body>
+</html>
