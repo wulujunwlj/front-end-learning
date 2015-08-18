@@ -1,0 +1,8 @@
+模式：
+{"id":"auto","name":"[智能模式]","proxyMode":"auto","color":"zhineng","isAutomaticModeProfile":true,"proxyConfigUrl":":memory:"}
+{"id":"overseas","name":"[海外模式]","proxyMode":"overseas","color":"haiwai"}
+{"id":"direct","name":"[本地模式]","proxyMode":"direct","color":"bendi"}
+
+{"name":"[智能模式]","proxyMode":"auto","proxyHttp":"","useSameProxy":true,"proxyHttps":"","proxyFtp":"","proxySocks":"","socksVersion":4,"proxyExceptions":"","proxyConfigUrl":":memory:","color":"zhineng","id":"auto","isAutomaticModeProfile":true}
+{"name":"[海外模式]","proxyMode":"overseas","proxyHttp":"","useSameProxy":true,"proxyHttps":"","proxyFtp":"","proxySocks":"","socksVersion":4,"proxyExceptions":"","proxyConfigUrl":"","color":"haiwai","id":"overseas"}
+{"name":"[本地模式]","proxyMode":"direct","proxyHttp":"","useSameProxy":true,"proxyHttps":"","proxyFtp":"","proxySocks":"","socksVersion":4,"proxyExceptions":"","proxyConfigUrl":"","color":"bendi","id":"direct"}
