@@ -6,7 +6,8 @@ app.controller('bindStrategyDemoCtrl', ['$scope',
 	function ($scope) {
 		var vm = $scope.vm = {
 			max: 15,
-			min: 5
+			min: 5,
+			arr: [{'name': 'abc', 'age': 8}, {'name': 'xyz', 'age': 18}]
 		};
 
 		$scope.callbackFn = function(data) {
@@ -21,15 +22,24 @@ app.directive('myDirect', [function () {
 		restrict: 'A',
 		scope: {
 			max: '=',
-			min: '@',
-			bindFn: '&'
+			min: '@',			// always string
+			bindFn: '&',
+			getMax: '&',
+			getMin: '&',
+			getArr: '&'
 		},
 		template: '<button type="button" ng-click="changeMax()">改变max属性</button>' + 
 			'<button type="button" ng-click="changeMin()">改变min属性</button>' + 
 			'<button type="button" ng-click="testBindFn()">bindFn</button>',
 		link: function (scope, iElement, iAttrs) {
-			console.log(typeof scope.max);
-			console.log(typeof scope.min);
+			console.log('max-->', scope.max, '; typeof max-->', typeof scope.max);
+			console.log('min-->', scope.min, '; typeof min-->', typeof scope.min);
+
+			scope.fnMax = scope.getMax();
+			scope.fnMin = scope.getMin();
+
+			console.log('fnMax-->', scope.fnMax, '; fnMin-->', scope.fnMin);
+			console.log(scope.getArr());
 
 			// 改变 max 属性
 			scope.changeMax = function() {

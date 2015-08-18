@@ -174,6 +174,10 @@ ProfileManager.getCurrentProfile = function getCurrentProfile() {
         return {};
     }
 
+//    if(ProfileManager.getSelectedProfile()) {
+//      proxyMode = ProfileManager.getSelectedProfile().id;
+//    }
+
     if (proxyMode == ProfileManager.ProxyModes.direct)
         return ProfileManager.directConnectionProfile;
 		
@@ -182,8 +186,8 @@ ProfileManager.getCurrentProfile = function getCurrentProfile() {
 		
     if (proxyMode == ProfileManager.ProxyModes.system)
         // drop mode 'system':when proxyMode == 'system',return autoSwitchProfile.  @20150816
-        return ProfileManager.systemProxyProfile;
-//        return ProfileManager.autoSwitchProfile;
+        // return ProfileManager.systemProxyProfile;
+        return ProfileManager.autoSwitchProfile;
     if (proxyMode == ProfileManager.ProxyModes.auto && ProxyPlugin.proxyConfigUrl == ProxyPlugin.memoryPath)
         return ProfileManager.autoSwitchProfile;
 

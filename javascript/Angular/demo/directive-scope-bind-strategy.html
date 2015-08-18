@@ -7,7 +7,7 @@
 
 <body>
 	<div ng-app="demoApp" ng-controller="bindStrategyDemoCtrl">
-		<div my-direct="" max="vm.max" min="{{ vm.min }}" bind-Fn="callbackFn(user)"></div>
+		<div my-direct="" max="vm.max" min="{{ vm.min }}" get-max="vm.max" get-min="vm.min" get-arr="vm.arr" bind-Fn="callbackFn(user)"></div>
 
 		<div>
 			<pre ng-bind="vm | json"></pre>

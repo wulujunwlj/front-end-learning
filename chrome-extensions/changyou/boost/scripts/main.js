@@ -25,6 +25,7 @@ var App = chrome.app.getDetails();
 
 var InitComplete = false;
 
+// data initilization
 function init() {
     if (RuleManager.isEnabled() && RuleManager.isRuleListEnabled()) {
         ProxyPlugin.setProxyCallback = function () {
@@ -40,15 +41,15 @@ function init() {
             InitComplete = true;
         };
     }
-    //if(!Settings.getValue("reapplySelectedProfile", true)){
-    //var _init = function(){
-    //	checkFirstTime();
-    //	setIconInfo(undefined);
-    //	monitorTabChanges();
-    //};
-    //	ProxyPlugin.updateProxyCallback = _init;
-    //	ProxyPlugin.init();
-    //}
+//    if(!Settings.getValue("reapplySelectedProfile", true)){
+//      var _init = function(){
+//        checkFirstTime();
+//        setIconInfo(undefined);
+//        monitorTabChanges();
+//      };
+//    	ProxyPlugin.updateProxyCallback = _init;
+//    	ProxyPlugin.init();
+//    }
 
     ProxyPlugin.init();
     checkFirstTime();
