@@ -5,3 +5,5 @@ http://blog.csdn.net/puncha/article/details/22491745
 http://stackoverflow.com/questions/14324451/angular-service-vs-angular-factory
 http://www.tuicool.com/articles/rABfUvm
 http://www.tuicool.com/articles/QB3yqu7
+
+http://segmentfault.com/a/1190000003096933
