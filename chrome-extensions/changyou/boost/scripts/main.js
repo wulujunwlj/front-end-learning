@@ -155,7 +155,7 @@ function applySavedOptions() {
         ProfileManager.applyProfile(profile);
     else
         InitComplete = true;
-//    setIconInfo(profile);
+    setIconInfo(profile);
 //    applyQuickSwitch();
 }
 
@@ -180,7 +180,7 @@ function setIconTitle(title) {
     if (title == undefined)
         title = "";
 
-    //chrome.browserAction.setTitle({ title:title });
+    chrome.browserAction.setTitle({ title:title });
 }
 
 function setIconInfo(profile, preventProxyChanges) {
@@ -232,8 +232,7 @@ function setAutoSwitchIcon(url) {
         RuleManager.LastProfile = profile;
         var iconPath = iconDir + "icon-auto-" + (profile.color || "blue") + ".png";
 
-        //chrome.browserAction.setIcon({ path:iconPath });
-
+        chrome.browserAction.setIcon({ path:iconPath });
 
         var title = I18n.getMessage("proxy_autoSwitchIconTitle", profile.name);
 

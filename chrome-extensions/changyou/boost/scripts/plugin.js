@@ -40,9 +40,14 @@ ProxyPlugin.init = function () {
 
 ProxyPlugin.updateProxy = function (config) {
     if (ProxyPlugin.mute) return;
-    if (config.value) {
-        config = config.value;
+    if(ProxyPlugin.proxyMode === 'direct') {
+        config.mode = 'direct';
+    } else {
+        if (config.value) {
+            config = config.value;
+        }
     }
+
     switch (config.mode) {
         case 'system':
             ProxyPlugin.proxyMode = Settings.setValue('proxyMode', 'system');
