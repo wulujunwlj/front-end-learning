@@ -22,4 +22,25 @@
 8、如何看2015年1月Peter-Paul Koch对Angular的看法？
 	http://www.zhihu.com/question/27601964
 
-9、
+9、angular seo
+    https://github.com/steeve/angular-seo
+
+10、angular styleguide
+    https://github.com/johnpapa/angular-styleguide
+
+11、awesome angularjs
+    https://github.com/gianarb/awesome-angularjs
+
+12、angularjs in pattern
+    https://github.com/mgechev/angularjs-in-patterns
+
+13、angular dragdrop
+    https://github.com/codef0rmer/angular-dragdrop
+
+14、ui-utils
+    https://github.com/angular-ui/ui-utils
+
+15、angular filter
+    https://github.com/a8m/angular-filter
+
+16、
