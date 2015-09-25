@@ -1,0 +1,19 @@
+/**
+ * all pages common style file
+ */
+
+body style {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	white-space: pre;
+	padding: 20px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
