@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>compile controller link in Angular directives</title>
+</head>
+<body>
+	<div class="container" ng-controller="compileCtrlLinkCtrl">
+		<div log="parent">parent
+			<div log="first-child">first-child</div>
+			<div log="second-child">second-child</div>
+		</div>
+	</div>
+
+	<div>Reference:
+		<a href="http://stackoverflow.com/questions/24615103/angular-directives-when-and-how-to-use-compile-controller-pre-link-and-post?rq=1" target="_blank">Angular directives - when and how to use compile, controller, pre-link and post-link </a>
+	</div>
+
+	<script src="../../../node_modules/angular/angular.js"></script>
+	<script src="./js/compile-controller-link.js"></script>
+</body>
+
+</html>
