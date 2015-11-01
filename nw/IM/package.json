@@ -2,6 +2,8 @@
 	"main": "index.html",
 	"name": "Hello NW.js",
 	"window": {
-		// "toolbar": false
+		// "toolbar": false,
+		"width": 280,
+		"height": 700
 	}
 }

@@ -1,0 +1,34 @@
+/**
+ * add by wlj @20151031
+ */
+.inline {
+	display: inline-block;
+}
+
+.pull-right {
+	float: right;
+}
+
+.m-t-sm {
+	margin-top: 10px;
+}
+
+.header-operation {
+	width: 100%;
+	height: 20px;
+}
+
+.panel-info {
+	width: 100%;
+	height: 90px;
+}
+
+.user-photo {
+	width: 50x;
+	height: 50px;
+}
+
+.footer-operation {
+	/*position: absolute;*/
+	bottom: 0;
+}
