@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Event in Angular</title>
+
+	<style>
+	body {
+		color: #fff;
+	}
+	.parent {
+		width: 500px;
+		height: 500px;
+		background-color: #FA0808;
+	}
+	.self, .brother {
+		width: 200px;
+		height: 400px;
+		display: inline-block;
+		background-color: #0C07F2;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.child {
+		width: 100px;
+		height: 80px;
+		background-color: #F5CC09;
+		margin: 0 auto;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container parent" ng-controller="ParentCtrl">Parent
+		<div class="container self" ng-controller="SelfCtrl">Self
+			<a ng-click="click()">click me</a>
+			<div class="container child" ng-controller="ChildCtrl">Child</div>
+		</div>
+
+		<div class="container brother" ng-controller="BroCtrl">Brother</div>
+	</div>
+
+	<script src="../../../node_modules/angular/angular.js"></script>
+
+	<script>
+	angular.module('demoApp', []);
+
+	angular.module('demoApp')
+		.controller('ParentCtrl', ['$rootScope', '$scope', 
+			function($rootScope, $scope) {
+				$scope.$on('to-child', function(e, data1, data2) {
+					console.log('parent -', data1, data2);
+				});
+
+				$scope.$on('to-parent', function(e, data1, data2) {
+					console.log('parent -', data1, data2);
+				});
+			}
+		])
+		.controller('SelfCtrl', ['$rootScope', '$scope', 
+			function($rootScope, $scope) {
+				$scope.click = function() {
+					$scope.$broadcast('to-child', 'self', 'child');
+
+					$scope.$emit('to-parent', 'self', 'parent');
+				};
+			}
+		])
+		.controller('ChildCtrl', ['$rootScope', '$scope', 
+			function($rootScope, $scope) {
+				$scope.$on('to-child', function(e, data1, data2) {
+					console.log('child -', data1, data2);
+				});
+
+				$scope.$on('to-parent', function(e, data1, data2) {
+					console.log('child -', data1, data2);
+				});
+			}
+		])
+		.controller('BroCtrl', ['$rootScope', '$scope', 
+			function($rootScope, $scope) {
+				$scope.$on('to-child', function(e, data1, data2) {
+					console.log('brother -', data1, data2);
+				});
+
+				$scope.$on('to-parent', function(e, data1, data2) {
+					console.log('brother -', data1, data2);
+				});
+			}
+		])
+	</script>
+</body>
+</html>

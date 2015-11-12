@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mouse event</title>
+	<link rel="stylesheet" href="../../node_modules/purecss/build/pure.css">
+	<link rel="stylesheet" href="../../common/style/common.css">
+</head>
+
+<body>
+	<div class="btn-feedback pure-button pure-button-primary">点我</div>
+
+	<script src="../../node_modules/jquery/dist/jquery.js"></script>
+	<script>
+	$(document).ready(function() {
+		var mousedownFn = function() {
+			console.log('in mousedown');
+		};
+
+		var mouseupFn = function() {
+			console.log('in mouseup');
+		};
+
+		var mousemoveFn = function() {
+			console.log('in mousemoveFn');
+		};
+
+		$('.btn-feedback')
+			.on('mousedown', mousedownFn)
+			.on('mouseup', mouseupFn)
+			.on('mousemove', mousemoveFn)
+	});
+	</script>
+</body>
+</html>
