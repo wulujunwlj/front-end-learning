@@ -53,6 +53,14 @@ Git 是目前世界上最先进的分布式版本控制系统。
 * 需要提交的文件修改通通放在暂存区[git add]，然后依次性提交暂存区的所有修改[git commit]
 
 ### 管理修改
+为什么 Git 比其他版本控制系统设计得优秀：Git 跟踪并管理的是修改，而非文件。
+
+### 撤销修改
+* git checkout -- file    [丢弃工作区的修改，让文件回到最近一次git comit 或 git add 时的状态]
+* git reset HEAD file   [把暂存区的修改撤销掉 - unstage，重新放回工作区]
+
+### 删除文件
+
 
 
 ### git 命令
@@ -63,3 +71,6 @@ Git 是目前世界上最先进的分布式版本控制系统。
 * git diff
 * git log [--pretty=oneline]
 * git reset -hard HEAD  [HEAD^^^/HEAD~100]
+* git checkout -- file
+* git reset HEAD file
+* 
