@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>observe in JavaScript</title>
+</head>
+
+<body>
+	<button class="btn-oper" ng-click="addProperty">添加属性</button>
+	<button class="btn-oper" ng-click="updateProperty">更新属性</button>
+	<button class="btn-oper" ng-click="removeProperty">删除属性</button>
+
+	<script>
+	var model = { 'age': 12 };
+	window.onload = bind();
+
+	function bind() {
+		var list = document.querySelectorAll('.btn-oper');
+
+		for(var i=0; i<list.length; i++) {
+			list[i].onclick = (function(index) {
+				return function() {
+					window[list[index].getAttribute('ng-click')]();
+				}
+			})(i);
+		}
+
+		Object.observe(model, observeFn);
+	}
+
+	function observeFn(changes) {
+		changes.forEach(function(change, index) {
+			console.log(change);
+		});
+	};
+
+	function addProperty() {
+		model['propName'] = 'addProperty';
+	}
+
+	function updateProperty() {
+		model['propName'] = 'updateProperty';
+	}
+
+	function removeProperty() {
+		delete model['propName'];
+	}
+	</script>
+</body>
+</html>

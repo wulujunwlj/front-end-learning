@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>two-way data binding</title>
+</head>
+
+<body>
+	<button ng-click="inc">increase 1</button>
+	<button ng-click="inc2">increase 2</button>
+
+	<span style="color: red" ng-bind="counter"></span>
+	<span style="color: blue" ng-bind="counter"></span>
+	<span style="color: green" ng-bind="counter"></span>
+
+	<input type="text" class="input" ng-blur="updateUser" placeholder="我是文本">
+	<button ng-click="changeName">改变名字</button>
+	<button ng-click="changeAge">改变年龄</button>
+	<span class="user"></span>
+
+	<script>
+	var counter = 0;
+	var model = { 'userName': 'userName' };
+
+	function inc() {
+		counter++;
+	}
+
+	function inc2() {
+		counter += 2;
+	}
+
+	function changeName() {
+		model['userName'] = 'userNameDefault';
+	}
+
+	function changeAge() {
+		model['age'] = 15;
+	}
+
+	function init() {
+		bind();
+
+		bind2();
+	}
+
+	function bind() {
+		var list = document.querySelectorAll('[ng-click]');
+		for(var i=0; i<list.length; i++) {
+			list[i].onclick = (function(index) {
+				return function() {
+					window[list[index].getAttribute('ng-click')]();
+
+					apply();
+				}
+			})(i);
+		}
+	}
+
+	function apply() {
+		var list = document.querySelectorAll('[ng-bind="counter"]');
+		for(var i=0; i<list.length; i++) {
+			list[i].innerHTML = counter;
+		}
+	}
+
+	window.onload = init();
+
+	function updateUser() {
+		var random = Math.floor(10 * Math.random()),
+			$input = document.querySelector('.input');
+
+		if(random % 2) {
+			model['userName'] = $input.value;
+		} else {
+			model['age'] = $input.value;
+		}
+	}
+
+	function bind2() {
+		var $input = document.querySelector('.input');
+
+		$input.onblur = function() {
+			window[$input.getAttribute('ng-blur')]();
+		}
+		Object.observe(model, observeFn);
+	}
+
+	function observeFn(changes) {
+		changes.forEach(function(change, index) {
+			// console.log('change type-->', change.type);
+			// console.log('change oldValue-->', change.oldValue);
+			// console.log('change name-->', change.name);
+			console.log(change);
+		});
+
+		var $user = document.querySelector('.user');
+		$user.innerHTML = '用户名：' + model['userName'] + '; 年龄：' + model['age'];
+	}
+
+	</script>
+</body>
+</html>

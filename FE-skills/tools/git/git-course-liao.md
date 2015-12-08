@@ -60,8 +60,13 @@ Git 是目前世界上最先进的分布式版本控制系统。
 * git reset HEAD file   [把暂存区的修改撤销掉 - unstage，重新放回工作区]
 
 ### 删除文件
+* git rm file
 
+### 远程仓库
 
+### 添加远程库
+保持本地库和远程库同步的方法
+* 
 
 ### git 命令
 * git init
@@ -73,4 +78,5 @@ Git 是目前世界上最先进的分布式版本控制系统。
 * git reset -hard HEAD  [HEAD^^^/HEAD~100]
 * git checkout -- file
 * git reset HEAD file
+* git rm
 * 
