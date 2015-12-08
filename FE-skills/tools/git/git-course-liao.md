@@ -66,7 +66,13 @@ Git 是目前世界上最先进的分布式版本控制系统。
 
 ### 添加远程库
 保持本地库和远程库同步的方法
-* 
+* 在 Github 创建一个代码仓库
+* git remote add origin git@github.com:***/**.git
+* git push -u origin master [把当前分支推送到远程，-u 参数，使得 Git 不但会把本地的 master 分支内容推送到远程新的 master 分支，还会把本地的 master 分支和远程的 master分支关联起来]
+* git push origin master
+
+### 从远程库克隆
+
 
 ### git 命令
 * git init
@@ -79,4 +85,6 @@ Git 是目前世界上最先进的分布式版本控制系统。
 * git checkout -- file
 * git reset HEAD file
 * git rm
+* git remote add 
+* git push
 * 
