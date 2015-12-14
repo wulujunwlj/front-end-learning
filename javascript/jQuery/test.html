@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<div>
+		<button type="button" class="btn">111</button>
+	</div>
+	<script src="../../node_modules/jquery/dist/jquery.js"></script>
+	<script>
+	$(document).ready(function() {
+		var $btn = $('.btn');
+
+		$btn.bind('click', function(e) {
+			console.log(e);
+		});
+	})
+	</script>
+	
+</body>
+</html>
