@@ -17,9 +17,9 @@ A collection of simple tips to help up your jQuery game.
 1. [Simple Accordion](#simple-accordion)
 1. [Make Two Divs the Same Height(使两个 div 等高)](#make-two-divs-the-same-height)
 1. [Open External Links in New Tab/Window(新标签页/浏览器中打开链接)](#open-external-links-in-new-tabwindow)
-1. [Find Element By Text](#find-element-by-text)
-1. [Trigger on Visibility Change](#trigger-on-visibility-change)
-1. [Ajax Call Error Handling](#ajax-call-error-handling)
+1. [Find Element By Text(根据内容查找元素)](#find-element-by-text)
+1. [Trigger on Visibility Change(切换可见性时触发)](#trigger-on-visibility-change)
+1. [Ajax Call Error Handling(异步调用 error 处理)](#ajax-call-error-handling)
 1. [Chain Plugin Calls](#chain-plugin-calls)
 
 
