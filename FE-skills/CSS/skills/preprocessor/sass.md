@@ -125,7 +125,7 @@ a {
 * 注释
     - `/* comments */` 
     - `// comments` ：单行注释不会输入到 CSS 中
-* 变量($)
+* 变量($) [sass揭秘之变量](http://www.w3cplus.com/preprocessor/sass-basic-variable.html)
     - 以 `$` 开头，后面紧跟变量名
     - 变量名和变量值之间使用冒号隔开
     - 值后面加 `!default` 表示默认值
@@ -152,4 +152,84 @@ a {
     }
     ```
     - 多值变量
+        + list 类型
+            * list 数据可以通过空格，逗号或小括号分隔多个值
+            * 可用 nth($var, $index) 取值
+            * 有函数：length($list),join($list1, $list2, [$separator]),append($list, $value, [$separator]) 等。[参考](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+        ``` SASS
+        // 一维数组
+        $px: 5px 10px 20px 30px;
+        // 二维数组
+        $px: 5px 10px, 20px 30px;
+        $px: (5px 10px) (20px 30px);
+
+        // 使用
+        $linkColor: #08c #333 !default;
+
+        a {
+            color: nth($linkColor, 1);
+
+            &:hover {
+                nth($linkColor, 2);
+            }
+        }
+        ```
+        + map 类型
+            * map 数据以 key 和 value 成对出现，其中 value 又可以是 list，格式为: `$map: (key1: value1, key2: value2)` 
+            * 可以通过 `map-get($map, $key)` 取值
+            * 有函数：map-merge($map1, $map2),map-keys($map), map-values($map) 等
+        ``` SAss
+        $heading: (h1: 2em, h2: 1.5em, h3: 1.2em);
+
+        @each $header, $size in $headings {
+            #{$header} {
+                font-size: $size
+            }
+        }
+        ```
+    - 全局变量(!global - 暂时不能支持,sass 3.4后的版本中正式应用)
+* 嵌套(nesting)
+    - 选择器的嵌套
+        + 一个选择器中嵌套另一个选择器来实现继承，增强了sass文件的结构性和可读性
+        + 可以使用 & 表示父元素选择器
+    ``` sass
+    #top-nav {
+        line-height: 40px;
+        text-transform: capitalize;
+        background-color: #333;
+        li {
+            float: left;
+        }
+        a {
+            display: block;
+            padding: 0 10px;
+            color: #fff;
+
+            &:hover {
+                color: #ddd;
+            }
+        }
+    }
+    ```
+    - 属性的嵌套
+        + 有些属性拥有同一个开始的单词
+    ``` sass
+    .fakeshadow {
+        border: {
+            style: solide;
+            left: {
+                width: 4px;
+                color: #888;
+            }
+            right: {
+                width: 2px;
+                color: #ccc;
+            }
+        }
+    }
+    ```
+* @at-root
+    - sass3.3.0 新增的功能，用于跳出选择器的嵌套。默认所有的嵌套，继承所有上级选择器，这个功能可以跳出所有上级选择器
+    - 普通跳出嵌套
+    - 
 * 

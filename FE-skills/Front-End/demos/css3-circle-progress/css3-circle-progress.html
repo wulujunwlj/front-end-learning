@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 圆形百分比进度条</title>
+
+	<style>
+	.circle {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		border-radius: 50%;
+		background: #0cc;
+	}
+
+	.left, .right {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	.pie-left, .pie-right {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		border-radius: 50%;
+		top: 0px;
+		left: 0px;
+		background: red;
+	}
+
+	.pie-right, .right {
+		clip: rect(0, auto, auto, 100px);
+	}
+
+	.pie-left, .left {
+		clip: rect(0, 100px, auto, 0);
+	}
+
+	.mask {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		left: 25px;
+		top: 25px;
+		position: absolute;
+		text-align: center;
+		line-height: 150px;
+		font-size: 16px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="reference">
+		<a href="http://www.tuicool.com/articles/aMrARvy" target="_blank">参考</a>
+	</div>
+
+	<div class="circle">
+		<div class="pie-left">
+			<div class="left"></div>
+		</div>
+		<div class="pie-right">
+			<div class="right"></div>
+		</div>
+		<div class="mask">
+			<span>10</span>%
+		</div>
+	</div>
+</body>
+</html>
