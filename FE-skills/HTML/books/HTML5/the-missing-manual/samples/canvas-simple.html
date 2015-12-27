@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas Simple</title>
+	<style>
+	canvas {
+		border: 1px dashed #000;
+	}
+	</style>
+</head>
+
+<body>
+	<canvas id="simple" width="500" height="300"></canvas>
+
+	<script>
+	window.onload = function() {
+		var canvas = document.querySelector('#simple'),
+			context = canvas.getContext('2d');
+
+		// context.fillRect(100, 200, 300, 400);
+		context.lineWidth = 20;
+		context.strokeStyle = 'rgb(205, 40, 40)';
+		context.lineCap = 'butt';
+		context.moveTo(10, 10);
+		context.lineTo(400, 40);
+		context.stroke();
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	video {
+		width: 800px;
+		height: 460px;
+	}
+
+	.duration-bar {
+		border: solid 1px #000;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	.position-bar {
+		height: 30px;
+		color: #fff;
+		font-weight: bold;
+		background: steellue;
+		text-align: center;
+	}
+
+
+	</style>
+</head>
+
+<body>
+	<audio id="audio1">
+		<source src="music.mp3" type="audio/mp3">
+	</audio>
+	<audio id="audio2">
+		<source src="music.mp3" type="audio/mp3">
+	</audio>
+	<audio id="audio3">
+		<source src="music.mp3" type="audio/mp3">
+	</audio>
+
+	<div class="operation">
+		<button class="btn btn-play">播放</button>
+		<button class="btn btn-pause">暂停</button>
+	</div>
+
+	<video id="angular-controller" src="angular-controller.mp4" ontimeupdate="progressUpdate()"></video>
+	<div class="duration-bar">
+		<div class="position-bar">
+			<span class="display-status">Idle.</span>
+		</div>
+	</div>
+	<div class="operation">
+		<button class="btn btn-video btn-play">Play</button>
+		<button class="btn btn-video btn-pause">Pause</button>
+		<button class="btn btn-video btn-stop">Stop</button>
+		<button class="btn btn-video btn-speedup">SpeedUp</button>
+		<button class="btn btn-video btn-slowdown">SlowDown</button>
+		<button class="btn btn-video btn-normalspeed">NormalSpeed</button>
+	</div>
+
+	<script>
+	var videoBtns = document.querySelectorAll('.btn-video'),
+		videoElem = document.querySelector('#angular-controller'),
+		btnPlay = videoBtns[0],
+		btnPause = videoBtns[1],
+		btnStop = videoBtns[2],
+		btnSpeedUp = videoBtns[3],
+		btnSlownDown = videoBtns[4],
+		btnNormalSpeed = videoBtns[5];
+
+	btnPlay.addEventListener('click', function() {
+		videoElem.play();
+	});
+	btnPause.addEventListener('click', function() {
+		videoElem.pause();
+	});
+	btnStop.addEventListener('click', function() {
+		videoElem.pause();
+		videoElem.currentTime = 0;
+	});
+	btnSpeedUp.addEventListener('click', function() {
+		videoElem.play();
+		videoElem.playbackRate = 2;
+	});
+	btnSlownDown.addEventListener('click', function() {
+		videoElem.play();
+		videoElem.playbackRate = 0.5;
+	});
+	btnNormalSpeed.addEventListener('click', function() {
+		videoElem.play();
+		videoElem.playbackRate = 1;
+	})
+
+	function progressUpdate() {
+		var positionBar = document.querySelectorAll('.position-bar')[0],
+			displayStatus = document.querySelectorAll('.display-status')[0];
+
+		positionBar.style.width = (videoElem.currentTime / videoElem.duration * 100) + '%';
+
+		displayStatus.innerHTML = (Math.round(videoElem.currentTime * 100) / 100) + ' second';
+	}
+	/*
+	var audioElem = document.querySelector('#audio1');
+	var audioElemCount = 3;
+	var audioElemIndex = 1;
+
+	var btnPlay = document.querySelectorAll('.btn-play'),
+		btnPause = document.querySelectorAll('.btn-pause');
+
+	btnPlay[0].addEventListener('click', play);
+	btnPause[0].addEventListener('click', pause);
+
+	function play() {
+		audioElem.play();
+	}
+
+	function pause() {
+		audioElem.pause();
+		audioElem.currentTime = 0;
+	}
+
+	function boing() {
+		var audioElemName = 'audio' + audioElemIndex;
+		var audio = document.querySelector(audioElemName);
+
+		audio.currentTime = 0;
+		audio.play();
+
+		if(audioElemIndex === audioElemCount) {
+			audioElemIndex = 1;
+		} else {
+			audioElemIndex += 1;
+		}
+	}
+	*/
+	</script>
+</body>
+</html>
