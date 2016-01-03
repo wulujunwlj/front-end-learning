@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Sockets API</title>
+</head>
+
+<body>
+	
+	<p id="support"></p>
+	<script>
+	function loadDemo() {
+		var support = document.getElementById('support');
+
+		if(window.WebSocket) {
+			support.innerHtml = 'HTML5 WebSocket is supported in your browser';
+		} else {
+			support.innerHtml = 'HTML5 WebSocket is not supported in your browser';
+		}
+	}
+
+	window.addEventListener('load', loadDemo, true);
+	</script>
+</body>
+</html>

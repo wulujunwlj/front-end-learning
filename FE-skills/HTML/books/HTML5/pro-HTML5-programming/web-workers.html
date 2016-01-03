@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Workers API</title>
+</head>
+
+<body>
+	<h1>Simple Web Worker Example.</h1>
+
+	<div id="support"></div>
+
+	<div class="container">
+		<button id="stop-button">Stop Task</button>
+		<button id="hello-button">Post a Message</button>
+	</div>
+
+	<script>
+	function stopWorker() {
+		worker.terminate();
+	}
+
+	function messageHandler(e) {
+		console.log(e.data);
+	}
+
+	function errorHandler(e) {
+		console.log(e.data, e);
+	}
+
+	function loadDemo() {
+		if(typeof(Worker) !== 'undefined') {
+			document.getElementById('support').innerHTML = 
+				'Excellent! Your browser supports Web Workers!';
+		}
+
+		worker = new Worker('worker.js');
+		worker.addEventListener('message', messageHandler, true);
+		worker.addEventListener('error', errorHandler, true);
+
+		document.getElementById('hello-button').onclick = function() {
+			worker.postMessage('Here\'s a message for you!');
+		}
+
+		document.getElementById('stop-button').onclick = stopWorker;
+	}
+
+
+	window.addEventListener('load', loadDemo(), true);
+	</script>
+</body>
+</html>
