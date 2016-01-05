@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Google 在线状态",
+	"version": "0.1",
+	"description": "监视 Google 是否在线",
+	"icons": {
+		"16": "", 
+		"48": "", 
+		"128": ""
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "",
+			"38": ""
+		}
+	},
+	"background": {
+		"scripts": [
+			""
+		]
+	},
+	"permissions": [
+		"http://www.google.cn"
+	]
+}
