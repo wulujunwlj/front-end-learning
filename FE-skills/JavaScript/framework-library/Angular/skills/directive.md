@@ -3,6 +3,7 @@
 http://www.cnblogs.com/rohelm/p/4051437.html
 * 完整参数
 ```JS
+
 angular.module('app', [])
 	// 插件生成
 	.directive('', ['', function(){
