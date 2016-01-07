@@ -20,7 +20,7 @@
 			"38": "images/icon38.png"
 		},
 		"default_title": "surfing-notification",
-		"default_popup": "popup.html"
+		"default_popup": "html/popup.html"
 	},
 	"background": {
 		"scripts": [

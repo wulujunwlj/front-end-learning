@@ -1,7 +1,5 @@
 (function() {
-	console.log('This is popup.js');
-
-	// var notification = webkitNotifications.createNotification('icon48.png', 'Notification', 'Hello');
-
-	// notification.show();
+	var $siteTimes = document.querySelectorAll('.site-time');
+	$siteTimes[0].innerHTML = '30\'28"';
+	$siteTimes[1].innerHTML = '12\'42"'
 })();
