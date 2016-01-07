@@ -96,6 +96,46 @@ http://www.ituring.com.cn/article/60130
 
 ## 第3章 Chrome 扩展的 UI 界面
 ## 第4章 管理你的浏览器
+
+### 4.5 标签
+* 标签的结构
+    - id
+    - index：0开始
+    - windowId
+    - openerTabId
+    - highlighted
+    - active
+    - pinned
+    - url：需要权限
+    - title：需要权限
+    - favIconUrl：需要权限
+    - status：标签状态，loading/complete
+    - incognito：是否在隐身窗口中
+    - width
+    - height
+    - sessionId
+* 方法：get,getCurrent,query，创建标签 create，赋值标签 duplicate,更新标签 update
+```JS
+// param:tabId
+chrome.tabs.get(tabId, function(tab) {
+    console.log(tab);
+});
+
+chrome.tabs.getCurrent(function(tab) {
+    console.log(tab);
+});
+// params attributes:active,pinned,highlighted,currentWindow,lastFocusedWindow,status,title,url,windowId,windowType,index
+chrome.tabs.query({
+    active: true
+}, function(tabsArr) {
+    console.log(tabsArr)
+});
+// 
+chrome.tabs.create({ windowId: wId, index: 0, url: 'http://www.google.com', active: true, pinned: false, openerTabId: tId }, function(tab) { console.log(tab); });
+chrome.tabs.duplicate(tabId, function(tab) { console.log(tab); });
+chrome.tabs.update(tabId, { url: 'http://www.google.com' }, function(tab) { console.log(tab); });
+```
+* 
 ## 第5章 部分高级 API
 ## 第6章 Chrome 应用基础
 ## 第7章 文件系统

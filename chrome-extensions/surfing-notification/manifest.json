@@ -28,6 +28,7 @@
 		]
 	},
 	"permissions": [
-		"notifications"
+		"notifications",
+		"tabs"
 	]
 }
