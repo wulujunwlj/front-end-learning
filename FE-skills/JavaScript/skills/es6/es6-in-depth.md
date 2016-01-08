@@ -95,6 +95,7 @@
 * 简介
     - 代码示例
     ```
+    // 定义
     function* quips(name) {
         yield '你好 ' + name + '!';
         yield '希望你能喜欢这篇介绍 ES6 的译文';
@@ -104,10 +105,17 @@
         }
         yield '我们下次再见!';
     }
+
+    // 调用
+    var iter = new quips('Xplay');
+    iter.next();
+    iter.next();
+    iter.next();
     ```
     - 生成器函数与普通函数的区别
         + 普通函数用 function 声明，生成器函数用 function* 声明
-        + 
+        + 在生成器函数内部，有一种类似 return 的语法：yield。普通函数只可以 return 一次，而生成器函数可以 yield 多次。
+        + 在 生成器的执行过程中，遇到 yield 表达式立即暂停，后续可恢复执行状态
 
 * 
 ## 模板字符串
