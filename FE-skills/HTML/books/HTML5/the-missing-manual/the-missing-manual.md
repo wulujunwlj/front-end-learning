@@ -446,12 +446,6 @@ article {
     - 变换包括移动(scaleX,scaleY)、缩放(scale)、斜切(skew)和旋转(rotate)
     - 变换不会影响页面中的其他元素，也不会影响布局
 
-### 三.构建桌面式 Web 应用
----
 
-#### 9.数据存储(新的 Web 存储功能)
-#### 10.离线应用(新的 HTML5 缓存功能)
-#### 11.与 Web 服务器通信(XMLHttpRequest，服务器事件，Web 套接字)
-#### 12.更酷的 JavaScript 技术(地理定位，Web Worker，新的浏览器历史功能)
 
 

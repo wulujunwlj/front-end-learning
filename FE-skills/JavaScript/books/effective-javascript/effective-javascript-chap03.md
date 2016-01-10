@@ -60,5 +60,59 @@ user.name;
 * 
 
 ### 28.不要信赖函数对象的 toString 方法
+* JS 函数具有将其源代码重现为字符串的能力
+```JS
+(function() {
+    return x + 1;
+}).toString();
+
+(function(x) {
+    return function(y) {
+        return x + y;
+    }
+})(42).toString();
+```
+* 当调用函数的 toString 方法时，并没有要求 JS 引擎能够精确的获取到函数的源代码
+* 由于在不同的引擎下调用 toString 方法的结果可能不同，所以不要信赖函数源代码的详细细节
+* toString 方法的执行结果并不会暴露存储在闭包中的局部变量值
+* 通常情况下，应该避免使用函数对象的 toString 方法
 
 ### 29.避免使用非标准的栈检查属性
+* 调用栈：指当前正在执行的活动函数链
+* arguments.callee：指向该 arguments 对象被调用的函数； argument.caller：指向调用该 arguments 对象的函数，大多数函数已经移除了次属性，但是许多 JS 环境可以使用 caller 属性，指向函数最近的调用者
+```JS
+var factorial = (function(n) {
+    return (n <= 1) ? 1 : (n * arguments.callee(n - 1));
+});
+// 等价于
+function factorial = function(n) {
+    return (n <= 1) ? 1 : (n * factorial(n - 1));
+}
+
+// caller 的使用
+function revealCaller() {
+    return revealCaller.caller;
+}
+function start() {
+    return revealCaller();
+}
+start() === start;
+
+// 利用 caller 获取栈跟踪
+function getCallStack() {
+    var stack = [];
+
+    for(var f = getCallStack.caller; f; f = f.caller) {
+        stack.push(f);
+    }
+    return stack;
+}
+
+// call 获取栈跟踪的问题
+function f(n) {
+    return n === 0 ? getCallStack() : f(n - 1);
+}
+```
+* 栈跟踪(stack trace)是一个提供当前调用栈快照的数据结构
+* 通过 caller 获取函数调用栈跟踪的问题：如果某个函数在调用栈中出现了不止一次，栈检查逻辑将会陷入循环。原因：函数 f 递归调用自己，因此其 caller 属性会自动更新，指回到函数 f
+* ES5 的严格模式中，arguments 的 caller 或 callee 属性都将抛出错误

@@ -1,4 +1,5 @@
 # Effective JavaScript:68 Specific Ways to Harness the Power of JavaScript
+current page: P19
 
 * 语法、形式和结构：编写合法的、符合语义的、具有意义和行为正确的而程序；
 * 语用：使用语言特性构建高效程序的方法。
@@ -7,9 +8,9 @@
 
 ### 1.了解你使用的 JavaScript 版本
 * ES5 引入了一种版本控制考量 - 严格模式(strict mode)。允许选择在受限制的 JavaScript 版本中禁止使用一些 JavaScript 语言中问题较多或较易于出错的特性。
-> 'use strict'; 
+> 'use strict';     // 字符串字面量(literal)
     - 只有在脚本或者函数顶部才能生效
-    - 由于在连接文件上可能造成的错误，建议把功能放在立即执行函数(IIFE)内部，并在函数中使用严格模式
+    - 由于在连接文件上可能造成的错误，建议把此功能放在立即执行函数(Immediately Invoked Function Expression,IIFE)内部，并在函数中使用严格模式
 
 ### 2.理解 JavaScript 的浮点数
 * JavaScript 中的所有数字都是双进度浮点数
@@ -69,9 +70,3 @@ console.log('hello'.someProperty);  // undefined
 ### 7.视字符串为16 位的代码单元序列(?)
 * Unicode：为世界上所有的文字系统的每个字符单位分配了一个唯一的整数，该整数介于0和1114111之间，在 Unicode 术语中称为代码点(code point)
 * 
-
-## 第3章 使用函数
-## 第4章 对象和类型 
-## 第5章 数组和字典 
-## 第6章 库和 API 设计 
-## 第7章 并发
