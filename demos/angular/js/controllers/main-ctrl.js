@@ -1,7 +1,7 @@
-(function() {
+(function(angular) {
 	'use strict';
 
-	var app = angular.module('app', ['ngRoute']);
+	var app = angular.module('app');
 
 	app.controller('mainCtrl', ['$scope', '$route', '$routeParams', '$location', 
 		function($scope, $route, $routeParams, $location) {
@@ -43,4 +43,4 @@
 					// $locationProvider.html5Mode(true);
 			}
 		])
-})();
+})(angular);
