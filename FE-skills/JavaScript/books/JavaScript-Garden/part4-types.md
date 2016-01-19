@@ -37,6 +37,7 @@ new String('foo') instanceof Object;
 'foo' instanceof String;
 'foo' instanceof Object;
 ```
+
 * `instanceof` 用来比较属于不同 JS 上下文的对象时将会出错(例如浏览器中不同的文档结构)，因为他们的构造函数不是同一个对象
 
 ### 类型转换

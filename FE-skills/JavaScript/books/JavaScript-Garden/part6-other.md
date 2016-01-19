@@ -28,5 +28,6 @@ function foo() {
 }
 setInterval(foo, 100);
 ```
+
 * setInterval 的堆调用：当回调函数的执行被阻塞时，`setInterval` 会发布更多的回调指令，在很小的定时间隔情况下，会导致回调函数被堆积起来。解决办法：回调函数内部使用 `setTimeout` 函数。
 * 手工清除定时器:clearTimeout(id),clearInterval(id);
