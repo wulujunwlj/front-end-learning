@@ -26,12 +26,12 @@ console.log(foo);
 ### 9.始终声明局部变量
 * 意外(隐式)的全局变量：程序中给一个未绑定的变量赋值将会简单的创建一个新的全局变量并赋值给它，而不是引发错误(省略 var 时会隐式的创建全局变量)
 
-### 10.避免使用 with(?)
+### 10.避免使用 with
 * with 语句的动机：程序中需要对单个对象依次调用一系列方法，使用 with 可以很方便的避免对对象的重复引用
 ```JS
 function status(info) {
     var widget = new Widget();
-    with(widget) {
+    with(widget) {      // 当 widget 包含一个 info 属性时会出现逻辑不明
         setBackground('blue');
         setForeground('white');
         setText('Status: ' + info);
@@ -40,11 +40,17 @@ function status(info) {
 }
 
 function f(x, y) {
-    with(Math) {
+    with(Math) {      // 当 Math 包含一个 x,y 属性时会出现逻辑不明
         return min(round(x), sqrt(y));
     }
 }
 ```
+* JS 对待所有的变量都是相同的。JS 从最内层的作用域开始向外查找变量。
+* ES5 规范称的 "词法环境"，在旧版本标准中被称为作用域链
+* with 语句的问题
+    -  with 块中的每个外部变量的引用都隐式的假设在 with 对象(以及它的任何原型对象)中没有同名的属性。变量作用域和对象命名空间之间的冲突使得 with 代码块异常脆弱[with 所引用的对象可能含有与函数参数一致的属性，会覆盖对应的调用]
+    -  with 代码块需要搜索对象的原型链来查找 with 代码块里的所有变量，因此运行速度远远低于一般代码块
+* 可以使用简短的变量名代替重复访问的对象，或者显式的绑定局部变量到对象属性上来避免 with 语句
 
 ### 11.熟练掌握闭包
 * 闭包的3个事实：
@@ -109,10 +115,10 @@ function sandWichMaker(magicIngredient) {
 ```
 
 ### 12.理解变量声明提升
-* JavaScript 支持词法作用域(lexical scoping)。除了极少的例外，对变量 foo 的引用会被绑定到声明 foo 变量最近的作用域中
+* JavaScript 支持词法作用域(lexical scoping)，除了极少的例外，对变量 foo 的引用会被绑定到声明 foo 变量最近的作用域中
 * JavaScript 不支持块级作用域，即变量定义的作用域并不是离其最近的封闭语句或代码块，而是包含它们的函数
 * JS 变量声明由两部分构成：声明和赋值。JS 隐式的提升(hoists)声明部分到封闭函数的顶部，而将赋值留在原地。换句话说，变量的作用域是整个函数，但仅在 var 语句出现的位置进行赋值。
-* JS 中的 catch 拥有块级作用域。try...catch 语句将捕获的异常绑定到一个变量，该变量的作用域只是 catch 语句块。
+* 例外：JS 中的 catch 拥有块级作用域。try...catch 语句将捕获的异常绑定到一个变量，该变量的作用域只是 catch 语句块。
 ```JS
 function test() {
     var x = 'var', result = [];
