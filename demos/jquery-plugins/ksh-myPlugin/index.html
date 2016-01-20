@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my-plugin index</title>
+</head>
+
+<body>
+	<div class="container">
+		<ul>
+			<li>
+				<a href="http://www.baidu.com">baidu</a>
+			</li>
+			<li>
+				<a href="http://www.google.com">google</a>
+			</li>
+		</ul>
+		
+		<p>This is a paragraph.</p>
+	</div>
+
+	<script src="./../node_modules/jquery/dist/jquery.js"></script>
+	<script src="./my-plugin.js"></script>
+	<script>
+	(function($) {
+		$(document).ready(function() {
+			$('a').myPlugin({ 'color': 'blue', 'fontSize': '20px' });
+		})
+	})(jQuery);
+	</script>
+</body>
+</html>
