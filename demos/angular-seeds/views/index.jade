@@ -1,0 +1,24 @@
+doctype html
+html(lang='en', ng-app="app")
+	head
+		meta(charset='utf-8')
+		title= title
+
+	body(ng-controller="mainCtrl")
+		div.nav
+			div.navbar-header
+			div.navbar-container
+
+		div.container
+			p= text
+			div {{ vm.ctrlName }}
+
+		div(ng-view)
+
+		script(src="node_modules/angular/angular.js")
+		script(src="node_modules/angular-route/angular-route.js")
+		script(src="node_modules/oclazyload/dist/ocLazyLoad.js")
+		script(src="scripts/app.js")
+		script(src="scripts/config.router.js")
+		script(src="js/controllers/main.js")
+		script(src="js/controllers/poll.js")

@@ -15,7 +15,12 @@
   "dependencies": {
     "angular": "^1.4.8",
     "angular-route": "^1.4.8",
+    "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "oclazyload": "^1.0.9"
+    "favicon": "0.0.2",
+    "jade": "^1.11.0",
+    "oclazyload": "^1.0.9",
+    "serve-favicon": "^2.3.0",
+    "supervisor": "^0.9.1"
   }
 }
