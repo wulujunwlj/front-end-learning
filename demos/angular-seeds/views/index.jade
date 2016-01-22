@@ -2,23 +2,27 @@ doctype html
 html(lang='en', ng-app="app")
 	head
 		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
 		title= title
+		link(rel='stylesheet', href='node_modules/bootstrap/dist/css/bootstrap.css')
+		link(rel='stylesheet', href='css/app.css')
 
 	body(ng-controller="mainCtrl")
-		div.nav
-			div.navbar-header
-			div.navbar-container
-
 		div.container
-			p= text
-			div {{ vm.ctrlName }}
+			div.header
+				nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+					div.navbar-header
+						a.navbar-brand(href='')= title
 
-		div(ng-view)
+			div.content-container.p-t-80
+				//- a(href="/#/nav") Go to nav
+				div(ng-view)
 
 		script(src="node_modules/angular/angular.js")
 		script(src="node_modules/angular-route/angular-route.js")
 		script(src="node_modules/oclazyload/dist/ocLazyLoad.js")
 		script(src="scripts/app.js")
+		script(src="scripts/main.js")
 		script(src="scripts/config.router.js")
 		script(src="js/controllers/main.js")
-		script(src="js/controllers/poll.js")
+		//- script(src="js/controllers/poll.js")

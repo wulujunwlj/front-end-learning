@@ -24,6 +24,8 @@
 * [AngularJS : Prevent error $digest already in progress when calling $scope.$apply()](http://stackoverflow.com/questions/12729122/angularjs-prevent-error-digest-already-in-progress-when-calling-scope-apply)
 
 ## 20160122
+* [Angular styleguide](https://github.com/johnpapa/angular-styleguide#modules)
+* [基于angular实现等待长操作时锁定页面](http://segmentfault.com/a/1190000004343531)
 
 ## 20160123
 * [eloquentjavascript](http://eloquentjavascript.net/)

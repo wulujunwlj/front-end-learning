@@ -1,7 +1,9 @@
 var express = require('express');
 var favicon = require('serve-favicon');
 var path = require('path');
+
 var routesMain = require('./routes/main');
+var routesService = require('./routes/service.js');
 
 var app = express();
 
@@ -14,6 +16,7 @@ app.set('view engine', 'jade');
 app.use(favicon(__dirname + '/public/angular.ico'));
 app.use(express.static(path.join(__dirname, '')));
 app.use('/', routesMain);
+app.use('/service', routesService);
 
 // app.get('/', function(req, res, next) {
 // 	res.render('index');

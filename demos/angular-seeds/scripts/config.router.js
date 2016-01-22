@@ -4,32 +4,30 @@
 	app.config(['$routeProvider', '$locationProvider', 
 		function($routeProvider, $locationProvider) {
 			$routeProvider
+				.when('/nav', {
+					templateUrl: 'views/nav.html',
+					controller: 'navCtrl'
+				})
 				.when('/polls', {
-					templateUrl: 'views/poll/list.jade',
-					controller: 'PollListCtrl'
+					templateUrl: 'views/poll/list.html',
+					controller: 'pollListCtrl',
+					resolve: {
+						polls: ['$ocLazyLoad', function($ocLazyLoad) {
+							return $ocLazyLoad.load('js/controllers/poll.js');
+						}]
+					}
 				})
 				.when('/poll/:pollId', {
-					templateUrl: 'views/poll/item.jade',
-					controller: 'PollItemCtrl'
+					templateUrl: 'views/poll/item.html',
+					controller: 'pollItemCtrl'
 				})
 				.when('/poll/new', {
-					templateUrl: 'views/poll/new.jade',
-					controller: 'PollNewCtrl'
+					templateUrl: 'views/poll/new.html',
+					controller: 'pollNewCtrl'
 				})
 				.otherwise({
-					redirectTo: '/polls'
+					redirectTo: '/nav'
 				});
 		}
 	])
-		.controller('PollListCtrl', ['$scope', function($scope) {
-			var vm = $scope.vm = {};
-
-			$scope.vm.text = '124';
-		}])
-		.controller('PollItemCtrl', ['$scope', function($scope) {
-			$scope.vm.text = '124';
-		}])
-		.controller('PollNewCtrl', ['$scope', function($scope) {
-			$scope.vm.text = '124';
-		}]);
 })(angular);

@@ -1,0 +1,35 @@
+{
+	"app": "Angular-seeds",
+	"nav": [
+		{
+			"name": "Polls",
+			"link": "/#/polls",
+			"description": "A demo for Angular, Express, Bootstrap and MongoDB",
+			"source": "http://www.ibm.com/developerworks/cn/web/wa-nodejs-polling-app/"
+		}
+	],
+	"APIs": [
+		{
+			"name": "Node.js",
+			"url": "http://nodeapi.ucdok.com/#/api/"
+		}, {
+			"name": "Express",
+			"url": "http://www.expressjs.com.cn/"
+		}, {
+			"name": "Bootstrap",
+			"url": "http://v3.bootcss.com/"
+		}, {
+			"name": "ocLazyLoad",
+			"url": "https://oclazyload.readme.io/"
+		}, {
+			"name": "Angular",
+			"url": "http://docs.angularjs.cn/api"
+		}, {
+			"name": "Grunt",
+			"url": "http://www.gruntjs.net"
+		}, {
+			"name": "一起学 koa",
+			"url": "http://base-n.github.io/koa-generator-examples/"
+		}
+	]
+}

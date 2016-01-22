@@ -1,9 +1,43 @@
 (function(angular) {
 	var app = angular.module('app');
 
-	// app.controller('PollListCtrl', ['$scope', function($scope) {
-	// 	var vm = $scope.vm = {};
+	app
+		.controller('pollListCtrl', ['$scope', 'polls', function($scope, polls) {
+			var vm = $scope.vm = {};
 
-	// 	vm.ctrlName = 'PollList';
-	// }])
+			$scope.vm.ctrlName = 'pollListCtrl';
+			$scope.polls = [];
+		}])
+		.controller('pollItemCtrl', ['$scope', function($scope) {
+			$scope.vm.ctrlName = 'pollItemCtrl';
+
+			$scope.poll = {};
+			$scope.vote = function() {
+				// 
+			}
+		}])
+		.controller('pollNewCtrl', ['$scope', function($scope) {
+			$scope.vm.ctrlName = 'pollNewCtrl';
+
+			$scope.poll = {
+				question: '',
+				choices: [
+					{
+						text: ''
+					}, {
+						text: ''
+					}, {
+						text: ''
+					}
+				]
+			};
+
+			$scope.addChoice = function() {
+				$scope.poll.choices.push({ text: '' });
+			};
+
+			$scope.createPoll = function() {
+				// 
+			};
+		}]);
 })(angular);
