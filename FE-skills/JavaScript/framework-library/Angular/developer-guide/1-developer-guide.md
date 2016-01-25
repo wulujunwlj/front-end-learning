@@ -7,12 +7,12 @@ Everything you need to know about AngularJS
 * [Conceptual Overview](http://docs.angularjs.cn/guide/concepts)
 
 ## Tutorials
-Official AngularJS Tutorial
-10 Reasons Why You Should Use AngularJS
-10 Reasons Why Developers Should Learn AngularJS
-Design Principles of AngularJS (video)
-Fundamentals in 60 Minutes (video)
-For folks with a jQuery background
+* [Official AngularJS Tutorial]
+* [10 Reasons Why You Should Use AngularJS]
+* [10 Reasons Why Developers Should Learn AngularJS]
+* [Design Principles of AngularJS (video)]
+* [Fundamentals in 60 Minutes (video)]
+* [For folks with a jQuery background]
 
 ## Core Concepts
 

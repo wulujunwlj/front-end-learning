@@ -2,9 +2,9 @@
 	var app = angular.module('app');
 
 	app
-		.controller('pollListCtrl', ['$scope', 'polls', function($scope, polls) {
+		.controller('pollListCtrl', ['$scope', 'dataService', function($scope, dataService) {
 			var vm = $scope.vm = {};
-
+			
 			$scope.vm.ctrlName = 'pollListCtrl';
 			$scope.polls = [];
 		}])

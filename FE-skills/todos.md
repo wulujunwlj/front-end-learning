@@ -29,3 +29,6 @@
 
 ## 20160123
 * [eloquentjavascript](http://eloquentjavascript.net/)
+
+## 20160125
+* 
