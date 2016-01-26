@@ -189,12 +189,79 @@ function wrapElements(a) {
     - 代码块不能包含任何跳出块的 break 和 continue 语句，因为在函数外使用 break 或 continue 是不合法的
     - 如果代码块引用了 this 或者 arguments 变量，IIFE 将改变它们的含义
 
-### 14.当心命名函数表达式笨拙的作用域(?)
+### 14.当心命名函数表达式笨拙的作用域(?)P52
+```
+function double(x) { return x * 2; }
+
+var f = function double(x) { return x * 2; }
+```
+
+* function double(x) { return x * 2; }。可以是一个函数声明，也可以是一个命名函数表达式(named function expression)。函数声明定义一个函数并绑定到当前作用域
+* var f = function double(x) { return x * 2; }。根据 ECMAScript 规范，此语句将该函数绑定到变量f，而不是变量 dboule
 
 ### 15.当心局部块函数声明笨拙的作用域
 
 ### 16.避免使用 eval 创建局部变量
-* eval 函数会将其参数作为 JS 程序进行解释
+```
+var y = 'global';
+function test(x) {
+    if(x) {
+        eval('var y = "local"');
+    }
+    return y;
+}
+test(true);
+test(false);
+
+// 源代码将未在局部作用域内定义的变量传递给 eval 函数时，赋予了外部调用者改变 test 函数内部作用域的能力
+var y = 'global';
+function test(src) {
+    eval(src);
+    return y;
+}
+test('var y = "local"');
+test('var z = "local"');
+
+// 在明确的嵌套作用域中使用 eval
+var y = 'global';
+function test(src) {
+    (function() { eval(src); })();
+    return y;
+}
+test('var y = "local"');
+test('var z = "local"');
+```
+
+* 错误使用 eval 函数的最简单方式之一是允许它干扰作用域
+* eval 函数会将其参数作为 JS 程序进行解释，但是该程序运行于调用者的局部作用域中。嵌入到程序的全局变量会被创建为调用程序的局部变量
+* 基于作用域决定程序的动态行为通常是个坏主意。导致的结果是，即使想简单的理解变量是如何绑定的都需要了解程序执行的细节
+* ES5 严格模式将 eval 函数运行在一个嵌套作用域中防止这种污染(修改内部作用域)。保证 eval 函数不影响外部作用域的一个方法是在一个明确的嵌套作用域中运行它
 
 ### 17.间接调用 eval 函数优于直接调用
-* eval 函数具有访问调用它那时的整个作用域的能力
+```
+var x = 'global';
+function test() {
+    var x = 'local';
+    return eval('x');       // direct eval
+}
+test();
+
+var x = 'global';
+function test() {
+    var x = 'local';
+    var f = eval;
+
+    return f('x');       // indirect eval
+}
+test();
+```
+
+* eval 函数不仅仅是一个函数，eval 函数具有访问调用它那时的整个作用域的能力
+* eval 函数很难调用任何一个函数，因为一旦调用的函数是 eval 函数，那么每个函数调用都需要确保在运行时整个作用域对 eval函数是可访问的
+* 直接调用 eval 函数：函数调用涉及 eval 标识符。在这种情况下，编译器需要确保被执行的程序具有访问调用者局部作用域的权限。直接调用的问题：
+    - 可能很容易被滥用：例如，对一个来自网络的源字符串进行求值，可能会暴露其内部细节给一些未受信者(参考16)
+    - 直接调用 eval 函数性能上的损耗相当昂贵
+* 间接调用 eval 函数：其他调用 eval 函数的方式。这些方式在全局作用域内对 eval 函数的参数求值。例如，绑定 eval 函数到另一个变量名，通过该变量名调用函数会使代码市区对所有局部作用域的访问能力
+* 在实践中，，唯一能够产生直接调用 eval 函数的语句是可能被(许多的)括号包裹的名称为 eval 的变量
+* 编写间接调用 eval 函数的一种简洁方式是表达式序列运算符(,)和一个明显毫无意义的数字字面量:`(0, eval)(src);` 。这种调用的形式几乎与简单的 eval 函数标识符完全一致，一个重要的区别在于整个调用表达式被视为是一种间接调用 eval函数的方式
+* 表达式序列运算符(,)的计算结果为最后一个运算的结果
