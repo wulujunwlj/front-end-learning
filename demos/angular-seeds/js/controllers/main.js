@@ -8,23 +8,23 @@
 			function($scope, $route, $routeParams, $location, $ocLazyLoad, $injector, $rootScope, $log) {
 				var vm = $scope.vm = {};
 
-				$scope.$on('ocLazyLoad.moduleLoaded', function(e, module) {
-					$log.log('moduleLoaded', module);
-				});
+				// $scope.$on('ocLazyLoad.moduleLoaded', function(e, module) {
+				// 	$log.log('moduleLoaded', module);
+				// });
 
 				function init() {				
 
-					$rootScope.$on('$routeChangeStart', function(e, data) {
-						$log.log('$routeChangeStart', data);
-					});
+					// $rootScope.$on('$routeChangeStart', function(e, data) {
+					// 	$log.log('$routeChangeStart', data);
+					// });
 
-					$rootScope.$on('$routeChangeSuccess', function(e, data) {
-						$log.log('$routeChangeSuccess', data);
-					});
+					// $rootScope.$on('$routeChangeSuccess', function(e, data) {
+					// 	$log.log('$routeChangeSuccess', data);
+					// });
 
-					$rootScope.$on('$routeChangeError', function(e, data) {
-						$log.log('$routeChangeError', data);
-					});
+					// $rootScope.$on('$routeChangeError', function(e, data) {
+					// 	$log.log('$routeChangeError', data);
+					// });
 				}
 
 				$ocLazyLoad.load('services')

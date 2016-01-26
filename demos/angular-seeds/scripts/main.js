@@ -28,4 +28,13 @@
 	// 			})
 	// 	}
 	// ])
+
+	var socket = io();
+	socket.on('connect', function() {
+		console.log('connected');
+	})
+	socket.on('news', function(data) {
+		console.log(data);
+		socket.emit('my other event', { my: 'data' });
+	});
 })(angular);

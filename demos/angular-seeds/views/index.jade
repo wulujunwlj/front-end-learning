@@ -12,7 +12,7 @@ html(lang='en', ng-app="app")
 			div.header
 				nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
 					div.navbar-header
-						a.navbar-brand(href='')= title
+						a.navbar-brand(href='#/')= title
 
 			div.content-container.p-t-80
 				//- a(href="/#/nav") Go to nav
@@ -21,6 +21,8 @@ html(lang='en', ng-app="app")
 		script(src="node_modules/angular/angular.js")
 		script(src="node_modules/angular-route/angular-route.js")
 		script(src="node_modules/oclazyload/dist/ocLazyLoad.js")
+		script(src="https://cdn.socket.io/socket.io-1.4.4.js")
+		//- script(src="vendor/socket.io/socket.io-1.4.0.js")
 		script(src="scripts/app.js")
 		script(src="scripts/main.js")
 		script(src="scripts/config.router.js")

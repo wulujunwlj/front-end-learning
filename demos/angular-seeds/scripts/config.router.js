@@ -19,11 +19,21 @@
 				})
 				.when('/poll/:pollId', {
 					templateUrl: 'views/poll/item.html',
-					controller: 'pollItemCtrl'
+					controller: 'pollItemCtrl',
+					resove: {
+						polls: ['$ocLazyLoad', function($ocLazyLoad) {
+							return $ocLazyLoad.load('js/controllers/poll.js');
+						}]
+					}
 				})
 				.when('/poll/new', {
 					templateUrl: 'views/poll/new.html',
-					controller: 'pollNewCtrl'
+					controller: 'pollNewCtrl',
+					resove: {
+						polls: ['$ocLazyLoad', function($ocLazyLoad) {
+							return $ocLazyLoad.load('js/controllers/poll.js');
+						}]
+					}
 				})
 				.otherwise({
 					redirectTo: '/nav'
