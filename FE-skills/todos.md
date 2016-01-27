@@ -1,6 +1,10 @@
 # 这里记录当天或近期需要处理的问题
 
 ## 20160127
+* [angular-auto-validate](https://github.com/jonsamwell/angular-auto-validate)
+* [angular-validation](https://github.com/huei90/angular-validation)
+* [angular-validator](https://github.com/kelp404/angular-validator)
+* [angular-form-for](https://github.com/bvaughn/angular-form-for)
 * 
 
 ## 20160126
