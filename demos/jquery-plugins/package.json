@@ -14,6 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "^1.12.0",
+    "jquery-file-upload": "^4.0.5",
+    "jquery-validation": "^1.14.0",
     "pure": "^2.67.0",
     "purecss": "^0.6.0",
     "requirejs": "^2.1.22",

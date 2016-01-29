@@ -1,16 +1,22 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160129
+* [requirejs](http://www.requirejs.cn/)
+* [游戏学编程1](http://cn.codecombat.com/)
+* [游戏学编程2](http://www.codewars.com/?language=javascript)
+* [human javascript](http://read.humanjavascript.com/ch01-introduction.html)
+* [eloquent-javascript-the-annotated-version](http://watchandcode.com/courses/eloquent-javascript-the-annotated-version)
+
 ## 20160127
 * [angular-auto-validate](https://github.com/jonsamwell/angular-auto-validate)
 * [angular-validation](https://github.com/huei90/angular-validation)
 * [angular-validator](https://github.com/kelp404/angular-validator)
 * [angular-form-for](https://github.com/bvaughn/angular-form-for)
-* 
 
 ## 20160126
 * grunt
-    - [【grunt整合版】30分钟学会使用grunt打包前端代码](http://www.cnblogs.com/yexiaochai/p/3603389.html)
-    - [用grunt搭建自动化的web前端开发环境-完整教程](http://developer.51cto.com/art/201506/479127.htm)
+    - [【grunt整合版】30分钟学会使用grunt打包前端代码](http://www.cnblogs.com/yexiaochai/p/3603389.html) :heavy_check_mark:
+    - [用grunt搭建自动化的web前端开发环境-完整教程](http://developer.51cto.com/art/201506/479127.htm)  :heavy_check_mark:
     - [gruntjs](http://www.gruntjs.net/)
 * websocket,socket.io
     - [使用Node.js+Socket.IO搭建WebSocket实时应用](http://www.plhwin.com/2014/05/28/nodejs-socketio/)
