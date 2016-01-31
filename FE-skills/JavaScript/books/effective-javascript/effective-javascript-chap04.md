@@ -61,8 +61,32 @@ if(typeof Object.getPropertyOf === 'undefined') {
 ### 35.使用闭包存储私有数据
 
 ### 36.只将实例状态存储在实例对象中
+* 原型对象与其实例之间是一对多的关系
+* 共享有状态的数据可能会导致问题。通常在一个类的多个实例之间共享方法是安全的，因为方法通常是无状态的，这不同于通过 this 来引用实例状态
+* 一般情况下，任何不可变的数据可以被存储在原型中从而被安全的共享。在原型中最常见的数据是方法，而每个实例的状态都存储在实例对象中
 
 ### 37.认识到 this 变量的隐式绑定问题
+```
+function CSVReader(separators) {
+    this.separators = separators || [','];
+    this.regexp = new RegExp(this.separators.map(function(sep) {
+        return '\\' + sep[0];
+    }).join('|'));
+}
+
+CSVReader.prototype.read = function(str) {
+    var lines = str.trim().split('\n');
+
+    return lines.map(function(line) {
+        return line.split(this.regexp);
+    });
+}
+
+var reader = new CSVReader();
+reader.read('a, b, c\nd, e, f\n');
+```
+* CSV(逗号分隔型取值)文件格式是一种表格数据的简单文本表示
+* 
 
 ### 38.在子类的构造函数中调用父类的构造函数
 
@@ -71,5 +95,12 @@ if(typeof Object.getPropertyOf === 'undefined') {
 ### 40.避免继承标准类
 
 ### 41.将原型视为实现细节
+* 对象是接口，原型是实现
 
 ### 42.避免使用轻率的猴子补丁
+* 猴子补丁(monkey-patching)：由于对象共享原型，因此每个对象都可以增加、删除或修改原型的属性。这个有争议的实践通常被称为猴子补丁
+* 当多个库以不兼容的方式给同一个原型打猴子补丁时，会出现问题(不同库的不同实现)
+* 处理办法：
+    - 任意修改共享原型的程序库都应当清晰的记录其修改
+    - 将修改置于一个导出函数中，使猴子补丁称为可选的
+* 猴子补丁的一种可靠而且有价值的使用场景:polyfill

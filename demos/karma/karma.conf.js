@@ -1,11 +1,8 @@
 // Karma configuration
-// Generated on Fri Jan 29 2016 16:48:06 GMT+0800 (中国标准时间)
+// Generated on Sat Jan 30 2016 06:40:26 GMT+0800 (中国标准时间)
 
 module.exports = function(config) {
   config.set({
-    plugins: [
-        'karma-coverage'
-    ],
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -15,28 +12,43 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine'],
 
+    plugins: [
+        'karma-jasmine', 
+        'karma-coverage',
+        'karma-chrome-launcher',
+        'karma-firefox-launcher'
+    ],
 
     // list of files / patterns to load in the browser
-    files: ['src/*.js', 'test/*.js'],
+    files: [
+        'src/*.js', 
+        'test/*.js'
+    ],
 
 
     // list of files to exclude
-    exclude: ['karma.conf.js'],
+    exclude: ['karma.conf.js'
+    ],
 
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {'src/reverse.js': 'coverage'},
-
-    coverageReporter: {
-        type: 'html',
-        dir: 'coverage/'
-    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ['progress', 'coverage'],
+
+
+    // preprocess matching files before serving them to the browser
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    preprocessors: { 
+        'src/reverse.js': 'coverage'
+    },
+
+    // optionally, configure the reporter
+    coverageReporter: {
+        type: 'html',
+        dir: 'coverage/'
+    },
+
 
     // web server port
     port: 9876,
@@ -62,6 +74,10 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
-  });
-};
+    singleRun: false,
+
+    // Concurrency level
+    // how many browser should be started simultaneous
+    concurrency: Infinity
+  })
+}
