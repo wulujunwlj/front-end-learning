@@ -1,19 +1,25 @@
-extends layout
+extends ./../layout
 
 block content
-	div.container-fluid
-		form.form-horizontal
+	div.container.col-md-6.col-md-offset-3
+		form.form-horizontal(action='')
+			div.login-tip.hidden.form-group
+
 			fieldset
-				legend 用户登录
-				div.control-group
+				div.form-group
+					legend 用户登录
+				div.form-group
 					label.control-label(for='username') 用户名
-					div.controls
-						input.input-xlarge#username(name='username')
+					div
+						input.form-control.input-xlarge#username(name='username')
 
-				div.control-group
+				div.form-group
 					label.control-label(for='password') 密码
-					div.controls
-						input(type='password', name='password')#password.input-xlarge
+					div
+						input(type='password', name='password')#password.input-xlarge.form-control
 
-				div.form-actions
-					button.btn.btn-primary 登录
+				div.form-group
+					button.btn.btn-primary#submit 登录
+
+block append scripts
+	script(src='../javascripts/admin/login.js')

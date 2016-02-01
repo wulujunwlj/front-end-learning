@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+a.login-link {
+	display: block;
+	padding: 5px 10px;
+}
+
+.login-tip {
+	padding: 10px 0px;
+}

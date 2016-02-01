@@ -9,6 +9,7 @@
 * npm i --save bootstrap
 * npm i --save-dev supervisor
 * npm i --save jquery
+* npm install --save ejs
 
 错误处理
 -----

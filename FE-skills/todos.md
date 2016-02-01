@@ -1,5 +1,10 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160201
+* [swiper](http://www.swiper.com.cn/)
+* [9大浏览器端缓存机制分析](http://www.codeceo.com/article/9-broswer-cache.html)
+* 
+
 ## 20160129
 * [requirejs](http://www.requirejs.cn/)
 * [游戏学编程1](http://cn.codecombat.com/)
