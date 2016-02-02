@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table header resize demo</title>
+
+	<style>
+	table {
+		table-layout: fixed;
+		border-collapse: collapse;
+		border: 1px solid black;
+		width: 0;
+	}
+	colgroup > col {
+		width: 100px;
+	}
+	tr.last td {
+		border-bottom: 1px solid black;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="scrollContainer">
+		<table class="resizable">
+			<caption>Data Table with resizable columns</caption>
+			<colgroup>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+				<col>
+			</colgroup>
+			<thead>
+				<tr class="colHeaders">
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 1</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 2</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 3</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 4</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 5</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+					<th class="ui-resizable">
+						<span class="columnLabel">Column 6</span>
+						<div class="resizeHelper ui-resizable-handle ui-resizable-e">&nbsp;</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+				<tr>
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+				<tr>
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+				<tr>
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+				<tr>
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+				<tr class="last">
+					<td>Column 1</td>
+					<td>Column 2</td>
+					<td>Column 3</td>
+					<td>Column 4</td>
+					<td>Column 5</td>
+					<td>Column 6</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="./../node_modules/jquery/dist/jquery.js"></script>
+	<script src="./resizable.js"></script>
+</body>
+</html>

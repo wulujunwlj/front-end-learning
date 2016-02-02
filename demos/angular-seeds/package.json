@@ -13,10 +13,16 @@
   "author": "ksh",
   "license": "ISC",
   "dependencies": {
+    "ag-grid": "^3.2.2",
     "angular": "^1.4.8",
+    "angular-auto-validate": "^1.19.0",
     "angular-busy": "^4.1.0",
+    "angular-form-for": "^4.1.10",
     "angular-loading-bar": "^0.8.0",
+    "angular-moment": "^0.10.3",
     "angular-route": "^1.4.8",
+    "angular-ui-grid": "^3.1.0",
+    "angular-validation": "^1.4.1",
     "angular-validation-match": "^1.7.1",
     "angularjs-toaster": "^1.0.0",
     "bootstrap": "^3.3.6",
@@ -29,10 +35,14 @@
     "ng-autocomplete": "^1.0.0",
     "ng-csv": "^0.3.6",
     "ng-infinite-scroll": "^1.2.1",
+    "ng-table": "^0.5.4",
     "oclazyload": "^1.0.9",
     "serve-favicon": "^2.3.0",
     "socket.io": "^1.4.4",
     "supervisor": "^0.9.1",
-    "textangular": "^1.5.0"
+    "textangular": "^1.5.0",
+    "ui-grid": "0.0.0",
+    "ui-router": "^0.2.15",
+    "ui-router-extras": "^0.1.0"
   }
 }
