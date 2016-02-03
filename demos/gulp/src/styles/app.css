@@ -1,0 +1,12 @@
+/* add by ksh @20160203 */
+.container {
+	width: 600px;
+	height: 400px;
+	background: #f0f0f0;
+}
+
+.left {
+	width: 400px;
+	height: 200px;
+	background: #944242;
+}

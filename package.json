@@ -2,7 +2,8 @@
   "name": "front-end-learning",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0"
   }
 }
