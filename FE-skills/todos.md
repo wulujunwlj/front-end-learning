@@ -1,5 +1,9 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160214
+* [javascript插件开发的一些感想和心得](http://luopq.com/2016/02/04/think-js-plugin/)
+* [用CSS边框图像让你的网站更漂亮](http://developer.51cto.com/art/201601/503890.htm)
+
 ## 20160203
 * [SegmentFault 2015 Top Rank](https://segmentfault.com/a/1190000004292681)
 * [Angular源码分析之$compile](https://segmentfault.com/a/1190000004373258)
