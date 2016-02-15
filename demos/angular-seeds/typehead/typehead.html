@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="typehead">
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Typehead</title>
+</head>
+
+<body>
+	<div ng-view ng-controller="mainCtrl">
+	<span direct></span>
+	<span class="direct"></span>
+	<direct></direct>
+	<!-- directive: direct -->
+	<div ng-view=""></div>
+		<typehead>
+			<ul ng-repeat="artist in vm.artists track by $index">
+				<li typehead-item ng-bind="::artist.name"></li>
+			</ul>
+		</typehead>
+	</div>
+	<script src="./../node_modules/angular/angular.js"></script>
+	<script src="./scripts/typehead.js"></script>
+</body>
+</html>

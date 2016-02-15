@@ -1,5 +1,11 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160215
+* [Building a Typeahead Directive with AngularJS](http://hueypetersen.com/posts/2013/06/24/typeahead-with-angular/?utm_campaign=NG-Newsletter&utm_medium=email&utm_source=NG-Newsletter_135)
+* [Angular Developer Guide](https://gitcafe.com/Angularjs/Angularjs-Developer-Guide/blob/master/AngularJS%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%9703%EF%BC%9AHTML%E7%BC%96%E8%AF%91%E5%99%A8.md)
+* [jasmine](http://jasmine.github.io/2.0/introduction.html#section-Standalone_Distribution)
+* [jasmine行为驱动,测试先行](http://blog.fens.me/nodejs-jasmine-bdd/)
+
 ## 20160214
 * [javascript插件开发的一些感想和心得](http://luopq.com/2016/02/04/think-js-plugin/)
 * [用CSS边框图像让你的网站更漂亮](http://developer.51cto.com/art/201601/503890.htm)
