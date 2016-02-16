@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Holy Grail Layout</title>
+	<style>
+	.sidebar {
+		position: absolute;
+		width: 200px;
+		bottom: 0;
+		top: 50px;
+		border-right: 1px solid #e7e7e7;
+		background: #DAF1EF;
+	}
+
+	.page-content {
+		position: absolute;
+		left: 205px;
+		bottom: 0;
+		top: 50px;
+		right: 0;
+		background: #4DBCB0;
+	}
+
+	.layout:after {
+		clear: both;
+		content: " ";
+		display: table;
+	}
+	.layout-aside,
+	.layout-main {
+		float: left;
+	}
+	.layout {
+		padding-left: 210px;
+	}
+	.layout-main {
+		width: 100%;
+		background: #4DBCB0;
+	}
+	.layout-aside {
+		width: 200px;
+		margin-left: -210px;
+		background: #DAF1EF;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- <div class="sidebar"></div>
+	<div class="page-content"></div> -->
+
+	<div class="layout">
+		<aside class="layout-aside"></aside>
+		<div class="layout-main"></div>
+	</div>
+</body>
+</html>
