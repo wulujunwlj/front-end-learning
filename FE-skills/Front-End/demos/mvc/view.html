@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript MVC</title>
+</head>
+
+<body>
+	<div id="container1" bind="model1"></div>
+	<div id="container2" bind="model2"></div>
+
+	<script src="./model.js"></script>
+	<script src="./controller.js"></script>
+	<script>
+		window.onload = function() {
+			var model = new Model();
+			// step1:watch 方法中调用具体的业务逻辑
+			// var container = document.querySelector('#container');
+
+			// model.watch(function(value) {
+			// 	container.innerHTML = value;
+			// });
+			// model.set('hello, this is a container...');
+
+			// step2:增加 bindView 方法用于把值绑定到 view 层
+			// model.bindView(document.querySelector('#container1'));
+			// model.bindView(document.querySelector('#container2'));
+			// model.set('This is container');
+
+			// step3:增加 controller 用于处理业务逻辑
+			new Controller(function(models) {
+				var model1 = models.model1;
+				var model2 = models.model2;
+
+				model1.set('This is container1');
+				model2.set('This is container2');
+			});
+		}
+	</script>
+</body>
+</html>

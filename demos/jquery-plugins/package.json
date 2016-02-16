@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "highlight.js": "^9.1.0",
     "jquery": "^1.12.0",
     "jquery-file-upload": "^4.0.5",
     "jquery-validation": "^1.14.0",
@@ -22,6 +23,7 @@
     "purecss": "^0.6.0",
     "requirejs": "^2.1.22",
     "seajs": "^3.0.2",
+    "syntaxhighlighter": "^3.0.90",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
