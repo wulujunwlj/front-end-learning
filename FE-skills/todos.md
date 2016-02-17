@@ -1,5 +1,11 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160217
+* [Promise的前世今生和妙用技巧](http://www.cnblogs.com/whitewolf/p/promise-best-practice.html)
+* [A Closer Look at Angular’s ngMessages Module](http://www.sitepoint.com/closer-look-angulars-ngmessages-module/)
+* [知乎上复制回答，剪贴板里自动加上版权出处的技术js如何实现](https://www.zhihu.com/question/38685128)
+* [当前端也拥有 Server 的能力](http://www.barretlee.com/blog/2016/02/16/when-fe-has-the-power-of-server/)
+
 ## 20160216
 * [backbone](https://github.com/jashkenas/backbone)
 * [immutable-js](https://github.com/facebook/immutable-js)

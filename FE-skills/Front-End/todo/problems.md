@@ -1,5 +1,9 @@
 # 记录一些想法和待解决问题
 
+## 20160217
+* Angular 中的 controller as 语法糖？
+* Angular 中的服务有哪些，如何使用？有什么区别
+
 ## 20160202
 1. 怎样处理异常？catch,exception
 2. 怎样记录日志以方便定位？log分级，Angular 中的 $log

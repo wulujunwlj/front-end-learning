@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular ng-class</title>
+	<style>
+	.font-bold {
+		font-weight: bold;
+	}
+	.text-danger {
+		color: #E31D1D;
+	}
+	.text-lg {
+		font-size: 30px;
+	}
+	</style>
+</head>
+
+<body>
+	<div ng-controller="demoCtrl">
+		<div ng-class="{ 'font-bold': options.isBold }" class="text-lg {{className}}">
+			<span>This is a text...</span>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script>
+		(function(angular) {
+			'use strict';
+
+			angular.module('app', [])
+				.controller('demoCtrl', ['$scope', 
+					function($scope) {
+						var options = $scope.options = {
+							isBold: true
+						};
+
+						$scope.className = 'text-danger';
+					}
+				]);
+		}(angular));
+	</script>
+</body>
+</html>

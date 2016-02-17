@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CtrlAsApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Controller</title>
+</head>
+<body>
+	<div ng-controller="demoCtrl">
+		hello: {{ ::title }}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script>
+		(function(angular) {
+			'use strict';
+			angular.module('CtrlAsApp', [])
+				.controller('demoCtrl', ['$scope', 
+					function($scope) {
+						$scope.title = 'Angular';
+					}
+				]);
+		}(angular));
+	</script>
+</body>
+</html>
