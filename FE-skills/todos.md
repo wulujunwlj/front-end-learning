@@ -1,5 +1,12 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160218
+* [创建自定义元素的最佳实践](http://bubkoo.com/2015/02/02/best-practice-for-creating-custom-elements/)
+* [Custom Elements](http://www.html5rocks.com/zh/tutorials/webcomponents/customelements/)
+* [弹性盒模型指南](http://bubkoo.com/2015/04/17/a-visual-guide-to-css3-flexbox-properties/)
+* [介绍几个 CSS 方法论](http://bubkoo.com/2015/06/25/css-methodologies/)
+* [bubkoo 归档](http://bubkoo.com/archives/)
+
 ## 20160217
 * [Promise的前世今生和妙用技巧](http://www.cnblogs.com/whitewolf/p/promise-best-practice.html)
 * [A Closer Look at Angular’s ngMessages Module](http://www.sitepoint.com/closer-look-angulars-ngmessages-module/)

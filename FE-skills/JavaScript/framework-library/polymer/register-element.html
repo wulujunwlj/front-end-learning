@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register Element</title>
+</head>
+
+<body>
+	<x-foo>111</x-foo>
+	<x-foo2>222</x-foo2>
+	<script>
+		var XFoo = document.registerElement('x-foo', {
+			prototype: Object.create(HTMLElement.prototype)
+		});
+		document.body.appendChild(new XFoo());
+
+		var MegaButton = document.registerElement('meta-button', {
+			prototype: Object.create(HTMLButtonElement.prototype)
+		});
+	</script>
+</body>
+</html>
