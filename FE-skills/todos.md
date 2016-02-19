@@ -1,5 +1,14 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160219
+* [JavaScript 四种跨域方式详解](https://segmentfault.com/a/1190000003642057)
+* [闭包，作用域链，垃圾回收，内存泄露](https://segmentfault.com/a/1190000002778015)
+* [JavaScript 经典实例收集整理](https://segmentfault.com/a/1190000002559158)
+* [JavaScript中的this陷阱的最全收集--没有之一](https://segmentfault.com/a/1190000002640298)
+* [angular好用的插件集合](https://segmentfault.com/a/1190000003858219)
+* [Grunt教程-前端自动化](https://segmentfault.com/a/1190000002605983)
+* [使用Chrome DevTools的Timeline分析页面性能](https://segmentfault.com/a/1190000003991459)
+
 ## 20160218
 * [创建自定义元素的最佳实践](http://bubkoo.com/2015/02/02/best-practice-for-creating-custom-elements/)
 * [Custom Elements](http://www.html5rocks.com/zh/tutorials/webcomponents/customelements/)
