@@ -99,8 +99,15 @@ promptDeferred.fail(function() {
 * 
 
 ## 第4章 Async.js 的工作流控制
+* 工作流控制(也称作控制工作流)：消解异步代码中的套话
+* npm install -g async step
+* 
 
 ## 第5章 worker 对象的多线程技术
+* 线程与进程的对比：同一个进程内的多个线程之间可以分享状态，而彼此独立的进程之间则不能
+
+### 5.1 网页版 worker 对象
+
 
 ## 第6章 异步的脚本加载
 
