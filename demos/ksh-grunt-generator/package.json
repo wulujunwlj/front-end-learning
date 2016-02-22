@@ -1,0 +1,17 @@
+{
+  "name": "ksh-grunt-generator",
+  "version": "0.1.0",
+  "description": "My own grunt configuration.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "ksh",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
