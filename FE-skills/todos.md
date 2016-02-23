@@ -1,5 +1,11 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160223
+* [请教大神对AngularJS做多语言站点有些什么好的建议？](http://www.html-js.com/topic/825)
+* [Generating PDFs from Web Pages on the Fly with jsPDF](http://www.sitepoint.com/generating-pdfs-from-web-pages-on-the-fly-with-jspdf/)
+* [AngularJS中使用HTML5摄像头拍照](http://www.html5cn.org/article-9343-1.html)
+* [学习JavaScript数据结构与算法（一）：栈与队列](http://www.imooc.com/article/4543)
+
 ## 20160219
 * [JavaScript 四种跨域方式详解](https://segmentfault.com/a/1190000003642057)
 * [闭包，作用域链，垃圾回收，内存泄露](https://segmentfault.com/a/1190000002778015)

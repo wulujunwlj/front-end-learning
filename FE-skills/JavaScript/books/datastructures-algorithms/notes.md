@@ -18,4 +18,77 @@ Data Structures & Algorithms with JavaScript
 
 第2章  数组
 -----
-* JS 中对数组的定义
+
+### 2.1 JS 中对数组的定义
+### todo
+* 数组中所有属性和方法示例的代码实现
+
+### 定义
+* 数组：
+    - 标准定义：一个存储元素的线性集合(collection)，元素可以通过索引来任意存取，索引通常是数字，用来计算元素之间存储位置的偏移量
+    - JS 中的定义：JavaScript 中的数组是一种特殊的对象，用来表示偏移量的索引是该对象的属性，索引可能是整数。然而，这些数字索引在内部被转换为字符串类型， 这是因为 JavaScript 对象中的属性名必须是字符串。数组在 JavaScript 中只是一种特殊的对象，所以效率上不如其他语言中的数组高
+
+### 2.2 使用数组
+* 创建数组:var numbers = [];
+* Array.isArray() 可判断一个对象是否是数组
+* 字符串的 split() 方法生成数组
+* 整体赋值(浅复制，新数组指向原来的数组)：引用传递
+* 深复制:
+```
+function copy(arr1, arr2) {
+    for (var i = 0; i < arr1.length; i++) {
+        arr2[i] = arr1[i];
+    }
+}
+```
+
+* 显示数组里的元素：print()
+
+### 2.3 存取函数
+* JS 提供了一组用来访问数组元素的函数，叫做存取函数，这些函数返回目标数组的某种变体
+* 查找：indexOf()/lastIndexOf()
+* 数组转化为字符串：join(),toString()
+* 数组合并：concat() - 创建新数组
+* 数组截取：splice() - 创建新数组
+
+### 2.4 可变数组
+* 数组末尾添加元素：push()/numbers[numbers.length] = newNum;
+* 数组开头添加元素：unshift()
+* 删除数组末尾元素：pop()
+* 删除数组第一个元素：shift()
+* 数组中间位置添加和删除元素：splice(index, elemNum, newElems);
+* 顺序翻转：reverse()
+* 排序：sort()。sort() 方法是按照字典顺序对元素进行排序，因此假定元素都是字符串类型。可传入比较函数
+```
+function compare(num1, num2) {
+    return num1 - num2;
+}
+var nums = [3, 1, 2, 100, 4, 200];
+nums.sort(compare);
+```
+
+### 2.5 迭代器方法
+*  迭代器方法对数组中的每个元素应用一个函数，可以返回一个值、一组值或者一个新数组
+*  不生成新数组：
+    -  forEach()
+    -  every()
+    -  some()
+    -  reduce()/reduceRight()
+*  生成新数组
+    -  map()
+    -  filter()
+
+### 2.6 二维和多维数组
+* JS 只支持一维数组，但可以在数组中保存数组元素
+* 创建二维数组
+```
+Array.matrix = function(numrows, numcols, initial) {
+    // 
+}
+
+var grades = [[], [], []];
+```
+
+* 
+
+
