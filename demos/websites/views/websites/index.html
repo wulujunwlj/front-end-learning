@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>仿站目录</title>
 </head>
 
 <body>
 	<p>Blank page</p>
+
+	<script src="jquery/dist/jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			$.ajax({
+				url: '/websites/index',
+				type: 'GET'
+			})
+			.done(function(data) {
+				console.log("success", data);
+			})
+			.fail(function(msg) {
+				console.log("error", msg);
+			})
+			.always(function(complete) {
+				console.log("complete", complete);
+			});
+			
+		})
+	</script>
 </body>
 </html>
