@@ -1,0 +1,14 @@
+{
+	"classify": [
+		{
+			"typeCode": "portal",
+			"typeName": "门户",
+			"lists": [
+				{
+					"name": "qq首页",
+					"url": "/websites/qq/"
+				}
+			]
+		}
+	]
+}

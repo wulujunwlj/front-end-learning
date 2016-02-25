@@ -83,12 +83,27 @@ nums.sort(compare);
 * 创建二维数组
 ```
 Array.matrix = function(numrows, numcols, initial) {
-    // 
+    var arr = [];
+    for (var i = 0; i < numrows; ++i) {
+        var columns = [];
+        for (var j = 0; j < numcols; ++j) {
+            columns[j] = initials;
+        }
+
+        arr[i] = columns;
+    }
+
+    return arr;
 }
 
 var grades = [[], [], []];
 ```
 
-* 
+### 2.7 对象数组
+* 数组中可以包含对象
+
+### 2.8 对象中的数组
+* 对象内部可以使用数组保存数据
+
 
 
