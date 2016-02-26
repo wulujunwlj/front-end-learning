@@ -1,5 +1,9 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160226
+* [AngularJS 模式](https://github.com/mgechev/angularjs-in-patterns/blob/master/i18n/README-zh-cn.md)
+* github roam - github 漫游指南
+
 ## 20160224
 * [前后端数据交互方法](http://www.html-js.com/article/Nimojs--frontend-development)
 * [ui.router源码解析](http://www.html-js.com/article/Front-end-source-code-analysis-original-uirouter-source-code-analysis)
