@@ -1,23 +1,24 @@
 var express = require('express');
 var router = express.Router();
-// var fs = require('fs');
+var fs = require('fs');
 
 router.get('/', function(req, res) {
-	res.render('websites/index')
-});
-
-router.get('/index', function(req, res) {
 	// fs.readFile('data/websites/classify.json', function(err, data) {
-	// 	// if (err) {
-	// 	// 	throw err;
-	// 	// }
-
+	// 	if (err) {
+	// 		throw err;
+	// 	}
+	// 	// res.render('websites/index', {data: data});
 	// });
-		res.send('111');
-})
+
+	res.send('websites/index', {data: '112'})
+});
 
 router.get('/qq', function(req, res) {
 	res.render('websites/qq');
 });
+
+router.get('/sina', function(req, res) {
+	res.render('websites/sina', { title: 'sina' });
+})
 
 module.exports = router;

@@ -19,7 +19,7 @@
     - JSON 对象
     - 新的数组方法：map(),filter()
 
-## 迭代器和 for-of 循环
+## 2 迭代器和 for-of 循环
 * 遍历数组
     - for loop
     ```
@@ -27,7 +27,7 @@
         console.log(myArray[index]);
     }
     ```
-    - forEach(不能使用 `break` 中断循环，也不能使用 `continue` 返回到外层函数)
+    - forEach(不能使用 `break` 中断循环，也不能使用 `return` 返回到外层函数)
     ```
     myArray.forEach(function(value) {
         console.log(value);
@@ -73,6 +73,8 @@
         + 避开了 for-in 的所有缺陷
         + 可以正确响应 break, continue 和 return 语句
         + 可以遍历其他集合:大多数类数组对象(DOM NodeList对象)，字符串遍历，Map 和 Set 对象
+        + for-of 循环不支持普通对象。可以使用 for-in 循环或内建的 Object.keys() 方法遍历对象
+        + for-of 循环语句通过方法调用来遍历各种集合
 * Symbols
     - 所有拥有 [Symbol.iterator] 的对象被称为可迭代的
 * for-of 循环的操作过程：
@@ -91,7 +93,7 @@
     };
     ```
 
-## 生成器 Generators
+## 3 生成器 Generators
 * 简介
     - 代码示例
     ```
@@ -108,14 +110,14 @@
 
     // 调用
     var iter = new quips('Xplay');
-    iter.next();
+    iter.next();        // 返回对象 { value: '', done: Boolean }
     iter.next();
     iter.next();
     ```
     - 生成器函数与普通函数的区别
         + 普通函数用 function 声明，生成器函数用 function* 声明
         + 在生成器函数内部，有一种类似 return 的语法：yield。普通函数只可以 return 一次，而生成器函数可以 yield 多次。
-        + 在 生成器的执行过程中，遇到 yield 表达式立即暂停，后续可恢复执行状态
+        + 在生成器的执行过程中，遇到 yield 表达式立即暂停，后续可恢复执行状态(最大的区别，普通函数不能自暂停，生成器函数可以)
 
 * 
 ## 模板字符串
