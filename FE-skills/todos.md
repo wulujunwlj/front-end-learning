@@ -1,5 +1,9 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160301
+* [优秀网站看前端 —— 小米Note介绍页面](http://web.jobbole.com/85189/)
+* [我为何放弃Gulp与Grunt，转投npm scripts](http://www.infoq.com/cn/news/2016/02/gulp-grunt-npm-scripts-part1)
+
 ## 20160228
 * [前端工程优化之路](https://segmentfault.com/a/1190000004415138)
 * [JGulp: 利用Gulp 配置的前端项目自动化工作流](https://segmentfault.com/a/1190000002658165)
