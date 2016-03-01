@@ -14,7 +14,9 @@ router.get('/', function(req, res) {
 });
 
 router.get('/qq', function(req, res) {
-	res.render('websites/qq');
+	res.render('websites/qq', {
+		'title': '腾讯首页'
+	});
 });
 
 router.get('/sina', function(req, res) {
