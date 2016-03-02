@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Swiper demo</title>
+	<link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.css">
+	<style>
+	body {
+		background: #DCD6D6;
+	}
+	.swiper-container {
+		width: 600px;
+		height: 300px;
+		background-color: #fff;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 300px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">Slide 1</div>
+			<div class="swiper-slide">Slide 2</div>
+			<div class="swiper-slide">Slide 3</div>
+		</div>
+
+		<div class="swiper-pagination"></div>
+
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- <div class="swiper-scrollbar"></div> -->
+	</div>
+	<script src="./node_modules/jquery/dist/jquery.js"></script>
+	<script src="./node_modules/swiper/dist/js/swiper.js"></script>
+	<script>
+		$(document).ready(function() {
+			var swiper = new Swiper('.swiper-container', {
+				// direction: 'vertical',
+				loop: true,
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+
+				// scrollbar: '.swiper-scrollbar',
+			});
+		})
+	</script>
+</body>
+</html>

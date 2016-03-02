@@ -1,4 +1,5 @@
 node_modules
+bower_components
 .idea
 *.mp3
 *.mp4
