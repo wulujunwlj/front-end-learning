@@ -1,5 +1,8 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160307
+* [JavaScript source code visualization, static analysis, and complexity tool](https://github.com/es-analysis/plato)
+
 ## 20160302
 * [张云龙博客](https://github.com/fouber/blog)
 
