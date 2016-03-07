@@ -12,7 +12,7 @@ grunt 相关插件使用
 * time-grunt
 * grunt-contrib-yuidoc
 * grunt-jsdoc
-* grunt-concat-cssmin
+* grunt-contrib-cssmin
 * grunt-usemin
 * grunt-cachebuster
 * grunt-contrib-less
