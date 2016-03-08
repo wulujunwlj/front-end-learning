@@ -1,6 +1,7 @@
 
 // wrapper 函数
 module.exports = function(grunt) {
+	
 	// 项目配置
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
