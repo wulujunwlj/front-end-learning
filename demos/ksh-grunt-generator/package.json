@@ -1,5 +1,6 @@
 {
   "name": "ksh-grunt-generator",
+  "file": "grunt-all", 
   "version": "0.1.0",
   "description": "My own grunt configuration.",
   "main": "main.js",

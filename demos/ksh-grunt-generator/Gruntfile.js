@@ -9,14 +9,23 @@ module.exports = function (grunt) {
 
 		uglify: {
 		    options: {
-		    	mangle: false, 
-		        stripBanners: true,
-		        banner: '/*! <%= pkg.name %> - <%= pkg.version %>.js <%= grunt.template.today("yyyy-mm-dd")%> */\n'
+		        // stripBanners: true,
+		        banner: '/*! <%= pkg.file %> <%= grunt.template.today("yyyy-mm-dd")%> */\n'
 		    },
 		    build: {
-		        src: 'src/*.js',
-		        dest: 'build/<%= pkg.name %>-<%= pkg.version %>.min.js'
+		        src: 'dist/*.js',
+		        dest: 'build/<%= pkg.file %>.min.js'
 		    }
+		}, 
+
+		concat: {
+			options: {
+				separator: ';'
+			},
+			dist: {
+				src: 'src/*.js',
+				dest: 'dist/all.js'
+			}
 		}, 
 
 		jshint: {
@@ -29,6 +38,7 @@ module.exports = function (grunt) {
 
 	// 加载插件
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	// 注册任务
 	// grunt.registerTask('default', 'This is the default task...', function() {
@@ -39,5 +49,8 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', ['uglify']);
 
-	// grunt.registerTask('uglify', ['uglify']);
+	grunt.registerTask('compress', ['uglify']);
+	grunt.registerTask('concat:js', ['concat']);
+
+	grunt.registerTask('js:all', ['concat', 'uglify']);
 };
