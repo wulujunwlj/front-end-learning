@@ -1,5 +1,10 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160311
+* [angularjs-lazy-loading-with-requirejs](https://github.com/ifyio/angularjs-lazy-loading-with-requirejs)
+* [基于ui-router的非侵入式angular按需加载方案](https://github.com/kuitos/kuitos.github.io/issues/31)
+* [AngularJS按需动态加载template和controller?](https://www.zhihu.com/question/30624377?sort=created)
+
 ## 20160309
 * [cssmagic](https://github.com/cssmagic)
 
