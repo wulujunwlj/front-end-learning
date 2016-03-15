@@ -1,5 +1,9 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160315
+* [Web前端开发推荐阅读书籍、学习课程下载](http://www.xuanfengge.com/fe-books.html)
+* [Grunt配置文件编写技巧及示范](http://www.xuanfengge.com/grunt-profile-writing-tips-and-demonstrations-2.html)
+
 ## 20160311
 * [angularjs-lazy-loading-with-requirejs](https://github.com/ifyio/angularjs-lazy-loading-with-requirejs)
 * [基于ui-router的非侵入式angular按需加载方案](https://github.com/kuitos/kuitos.github.io/issues/31)
