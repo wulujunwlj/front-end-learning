@@ -1,5 +1,8 @@
 # 这里记录当天或近期需要处理的问题
 
+## 20160318
+* [前端优化不完全指南](http://aotu.io/notes/2016/03/16/optimization/)
+
 ## 20160315
 * [Web前端开发推荐阅读书籍、学习课程下载](http://www.xuanfengge.com/fe-books.html)
 * [Grunt配置文件编写技巧及示范](http://www.xuanfengge.com/grunt-profile-writing-tips-and-demonstrations-2.html)
