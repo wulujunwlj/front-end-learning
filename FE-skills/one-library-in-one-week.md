@@ -7,7 +7,7 @@ One Library in One Week
 
 * 20160319 - 20160325
 
-    > [immutalbe-js:Immutable persistent data collections for Javascript which increase efficiency and simplicity.](https://github.com/facebook/immutable-js)
+    > [immutable-js:Immutable persistent data collections for Javascript which increase efficiency and simplicity.](https://github.com/facebook/immutable-js)
 
 * 20160326 - 20160401
 
