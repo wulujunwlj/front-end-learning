@@ -9,3 +9,5 @@
 * [从零开始nodejs系列文章](http://blog.fens.me/series-nodejs/)
 * [如何系统地学习Node.js](https://www.zhihu.com/question/21567720)
 * [js tips](http://www.jstips.co/)
+* [用NodeJS爬取知乎的关系链](https://segmentfault.com/a/1190000004669003)
+* 

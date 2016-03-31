@@ -11,4 +11,4 @@
 * [What is the most efficient way to clone an object?](http://stackoverflow.com/questions/122102/what-is-the-most-efficient-way-to-clone-an-object)
 * [What does “use strict” do in JavaScript, and what is the reasoning behind it?](http://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it)
 * [What is the purpose of Node.js module.exports and how do you use it?](http://stackoverflow.com/questions/5311334/what-is-the-purpose-of-node-js-module-exports-and-how-do-you-use-it)
-* 
+* [How do JavaScript closures work?](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
